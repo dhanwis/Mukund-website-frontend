@@ -3,6 +3,9 @@ import React from 'react'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 
 
 
@@ -41,32 +44,45 @@ function Header() {
 
          
      
-      <Navbar bg="light" data-bs-theme="light">
-        <Container>
-        <div class="logo">
-                                    <a href="index.html"><img  className='me-5' style={{width:'70px',marginLeft:'-40px'}} src="img/icon/Mukundiconog.png" alt="logo"/></a>
-                                </div>
-          <Nav className="me-auto">
-            <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/aboutus">About US </Nav.Link>
-            <Nav.Link href="/products">Product</Nav.Link>
-            <Nav.Link href="/contact">Contact</Nav.Link>
+    
+   <div className='container'>
+          <Navbar expand="lg" className="bg-body-tertiary">
+          <Container fluid>
+          <div class="logo">
+                                        <a href="index.html"><img  className='me-5' style={{width:'70px',marginLeft:'-40px'}} src="img/icon/Mukundiconog.png" alt="logo"/></a>
+                                    </div>
+            {/* <Navbar.Brand href="#">Navbar scroll</Navbar.Brand> */}
+    
+            
+            <Navbar.Toggle aria-controls="navbarScroll" />
+            <Navbar.Collapse id="navbarScroll">
+              <Nav
+                className="me-auto my-2 my-lg-0"
+                style={{ maxHeight: '100px' }}
+                navbarScroll
+              >
+                <Nav.Link href="/">Home</Nav.Link>
+                <Nav.Link href="/aboutus">About Us</Nav.Link>
+                <Nav.Link href="/products">Product</Nav.Link>
+                <Nav.Link href="/contact">Contact</Nav.Link>
 
-                             {/* <div style={{float:'left'}} class="header-social">
-                                <span>
-                                    <a href="#" title="Facebook"><i style={{color:'rgb(0, 23, 60)'}} class="fab fa-facebook-f"></i></a>
-                                    <a href="#" title="LinkedIn"><i style={{color:'rgb(0, 23, 60)'}} class="fab fa-instagram"></i></a>               
-                                    <a href="#" title="Twitter"><i style={{color:'rgb(0, 23, 60)'}} class="fab fa-twitter"></i></a>
-                                    <a href="#" title="Twitter"><i style={{color:'rgb(0, 23, 60)'}} class="fab fa-youtube"></i></a>
-                                   </span>                    
-                            </div> */}
 
-                               
-                            
-
-          </Nav>
-        </Container>
-      </Navbar>
+                
+                
+              </Nav>
+              <Form className="d-flex">
+                <Form.Control
+                  type="search"
+                  placeholder="Search"
+                  className="me-2"
+                  aria-label="Search"
+                />
+                <Button variant="outline-success">Search</Button>
+              </Form>
+            </Navbar.Collapse>
+          </Container>
+        </Navbar>
+   </div>
         {/* </header> */}
 
 
