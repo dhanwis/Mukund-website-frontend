@@ -31,7 +31,7 @@ function Products() {
   <Card style={{ width: '18rem' }}>
       <Card.Img style={{height:'200px'}} variant="top" src="img/icon/sawsss.jpg" />
       <Card.Body>
-        <Card.Title>Saws</Card.Title>
+        <Card.Title>product</Card.Title>
         <Card.Text>
           Some quick example text to build on the card title and make up the
           bulk of the card's content.
@@ -44,7 +44,7 @@ function Products() {
   <Card style={{ width: '18rem' }}>
       <Card.Img style={{height:'200px'}} variant="top" src="img/icon/tools.jpg" />
       <Card.Body>
-        <Card.Title>powertools</Card.Title>
+        <Card.Title>product</Card.Title>
         <Card.Text>
           Some quick example text to build on the card title and make up the
           bulk of the card's content.
@@ -57,7 +57,7 @@ function Products() {
   <Card style={{ width: '18rem' }}>
       <Card.Img style={{height:'200px'}} variant="top" src="img/icon/tape.jpg" />
       <Card.Body>
-        <Card.Title>Papergum Tape</Card.Title>
+        <Card.Title>Product</Card.Title>
         <Card.Text>
           Some quick example text to build on the card title and make up the
           bulk of the card's content.

@@ -2,6 +2,13 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 import React, { useEffect } from 'react'
 
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+
 
 function Home() {
 
@@ -73,7 +80,7 @@ function Home() {
                     <div class="row justify-content-center">
                         <div class="col-xl-7 col-lg-10">
                             <div class="section-title text-center mb-35">
-                                <h2>OUR PRODUCTS</h2>
+                                <h2>What We Provide</h2>
                             </div>
                         </div>
                     </div>
@@ -137,7 +144,7 @@ function Home() {
                 </div>
             </section>
 
-            <section data-aos="zoom-in-up" class="about-area about-p pt-120 pb-120 p-relative fix ">
+            <section data-aos="zoom-in-up" class="about-area about-p pt-120 pb-120 p-relative fix mb-5 ">
                 <div class="container">
                     <div class="row justify-content-center align-items-center">
                          <div class="col-lg-6 col-md-12 col-sm-12">
@@ -164,6 +171,203 @@ function Home() {
                         </div>
                      
                     </div>
+                </div>
+            </section>
+
+
+            <section id="services" class="services-area services-bg pt-120 pb-90 p-relative">
+                <div class="container">
+                <h1 className='text-center'>Our <span style={{color:'rgb(255, 94, 21)'}}>Products</span> are Here</h1>
+                <br />
+
+                <div className='row'>
+  <div className='col-12 col-md-6 col-lg-3 mb-4'>
+    <Card sx={{ maxWidth: 345 }}>
+    <CardMedia
+        sx={{ height: 200 }}
+        image="https://dummyimage.com/600x400/000/fff"
+        title="green iguana"
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+          product
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+          Lizards are a widespread group of squamate reptiles, with over 6,000
+          species, ranging across all continents except Antarctica
+        </Typography>
+      </CardContent>
+      <CardActions>
+        <Button size="small">Share</Button>
+        <Button size="small">Learn More</Button>
+      </CardActions>
+    </Card>
+  </div>
+  <div className='col-12 col-md-6 col-lg-3 mb-4'>
+    <Card sx={{ maxWidth: 345 }}>
+    <CardMedia
+        sx={{ height: 200 }}
+        image="https://dummyimage.com/600x400/000/fff"
+        title="green iguana"
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+        product
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+          Lizards are a widespread group of squamate reptiles, with over 6,000
+          species, ranging across all continents except Antarctica
+        </Typography>
+      </CardContent>
+      <CardActions>
+        <Button size="small">Share</Button>
+        <Button size="small">Learn More</Button>
+      </CardActions>
+    </Card>
+  </div>
+  <div className='col-12 col-md-6 col-lg-3 mb-4'>
+    <Card sx={{ maxWidth: 345 }}>
+    <CardMedia
+        sx={{ height: 200 }}
+        image="https://dummyimage.com/600x400/000/fff"
+        title="green iguana"
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+        product
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+          Lizards are a widespread group of squamate reptiles, with over 6,000
+          species, ranging across all continents except Antarctica
+        </Typography>
+      </CardContent>
+      <CardActions>
+        <Button size="small">Share</Button>
+        <Button size="small">Learn More</Button>
+      </CardActions>
+    </Card>
+  </div>
+  <div className='col-12 col-md-6 col-lg-3 mb-4'>
+    <Card sx={{ maxWidth: 345 }}>
+    <CardMedia
+        sx={{ height: 200 }}
+        image="https://dummyimage.com/600x400/000/fff"
+        title="green iguana"
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+        product
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+          Lizards are a widespread group of squamate reptiles, with over 6,000
+          species, ranging across all continents except Antarctica
+        </Typography>
+      </CardContent>
+      <CardActions>
+        <Button size="small">Share</Button>
+        <Button size="small">Learn More</Button>
+      </CardActions>
+    </Card>
+  </div>
+  <div className='col-12 col-md-6 col-lg-3 mb-4'>
+    <Card sx={{ maxWidth: 345 }}>
+    <CardMedia
+        sx={{ height: 200 }}
+        image="https://dummyimage.com/600x400/000/fff"
+        title="green iguana"
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+        product
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+          Lizards are a widespread group of squamate reptiles, with over 6,000
+          species, ranging across all continents except Antarctica
+        </Typography>
+      </CardContent>
+      <CardActions>
+        <Button size="small">Share</Button>
+        <Button size="small">Learn More</Button>
+      </CardActions>
+    </Card>
+  </div>
+  <div className='col-12 col-md-6 col-lg-3 mb-4'>
+    <Card sx={{ maxWidth: 345 }}>
+    <CardMedia
+        sx={{ height: 200 }}
+        image="https://dummyimage.com/600x400/000/fff"
+        title="green iguana"
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+        product
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+          Lizards are a widespread group of squamate reptiles, with over 6,000
+          species, ranging across all continents except Antarctica
+        </Typography>
+      </CardContent>
+      <CardActions>
+        <Button size="small">Share</Button>
+        <Button size="small">Learn More</Button>
+      </CardActions>
+    </Card>
+  </div>
+  <div className='col-12 col-md-6 col-lg-3 mb-4'>
+    <Card sx={{ maxWidth: 345 }}>
+    <CardMedia
+        sx={{ height: 200 }}
+        image="https://dummyimage.com/600x400/000/fff"
+        title="green iguana"
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+        product
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+          Lizards are a widespread group of squamate reptiles, with over 6,000
+          species, ranging across all continents except Antarctica
+        </Typography>
+      </CardContent>
+      <CardActions>
+        <Button size="small">Share</Button>
+        <Button size="small">Learn More</Button>
+      </CardActions>
+    </Card>
+  </div>
+  <div className='col-12 col-md-6 col-lg-3 mb-4'>
+    <Card sx={{ maxWidth: 345 }}>
+      <CardMedia
+        sx={{ height: 200 }}
+        image="https://dummyimage.com/600x400/000/fff"
+        title="green iguana"
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+        product
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+          Lizards are a widespread group of squamate reptiles, with over 6,000
+          species, ranging across all continents except Antarctica
+        </Typography>
+      </CardContent>
+      <CardActions>
+        <Button size="small">Share</Button>
+        <Button size="small">Learn More</Button>
+      </CardActions>
+    </Card>
+  </div>
+
+  <div class="slider-btn mt-30 mb-160">     
+<center>
+                                                 <a href="/products" class="btn ss-btn mr-40" data-animation="fadeInLeft" data-delay=".4s">See More</a>
+    
+</center>                                        </div>    
+</div>
+
+
+
+                  
                 </div>
             </section>
 
@@ -276,7 +480,7 @@ function Home() {
             </section>
 
 <br />
-       <div className='text-center mt-5'><h2>OUR BRANDS</h2></div>
+       <div className='text-center mt-5'><h2>OUR <span style={{color:'rgb(255, 94, 21)'}}>BRANDS</span></h2></div>
 
      <div className='container'>
          <div className='row'>
@@ -284,7 +488,7 @@ function Home() {
          <div class="col-md-2 col-6 mt-5">
   
           <div data-aos="flip-left"  class="brand-bx">
-            <img src="img/icon/brand.png" alt="circle_left"/>
+            <img src="https://dummyimage.com/600x400/000/fff" alt="circle_left"/>
             
             
             </div>
@@ -298,7 +502,7 @@ function Home() {
           <div class="col-md-2 col-6 mt-5">
   
           <div data-aos="flip-left" class="brand-bx">
-          <img src="img/icon/brand.png" alt="circle_left"/>
+          <img src="https://dummyimage.com/600x400/000/fff" alt="circle_left"/>
 
             
             
@@ -313,7 +517,7 @@ function Home() {
           <div class="col-md-2 col-6 mt-5">
   
           <div data-aos="flip-left" class="brand-bx">
-          <img src="img/icon/brand.png" alt="circle_left"/>
+          <img src="https://dummyimage.com/600x400/000/fff" alt="circle_left"/>
 
             
             
@@ -323,7 +527,7 @@ function Home() {
             <div class="col-md-2 col-6 mt-5">
   
   <div data-aos="flip-left" class="brand-bx">
-  <img src="img/icon/brand.png" alt="circle_left"/>
+  <img src="https://dummyimage.com/600x400/000/fff" alt="circle_left"/>
 
     
     
@@ -333,7 +537,7 @@ function Home() {
     <div class="col-md-2 col-6 mt-5">
   
   <div data-aos="flip-left" class="brand-bx">
-  <img src="img/icon/brand.png" alt="circle_left"/>
+  <img src="https://dummyimage.com/600x400/000/fff" alt="circle_left"/>
 
     
     
@@ -343,7 +547,7 @@ function Home() {
     <div class="col-md-2 col-6 mt-5">
   
   <div data-aos="flip-left" class="brand-bx">
-  <img src="img/icon/brand.png" alt="circle_left"/>
+  <img src="https://dummyimage.com/600x400/000/fff" alt="circle_left"/>
 
     
     
