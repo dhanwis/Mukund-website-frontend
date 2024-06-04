@@ -23,12 +23,12 @@ function Footer() {
                                     <div class="f-contact">
                                     <ul>
                                     <li>
-                                        <span class="icon"><img src="img/icon/fot-icon1.png" alt="img"/></span>
+                                        <span class="icon"><img src="img/icon/fot-icon12.png" alt="img"/></span>
                                         <span>Tel :0091 497 2760645<br/> Fax: 0091 497 2702177 </span>
                                     </li>
                                     
                                     <li>
-                                      <span class="icon"><img src="img/icon/fot-icon2.png" alt="img"/></span>
+                                      <span class="icon"><img src="img/icon/fot-icon23.png" alt="img"/></span>
                                          <span >147, Stadium Complex, Kannur<br/>670 001, Kerala,India</span>
                                          <span className='ms-5'>kannurmukund@gmail.com</span>
 
@@ -97,7 +97,7 @@ function Footer() {
                     </div>
                 </div>
             </div>
-            <div class="copyright-wrap">
+            {/* <div class="copyright-wrap">
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-lg-4">
@@ -119,7 +119,31 @@ function Footer() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
+{/* 
+<div class="copyright-wrap">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-4">
+                        <img  className='me-5' style={{width:'70px',marginLeft:'-40px'}} src="img/icon/Mukundiconog.png" alt="logo"/>
+                          
+                        </div>
+                        <div class="col-lg-4">          
+                            <div class="copy-text text-center">
+                                 Copyright &copy; 2024 Mukund Machine Tools. All rights reserved.       
+                            </div>
+                                
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="footer-social">                                    
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                </div>    
+                        </div>
+                    </div>
+                </div>
+            </div> */}
         </footer>
 
 

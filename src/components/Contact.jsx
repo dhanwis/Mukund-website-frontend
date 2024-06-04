@@ -44,6 +44,7 @@ function Contact() {
                     </div>
                 </div>
             </section>
+            
 
 
 
@@ -56,8 +57,8 @@ function Contact() {
                              
                             <div class="contact-info">
                                   <div class="single-cta pb-30 mb-30 wow fadeInUp animated" data-animation="fadeInDown animated" data-delay=".2s">
-                                        <div class="f-cta-icon">
-                                            <i class="far fa-map"></i>
+                                        <div  class="f-cta-icon">
+                                            <i style={{backgroundColor:'rgb(210, 33, 39)'}}  class="far fa-map"></i>
                                         </div>
                                         <h5>Office Address</h5>
                                         <p>147, Stadium Complex, Kannur <br/>
@@ -65,7 +66,7 @@ function Contact() {
                                     </div>
                                      <div class="single-cta pb-30 mb-30 wow fadeInUp animated" data-animation="fadeInDown animated" data-delay=".2s">
                                         <div class="f-cta-icon">
-                                            <i class="far fa-clock"></i>
+                                            <i style={{backgroundColor:'rgb(210, 33, 39)'}} class="far fa-clock"></i>
                                         </div>
                                         <h5>Working Hours</h5>
                                         <p>Monday to Friday 09:00 to 18:30 <br/> 
@@ -73,7 +74,7 @@ function Contact() {
                                     </div>
                                      <div class="single-cta wow fadeInUp animated" data-animation="fadeInDown animated" data-delay=".2s">
                                         <div class="f-cta-icon">
-                                            <i class="far fa-envelope-open"></i>
+                                            <i style={{backgroundColor:'rgb(210, 33, 39)'}} class="far fa-envelope-open"></i>
                                         </div>
                                         <h5>Message Us</h5>
                                         <p> <a >kannurmukund@gmail.com</a></p>

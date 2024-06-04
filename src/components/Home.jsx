@@ -23,7 +23,7 @@ function Home() {
       }, []);
  
     const sliderStyle = {
-      backgroundImage: 'url(img/slider/slider_img02.png)',
+      backgroundImage: 'url(img/slider/slider_img024.jpg)',
       backgroundSize: 'cover',
       // backgroundPosition: 'center',
       // height: '100vh', // adjust this to your desired height
@@ -60,8 +60,8 @@ function Home() {
                                          <h2 data-animation="fadeInUp" data-delay=".4s">We Are Best In Industry</h2>
                                         <p data-animation="fadeInUp" data-delay=".6s">Your Gateway to Precision Manufacturing: Reliable Tools for Every Task.</p>
                                         
-                                         <div class="slider-btn mt-30 mb-160">     
-                                             <a href="/aboutus" class="btn ss-btn mr-40" data-animation="fadeInLeft" data-delay=".4s">Read More</a>
+                                         <div  class="slider-btn mt-30 mb-160">     
+                                             <a style={{backgroundColor:'rgb(210, 33, 39)',borderColor:'rgb(210, 33, 39)'}} href="/aboutus" class="btn ss-btn mr-40" data-animation="fadeInLeft" data-delay=".4s">Read More</a>
                                         </div>        
                                                               
                                     </div>
@@ -90,7 +90,7 @@ function Home() {
       <img style={{ height: '500px', width: '500px' }} src="img/services/ik.jpg" alt="feature" />
       <div className="h-service"><h5>Industrial Knives</h5></div>
       <div className="services-icon">
-        <img src="img/icon/sve-icon1.png" />
+        <img src="img/icon/sve-icon5.jpg" />
       </div>
       <div className="services-hover">
         <div className="box1"></div>
@@ -108,7 +108,7 @@ function Home() {
                                  <img style={{height:'500px',width:'500px'}} src="img/services/pt2.jpg" alt="feature"/>
                                  <div class="h-service"><h5>Power Tools</h5></div>
                                  <div class="services-icon">
-                                       <img src="img/icon/sve-icon2.png"/>
+                                       <img src="img/icon/sve-icon6.jpg"/>
                                     </div>
                                 <div class="services-hover">
                                     <div class="box1"></div>
@@ -126,7 +126,7 @@ function Home() {
                                 <div class="h-service"><h5>Cutters</h5></div>
                                  <div class="services-icon">
 
-                                 <img src="img/icon/sve-icon1.png"/>
+                                 <img src="img/icon/sve-icon5.jpg"/>
                                     </div>
                                 <div class="services-hover">
                                     <div class="box1"></div>
@@ -142,17 +142,19 @@ function Home() {
                     </div>
                   
                 </div>
-            </section>
+         
+         
+           </section>
 
             <section data-aos="zoom-in-up" class="about-area about-p pt-120 pb-120 p-relative fix mb-5 ">
                 <div class="container">
                     <div class="row justify-content-center align-items-center">
                          <div class="col-lg-6 col-md-12 col-sm-12">
-                            <div class="s-about-img p-relative  wow fadeInLeft animated" data-animation="fadeInLeft" data-delay=".4s">
-                                <img src="img/features/about_img.png" alt="img"/>   
-                               <div class="about-text second-about">
+                            <div  class="s-about-img p-relative  wow fadeInLeft animated" data-animation="fadeInLeft" data-delay=".4s">
+                                <img src="img/features/about_img3.jpg" alt="img"/>   
+                               <div  class="about-text second-about">
                                     <span>5 <sub>+</sub></span>
-                                    <p>Years of Experience</p>
+                                    <p >Years of Experience</p>
                                 </div>
                             </div>
                           
@@ -165,7 +167,7 @@ function Home() {
                                 </div>
                                    <p>Aliquam ac sem et diam iaculis efficitur. Morbi in enim odio. Nullam quis volutpat est, sed dapibus sapien. Cras condimentum eu velit id tempor. Curabitur purus sapien, cursus sed nisl tristique, commodo vehicula arcu.</p>
                                  <div class="slider-btn mt-20">                                          
-                                     <a href="/aboutus" class="btn ss-btn smoth-scroll">Read More</a>				
+                                     <a style={{backgroundColor:'rgb(210, 33, 39)',borderColor:'rgb(210, 33, 39)'}} href="/aboutus" class="btn ss-btn smoth-scroll">Read More</a>				
                                 </div>
                             </div>
                         </div>
@@ -175,9 +177,9 @@ function Home() {
             </section>
 
 
-            <section id="services" class="services-area services-bg pt-120 pb-90 p-relative">
+            <section data-aos="zoom-in-up" id="services" class="services-area services-bg pt-120 pb-90 p-relative">
                 <div class="container">
-                <h1 className='text-center'>Our <span style={{color:'rgb(255, 94, 21)'}}>Products</span> are Here</h1>
+                <h1 className='text-center'>Our <span style={{color:'rgb(210, 33, 39)'}}>Products</span> are Here</h1>
                 <br />
 
                 <div className='row'>
@@ -269,7 +271,7 @@ function Home() {
       </CardActions>
     </Card>
   </div>
-  <div className='col-12 col-md-6 col-lg-3 mb-4'>
+  {/* <div className='col-12 col-md-6 col-lg-3 mb-4'>
     <Card sx={{ maxWidth: 345 }}>
     <CardMedia
         sx={{ height: 200 }}
@@ -290,8 +292,8 @@ function Home() {
         <Button size="small">Learn More</Button>
       </CardActions>
     </Card>
-  </div>
-  <div className='col-12 col-md-6 col-lg-3 mb-4'>
+  </div> */}
+  {/* <div className='col-12 col-md-6 col-lg-3 mb-4'>
     <Card sx={{ maxWidth: 345 }}>
     <CardMedia
         sx={{ height: 200 }}
@@ -312,8 +314,8 @@ function Home() {
         <Button size="small">Learn More</Button>
       </CardActions>
     </Card>
-  </div>
-  <div className='col-12 col-md-6 col-lg-3 mb-4'>
+  </div> */}
+  {/* <div className='col-12 col-md-6 col-lg-3 mb-4'>
     <Card sx={{ maxWidth: 345 }}>
     <CardMedia
         sx={{ height: 200 }}
@@ -334,8 +336,8 @@ function Home() {
         <Button size="small">Learn More</Button>
       </CardActions>
     </Card>
-  </div>
-  <div className='col-12 col-md-6 col-lg-3 mb-4'>
+  </div> */}
+  {/* <div className='col-12 col-md-6 col-lg-3 mb-4'>
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
         sx={{ height: 200 }}
@@ -356,11 +358,11 @@ function Home() {
         <Button size="small">Learn More</Button>
       </CardActions>
     </Card>
-  </div>
+  </div> */}
 
   <div class="slider-btn mt-30 mb-160">     
 <center>
-                                                 <a href="/products" class="btn ss-btn mr-40" data-animation="fadeInLeft" data-delay=".4s">See More</a>
+                                                 <a style={{backgroundColor:'rgb(210, 33, 39)',borderColor:'rgb(210, 33, 39)'}} href="/products" class="btn ss-btn mr-40" data-animation="fadeInLeft" data-delay=".4s">See More</a>
     
 </center>                                        </div>    
 </div>
@@ -480,7 +482,7 @@ function Home() {
             </section>
 
 <br />
-       <div className='text-center mt-5'><h2>OUR <span style={{color:'rgb(255, 94, 21)'}}>BRANDS</span></h2></div>
+       <div className='text-center mt-5'><h2>OUR <span style={{color:'rgb(210, 33, 39)'}}>BRANDS</span></h2></div>
 
      <div className='container'>
          <div className='row'>

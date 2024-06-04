@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import Products from './components/Products';
 import Aboutus from './components/Aboutus';
 import Contact from './components/Contact';
+import Copy from './components/Copyrightt';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
     <br/>
     
     <Footer/>
+    <Copy/>
 
 
     

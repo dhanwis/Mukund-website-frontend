@@ -65,8 +65,8 @@ function Aboutus() {
 					<div class="col-lg-6 col-md-12 col-sm-12">
                             <div class="about-content s-about-content pl-30 wow fadeInRight  animated" data-animation="fadeInRight" data-delay=".4s">
                                 <div class="about-title second-title pb-25">  
-                                    <h3>Welcome to <br /></h3>   
-                                    <h2><span>Mukund Machine Tools</span></h2>                                
+                                    <h3 style={{color:'00173c'}}>Welcome to <br /></h3>   
+                                    <h2 ><span style={{color:'rgb(210, 33, 39)'}}>Mukund Machine Tools</span></h2>                                
                                 </div>
                                    <p>Aliquam ac sem et diam iaculis efficitur. Morbi in enim odio. Nullam quis volutpat est, sed dapibus sapien. Cras condimentum eu velit id tempor. Curabitur purus sapien, cursus sed nisl tristique, commodo vehicula arcu.</p>
                                   <p>Ut iaculis dignissim justo, ut scelerisque lacus gravida sit amet. Mauris at pharetra quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi accumsan hendrerit dapibus. Quisque auctor leo non nulla maximus, tincidunt lobortis diam dignissim.Teger eu venenatis tellus. Nullam vehicula magna id tellus accumsan blandit. Vivamus vehicula vel lorem vel purus sapien, cursus sed nisl dignissim.</p>

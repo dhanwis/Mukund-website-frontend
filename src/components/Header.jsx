@@ -6,6 +6,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import Offcanvas from 'react-bootstrap/Offcanvas';
 
 
 
@@ -22,11 +23,11 @@ function Header() {
                              <div class="header-cta">
                                <ul>                                   
                                     <li>
-                                        <i class="icon fal fa-envelope"></i>
+                                        <i style={{color:'rgb(210, 33, 39)'}} class="icon fal fa-envelope"></i>
                                         <span>kannurmukund@gmail.com</span>
                                     </li>
                                     <li>
-                                        <i class="icon fal fa-phone"></i>
+                                        <i style={{color:'rgb(210, 33, 39)'}} class="icon fal fa-phone"></i>
                                         <span>0091 497 2700966</span>
                                     </li>
                                 </ul>
@@ -45,47 +46,41 @@ function Header() {
          
      
     
-   <div className='container'>
-          <Navbar expand="lg" className="bg-body-tertiary">
-          <Container fluid>
-          <div class="logo">
-                                        <a href="index.html"><img  className='me-5' style={{width:'70px',marginLeft:'-40px'}} src="img/icon/Mukundiconog.png" alt="logo"/></a>
-                                    </div>
-            {/* <Navbar.Brand href="#">Navbar scroll</Navbar.Brand> */}
-    
-            
-            <Navbar.Toggle aria-controls="navbarScroll" />
-            <Navbar.Collapse id="navbarScroll">
-              <Nav
-                className="me-auto my-2 my-lg-0"
-                style={{ maxHeight: '100px' }}
-                navbarScroll
-              >
-                <Nav.Link href="/">Home</Nav.Link>
-                <Nav.Link href="/aboutus">About Us</Nav.Link>
-                <Nav.Link href="/products">Product</Nav.Link>
-                <Nav.Link href="/contact">Contact</Nav.Link>
-
-
-                
-                
-              </Nav>
-              <Form className="d-flex">
-                <Form.Control
-                  type="search"
-                  placeholder="Search"
-                  className="me-2"
-                  aria-label="Search"
-                />
-                <Button variant="outline-success">Search</Button>
-              </Form>
-            </Navbar.Collapse>
-          </Container>
-        </Navbar>
-   </div>
+  
         {/* </header> */}
 
+        <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
+      <Container>
+        <Navbar.Brand href="#home"> <div class="logo">
+                                        <a href="index.html"><img  className='ms-2' style={{width:'70px',marginLeft:'-40px'}} src="img/icon/Mukundiconog.png" alt="logo"/></a>
+                                    </div></Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link className='me-5' style={{fontSize:'20px'}} href="/">Home</Nav.Link>
+            <Nav.Link  className='me-5'  style={{fontSize:'20px'}} href="/aboutus">Aboutus</Nav.Link>
+            <Nav.Link  className='me-5'  style={{fontSize:'20px'}} href="/products">Products</Nav.Link>
+            <Nav.Link  className='me-5' style={{fontSize:'20px'}} href="/contact">Contact</Nav.Link>
 
+           
+          </Nav>
+          <Nav>
+          
+<Nav.Link href="#deets"><i  style={{color:'rgb(0, 23, 60)'}} class="fa-brands fa-whatsapp fa-2x"></i></Nav.Link>
+
+            <Nav.Link href="#deets"><i style={{color:'rgb(0, 23, 60)'}} class="fa-brands fa-instagram fa-2x"></i></Nav.Link>
+            <Nav.Link href="#deets"><i  style={{color:'rgb(0, 23, 60)'}} class="fa-brands fa-facebook fa-2x"></i></Nav.Link>
+
+
+
+{/* fghfghfghfghfgfhfghfgfhfghghgfghfgh */}
+           
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+
+  
 
     </div>
   )
