@@ -160,7 +160,7 @@ function Home() {
                           
                         </div>
                         
-					<div   class="col-lg-6 col-md-12 col-sm-12">
+					<div   class="col-lg-6 col-md-12 col-sm-12 mb-5">
                             <div  class="about-content s-about-content pl-30 wow fadeInRight  animated"   >
                                 <div class="about-title second-title pb-25">  
                                     <h2>Our Industrial Solution</h2>                                   
@@ -177,14 +177,14 @@ function Home() {
             </section>
 
 
-            <section data-aos="zoom-in-up" id="services" class="services-area services-bg pt-120 pb-90 p-relative">
+            <section data-aos="zoom-in-up" id="services" class="services-area services-bg pt-120 pb-90 p-relative mb-5">
                 <div class="container">
                 <h1 className='text-center'>Our <span style={{color:'rgb(210, 33, 39)'}}>Products</span> are Here</h1>
                 <br />
 
                 <div className='row'>
   <div className='col-12 col-md-6 col-lg-3 mb-4'>
-    <Card sx={{ maxWidth: 345 }}>
+    <Card data-aos="flip-left" sx={{ maxWidth: 345 }}>
     <CardMedia
         sx={{ height: 200 }}
         image="https://dummyimage.com/600x400/000/fff"
@@ -206,7 +206,7 @@ function Home() {
     </Card>
   </div>
   <div className='col-12 col-md-6 col-lg-3 mb-4'>
-    <Card sx={{ maxWidth: 345 }}>
+    <Card data-aos="flip-left" sx={{ maxWidth: 345 }}>
     <CardMedia
         sx={{ height: 200 }}
         image="https://dummyimage.com/600x400/000/fff"
@@ -228,7 +228,7 @@ function Home() {
     </Card>
   </div>
   <div className='col-12 col-md-6 col-lg-3 mb-4'>
-    <Card sx={{ maxWidth: 345 }}>
+    <Card data-aos="flip-left" sx={{ maxWidth: 345 }}>
     <CardMedia
         sx={{ height: 200 }}
         image="https://dummyimage.com/600x400/000/fff"
@@ -250,7 +250,7 @@ function Home() {
     </Card>
   </div>
   <div className='col-12 col-md-6 col-lg-3 mb-4'>
-    <Card sx={{ maxWidth: 345 }}>
+    <Card  data-aos="flip-left"sx={{ maxWidth: 345 }}>
     <CardMedia
         sx={{ height: 200 }}
         image="https://dummyimage.com/600x400/000/fff"
@@ -374,7 +374,7 @@ function Home() {
             </section>
 
 
-            <section   data-aos="zoom-in-up"  id="services-08" class="services-08 pt-105 pb-100 p-relative" style={sliderStyle1} >
+            <section   data-aos="zoom-in-up"  id="services-08" class="services-08 pt-105 pb-100 p-relative mb-5" style={sliderStyle1} >
                 <div class="container">
                     <div class="row">   
                         <div class="col-lg-12">

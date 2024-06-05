@@ -1,9 +1,21 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 // import '../product.css';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import 'aos/dist/aos.css';
+import Aos from 'aos';
+
 
 function Products() {
+
+  useEffect(() => {
+    Aos.init({
+      duration: 1000, // Duration of animation in milliseconds
+      easing: 'ease-in-out', // Easing function for animation
+      once: false, // Whether animation should happen only once
+      mirror: false, // Whether elements should animate out while scrolling past them
+    });
+  }, []);
 
     const sliderStyle1 = {
         
@@ -18,13 +30,18 @@ function Products() {
     // style={{background:'#00173c'}}
   return (
     <div  >
-        <div className='container'>
+        <div data-aos="zoom-out-down" className='container'>
             <br />
+            <br />
+            <br /><br />
             <h1 style={{color:'rgb(0, 23, 60)'}} className='text-center '>Product Gallery</h1>
+            <br />
+            <br />
 
-<br />
-<br />
-<br />
+
+
+
+
 
 <div className='row'>
   <div className='col-12 col-md-6 col-lg-4 mb-4'>

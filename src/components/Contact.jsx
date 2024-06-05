@@ -19,9 +19,9 @@ function Contact() {
         
       };
   return (
-    <div>
+    <div data-aos="zoom-out-down">
 
-<section class="breadcrumb-area d-flex align-items-center" style={sliderStyle}>
+<section  class="breadcrumb-area d-flex align-items-center" style={sliderStyle}>
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-xl-12 col-lg-12">

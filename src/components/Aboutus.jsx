@@ -21,7 +21,7 @@ function Aboutus() {
         });
       }, []);
   return (
-    <div>
+    <div >
 
 
 <section class="breadcrumb-area d-flex align-items-center" style={sliderStyle1}>

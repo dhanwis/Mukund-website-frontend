@@ -6,7 +6,7 @@ const WhatsApp = () => {
     <div className="whatsapp-button">
       {/* WhatsApp button icon or text */}
 
-      <img style={{width:'110px'}} src="img/icon/waa.png" alt="WhatsApp" />
+     <a href=''> <img  style={{width:'110px'}} src="img/icon/waa.png" alt="WhatsApp" /></a>
     </div>
   );
 }
