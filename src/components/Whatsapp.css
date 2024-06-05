@@ -1,0 +1,15 @@
+/* WhatsAppButton.css */
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    z-index: 1000; /* Make sure it's above other content */
+  }
+  
+  .whatsapp-button img {
+    width: 50px; /* Adjust size as needed */
+    height: auto;
+    cursor: pointer;
+  }
+  

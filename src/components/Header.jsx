@@ -66,10 +66,10 @@ function Header() {
           </Nav>
           <Nav>
           
-<Nav.Link href="#deets"><i  style={{color:'rgb(0, 23, 60)'}} class="fa-brands fa-whatsapp fa-2x"></i></Nav.Link>
+<Nav.Link href="#deets"><i  style={{color:'rgb(0, 23, 60)',fontSize:'21px'}} class="fa-brands fa-whatsapp fa-2x"></i></Nav.Link>
 
-            <Nav.Link href="#deets"><i style={{color:'rgb(0, 23, 60)'}} class="fa-brands fa-instagram fa-2x"></i></Nav.Link>
-            <Nav.Link href="#deets"><i  style={{color:'rgb(0, 23, 60)'}} class="fa-brands fa-facebook fa-2x"></i></Nav.Link>
+            <Nav.Link href="#deets"><i style={{color:'rgb(0, 23, 60)',fontSize:'20px'}} class="fa-brands fa-instagram "></i></Nav.Link>
+            <Nav.Link href="#deets"><i   style={{color:'rgb(0, 23, 60)',fontSize:'20px'}} class="fa-brands fa-facebook "></i></Nav.Link>
 
 
 

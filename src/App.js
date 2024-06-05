@@ -7,6 +7,7 @@ import Products from './components/Products';
 import Aboutus from './components/Aboutus';
 import Contact from './components/Contact';
 import Copy from './components/Copyrightt';
+import WhatsApp from './components/Whatsappbutton';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
 
   
     </Routes>
+    <WhatsApp/>
     <br/>
     <br/>
     <br/>
