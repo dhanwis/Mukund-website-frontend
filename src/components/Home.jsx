@@ -1,6 +1,6 @@
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-import React, { useEffect } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
@@ -8,6 +8,9 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import { addprojectresponsecontext } from './context/Contextshare';
+import { allproductAPI } from '../services/allAPI';
+import { BASE_URL } from '../services/baseurl';
 
 
 function Home() {
@@ -36,18 +39,39 @@ function Home() {
       backgroundImage: 'url(img/bg/servies-bg.png)',
       
       
-      // backgroundPosition: 'center',
-      // height: '100vh', // adjust this to your desired height
-      // display: 'flex',
-      // alignItems: 'center',
+    
     };
 
 
-    // style="background-image: url(img/bg/servies-bg.png); background-repeat: no-repeat;"
+
+    const [getProduct, setgetProduct] = useState([]);
+
+    const {addprojectresponse,setaddprojectresponse}=useContext(addprojectresponsecontext)
+
+
+
+
+    
+    useEffect(() => {
+      getProducts(); 
+
+    }, [addprojectresponse]);
+  
+    const getProducts = async () => {
+      const reqheader = {
+        "Content-Type": "application/json",
+      };
+      const result = await allproductAPI(reqheader);
+      setgetProduct(result.data);
+      setaddprojectresponse(result.data)
+    };
+
+    console.log(getProduct);
+
+
   return (
     <div>
 
-{/* style="background-image: url(img/slider/slider_img01.png); background-size: cover;" */}
 
 <div class="single-slider slider-bg d-flex align-items-center" style={sliderStyle} >
                         <div class="container">
@@ -183,182 +207,36 @@ function Home() {
                 <br />
 
                 <div className='row'>
-  <div className='col-12 col-md-6 col-lg-3 mb-4'>
+  {
+    getProduct.length>0 ?
+    getProduct.slice(0,4).map((item)=>(
+    <div className='col-12 col-md-6 col-lg-3 mb-4'>
     <Card data-aos="flip-left" sx={{ maxWidth: 345 }}>
     <CardMedia
         sx={{ height: 200 }}
-        image="https://dummyimage.com/600x400/000/fff"
+        image={`${BASE_URL}/uploads/${item.image}`}
         title="green iguana"
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          product
+        {item.productname}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
+        {item.description}
+
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
+       
       </CardActions>
     </Card>
   </div>
-  <div className='col-12 col-md-6 col-lg-3 mb-4'>
-    <Card data-aos="flip-left" sx={{ maxWidth: 345 }}>
-    <CardMedia
-        sx={{ height: 200 }}
-        image="https://dummyimage.com/600x400/000/fff"
-        title="green iguana"
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-        product
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
-        </Typography>
-      </CardContent>
-      <CardActions>
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
-      </CardActions>
-    </Card>
-  </div>
-  <div className='col-12 col-md-6 col-lg-3 mb-4'>
-    <Card data-aos="flip-left" sx={{ maxWidth: 345 }}>
-    <CardMedia
-        sx={{ height: 200 }}
-        image="https://dummyimage.com/600x400/000/fff"
-        title="green iguana"
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-        product
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
-        </Typography>
-      </CardContent>
-      <CardActions>
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
-      </CardActions>
-    </Card>
-  </div>
-  <div className='col-12 col-md-6 col-lg-3 mb-4'>
-    <Card  data-aos="flip-left"sx={{ maxWidth: 345 }}>
-    <CardMedia
-        sx={{ height: 200 }}
-        image="https://dummyimage.com/600x400/000/fff"
-        title="green iguana"
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-        product
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
-        </Typography>
-      </CardContent>
-      <CardActions>
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
-      </CardActions>
-    </Card>
-  </div>
-  {/* <div className='col-12 col-md-6 col-lg-3 mb-4'>
-    <Card sx={{ maxWidth: 345 }}>
-    <CardMedia
-        sx={{ height: 200 }}
-        image="https://dummyimage.com/600x400/000/fff"
-        title="green iguana"
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-        product
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
-        </Typography>
-      </CardContent>
-      <CardActions>
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
-      </CardActions>
-    </Card>
-  </div> */}
-  {/* <div className='col-12 col-md-6 col-lg-3 mb-4'>
-    <Card sx={{ maxWidth: 345 }}>
-    <CardMedia
-        sx={{ height: 200 }}
-        image="https://dummyimage.com/600x400/000/fff"
-        title="green iguana"
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-        product
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
-        </Typography>
-      </CardContent>
-      <CardActions>
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
-      </CardActions>
-    </Card>
-  </div> */}
-  {/* <div className='col-12 col-md-6 col-lg-3 mb-4'>
-    <Card sx={{ maxWidth: 345 }}>
-    <CardMedia
-        sx={{ height: 200 }}
-        image="https://dummyimage.com/600x400/000/fff"
-        title="green iguana"
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-        product
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
-        </Typography>
-      </CardContent>
-      <CardActions>
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
-      </CardActions>
-    </Card>
-  </div> */}
-  {/* <div className='col-12 col-md-6 col-lg-3 mb-4'>
-    <Card sx={{ maxWidth: 345 }}>
-      <CardMedia
-        sx={{ height: 200 }}
-        image="https://dummyimage.com/600x400/000/fff"
-        title="green iguana"
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-        product
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
-        </Typography>
-      </CardContent>
-      <CardActions>
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
-      </CardActions>
-    </Card>
-  </div> */}
+  ))
+  :null
+  
+}
+  
+ 
 
   <div class="slider-btn mt-30 mb-160">     
 <center>
@@ -400,8 +278,10 @@ function Home() {
                                         <h3>
                                             <a href="single-service.html">Superior Quality</a>                                     
                                         </h3>
-                                        <p>We pride ourselves on delivering machine tools of the highest quality,ensuring durability and optimal performance for all your machining needs.</p>
-                                        <a href="single-service.html" class="readmore"><i class="far fa-angle-right"></i></a>
+<div className='me-5' style={{width:'20rem',height:'10rem'}}>
+                                          <p style={{textAlign:'justify'}}>We pride ourselves on delivering machine tools of the highest quality,ensuring durability and optimal performance for all your machining needs.</p>
+  
+</div>                                        <a href="single-service.html" class="readmore"><i class="far fa-angle-right"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -414,9 +294,10 @@ function Home() {
                                     </div>
                                     <div class="services-08-content">
                                         <h3>
-                                            <a href="single-service.html">Comprehensive Product Range</a>
+                                            <a href="single-service.html">Wide Product Range</a>
                                         </h3>
-                                       <p>Whether you need milling machines, lathes, grinders, or specialized equipment, we have a comprehensive range of products to meet your requirements.</p>
+                                        <div className='me-5' style={{width:'20rem',height:'10rem'}}>
+                                        <p style={{textAlign:'justify'}}>Whether you need milling machines, lathes, grinders, or specialized equipment, we have a comprehensive range of products to meet your requirements.</p> </div>
                                         <a href="single-service.html" class="readmore"><i class="far fa-angle-right"></i></a>
                                     </div>
                                 </div>
@@ -428,7 +309,8 @@ function Home() {
                                     </div>
                                     <div class="services-08-content">
                                         <h3><a href="single-service.html">Innovative Technology</a></h3>
-                                        <p>Our commitment to innovation means you get access to the latest advancements in machine tool technology.</p>
+                                        <div className='me-5' style={{width:'20rem',height:'10rem'}}>
+                                        <p style={{textAlign:'justify'}}>Our commitment to innovation means you get access to the latest advancements in machine tool technology.</p> </div>
                                         <a href="single-service.html" class="readmore"><i class="far fa-angle-right"></i></a>
                                     </div>
                                 </div>
@@ -445,7 +327,8 @@ function Home() {
                                     </div>
                                     <div class="services-08-content">
                                         <h3><a href="single-service.html">Competitive Pricing</a></h3>
-                                        <p>We offer premium machine tools at competitive prices. Our goal is to provide you with the best value for your investment.</p>
+                                        <div className='me-5' style={{width:'20rem',height:'10rem'}}>
+                                        <p style={{textAlign:'justify'}}>We offer premium machine tools at competitive prices. Our goal is to provide you with the best value for your investment.</p> </div>
                                         <a href="single-service.html" class="readmore"><i class="far fa-angle-right"></i></a>
                                     </div>
                                 </div>
@@ -457,7 +340,8 @@ function Home() {
                                     </div>
                                     <div class="services-08-content">
                                         <h3><a href="single-service.html">Reliability and Trust</a></h3>
-                                        <p>Over the years, we have built a reputation for reliability and trustworthiness. Our clients know they can depend on us for consistent quality, timely deliveries, and exceptional service.</p>
+                                        <div className='me-5' style={{width:'20rem',height:'10rem'}}>
+                                        <p style={{textAlign:'justify'}}>Over the years, we have built a reputation for reliability and trustworthiness. Our clients know they can depend on us for consistent quality, timely deliveries, and exceptional service.</p> </div>
                                         <a href="single-service.html" class="readmore"><i class="far fa-angle-right"></i></a>
                                     </div>
                                 </div>
@@ -469,7 +353,8 @@ function Home() {
                                     </div>
                                     <div class="services-08-content">
                                         <h3><a href="single-service.html">Customer-Focused</a></h3>
-                                        <p>Your satisfaction is our top priority. We offer personalized service, tailored solutions, and ongoing support to ensure you get the most out of our products.</p>
+                                        <div className='me-5' style={{width:'20rem',height:'10rem'}}>
+                                        <p style={{textAlign:'justify'}}>Your satisfaction is our top priority. We offer personalized service, tailored solutions, and ongoing support to ensure you get the most out of our products.</p> </div>
                                         <a href="single-service.html" class="readmore"><i class="far fa-angle-right"></i></a>
                                     </div>
                                 </div>

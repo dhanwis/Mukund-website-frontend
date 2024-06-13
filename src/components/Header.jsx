@@ -1,5 +1,5 @@
 import { blue } from '@mui/material/colors'
-import React from 'react'
+import React, { useState } from 'react'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -8,6 +8,11 @@ import Navbar from 'react-bootstrap/Navbar';
 
 
 function Header() {
+
+
+
+
+
   return (
     <div>
 
@@ -45,7 +50,7 @@ function Header() {
     
   
         {/* </header> */}
-
+ 
         <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary fixed-top">
   <Container>
     <Navbar.Brand href="#home">
@@ -70,7 +75,7 @@ function Header() {
                                         <i style={{color:'rgb(210, 33, 39)'}} class="icon fal fa-envelope"></i>
                                         <span style={{fontWeight:'500'}}>kannurmukund@gmail.com</span>
                                     </li>
-                                    <li>
+                                    <li >
                                         <i style={{color:'rgb(210, 33, 39)'}} class="icon fal fa-phone"></i>
                                         <span style={{fontWeight:'500'}}>0091 497 2700966</span>
                                     </li>
@@ -79,7 +84,8 @@ function Header() {
       </Nav>
     </Navbar.Collapse>
   </Container>
-</Navbar>
+</Navbar> 
+
 
 
   

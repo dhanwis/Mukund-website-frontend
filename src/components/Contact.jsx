@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import Card from 'react-bootstrap/Card';
 
 function Contact() {
 
@@ -69,8 +70,8 @@ function Contact() {
                                             <i style={{backgroundColor:'rgb(210, 33, 39)'}} class="far fa-clock"></i>
                                         </div>
                                         <h5>Working Hours</h5>
-                                        <p>Monday to Friday 09:00 to 18:30 <br/> 
-                                            Saturday 15:30</p>
+                                        <p>Monday to  09:00 to 5:30 <br/> 
+                                            Sunday holiday</p> 
                                     </div>
                                      <div class="single-cta wow fadeInUp animated" data-animation="fadeInDown animated" data-delay=".2s">
                                         <div class="f-cta-icon">
@@ -124,9 +125,49 @@ function Contact() {
                             </form>                            
                             </div>     */}
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999533.8942689339!2d74.14937777812501!3d11.875168000000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba43d3698079455%3A0xdbe4609715f541e1!2sMukund%20Machine%20Tools!5e0!3m2!1sen!2sin!4v1717047988547!5m2!1sen!2sin" width="600" height="450" style={{border:'0'}} allowfullscreen="" loading="lazy"></iframe>
+{/* <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999533.8942689339!2d74.14937777812501!3d11.875168000000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba43d3698079455%3A0xdbe4609715f541e1!2sMukund%20Machine%20Tools!5e0!3m2!1sen!2sin!4v1717047988547!5m2!1sen!2sin" width="600" height="450" style={{border:'0'}} allowfullscreen="" loading="lazy"></iframe> */}
+<h3 style={{marginTop:'-60px'}} className='text-center mb-5'>Other Branches</h3>
+                      <div className='row'>
+                       
 
-                        
+<div className='col-6'>
+<Card className='ms-5' style={{ width: '18rem' }}>
+      <Card.Body>
+        <Card.Title>Mukund Machine Tools</Card.Title>
+        <Card.Subtitle className="mb-2 text-muted">Perumbavoor</Card.Subtitle>
+        <Card.Text>
+        4F9G+63M, Karthika Annex, Ground Floor, Kalady-Perumbavoor Rd, Perumbavoor, Kerala 683542
+        </Card.Text>
+        <Card.Text>
+        Phone:<a>95444 21115</a>
+        </Card.Text>
+       
+        <Card.Link href="#">Another Link</Card.Link>
+      </Card.Body>
+    </Card>
+</div>
+<div className='col-6'>
+
+<Card className='ms-5' style={{ width: '18rem' }}>
+      <Card.Body>
+        <Card.Title>Prebin Engineering</Card.Title>
+        <Card.Subtitle className="mb-2 text-muted">Kannur</Card.Subtitle>
+        <Card.Text>
+        Dharmasala, Kerala 670563
+        </Card.Text>
+        <Card.Text>
+        Working Hours: 9 Am-6 pm
+        </Card.Text>
+        <Card.Text>
+        Phone:<a>72931 15909</a>
+        </Card.Text>
+       
+        <Card.Link href="#">Another Link</Card.Link>
+      </Card.Body>
+    </Card>
+</div>
+
+                        </div>  
 						</div>
 					</div>
                     
@@ -134,7 +175,7 @@ function Contact() {
                
             </section>
             {/* style="background: #f5f5f5;" */}
-            {/* <div class="map fix" style={{background:' #f5f5f5;'}} >
+            <div class="map fix" style={{background:' #f5f5f5;'}} >
                 <div class="container-flud">
                     
                     <div class="row">
@@ -143,7 +184,7 @@ function Contact() {
                         </div>
                     </div>
                 </div>
-            </div> */}
+            </div>
     </div>
   )
 }

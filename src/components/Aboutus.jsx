@@ -21,7 +21,7 @@ function Aboutus() {
         });
       }, []);
   return (
-    <div >
+    <div data-aos="zoom-out-down" >
 
 
 <section class="breadcrumb-area d-flex align-items-center" style={sliderStyle1}>
@@ -48,11 +48,11 @@ function Aboutus() {
                 </div>
             </section>
 
-            <section data-aos="zoom-in-up" class="about-area about-p pt-120 pb-120 p-relative fix ">
+            <section class="about-area about-p pt-120 pb-120 p-relative fix ">
                 <div class="container">
                     <div class="row justify-content-center align-items-center">
                          <div class="col-lg-6 col-md-12 col-sm-12">
-                            <div class="s-about-img p-relative  wow fadeInLeft animated" data-animation="fadeInLeft" data-delay=".4s">
+                            <div class="s-about-img p-relative  wow "  >
                                 <img className='mb-5' src="img/services/aboutuss.jpg" alt="img"/>   
                                {/* <div class="about-text second-about">
                                     <span>5 <sub>+</sub></span>
@@ -63,7 +63,7 @@ function Aboutus() {
                         </div>
                         
 					<div class="col-lg-6 col-md-12 col-sm-12">
-                            <div class="about-content s-about-content pl-30 wow fadeInRight  animated" data-animation="fadeInRight" data-delay=".4s">
+                            <div class="about-content s-about-content pl-30 wow "  >
                                 <div class="about-title second-title pb-25">  
                                     <h3 style={{color:'00173c'}}>Welcome to <br /></h3>   
                                     <h2 ><span style={{color:'rgb(210, 33, 39)'}}>Mukund Machine Tools</span></h2>                                
