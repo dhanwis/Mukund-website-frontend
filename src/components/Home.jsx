@@ -189,7 +189,7 @@ function Home() {
                                 <div class="about-title second-title pb-25">  
                                     <h2>Our Industrial Solution</h2>                                   
                                 </div>
-                                   <p>Aliquam ac sem et diam iaculis efficitur. Morbi in enim odio. Nullam quis volutpat est, sed dapibus sapien. Cras condimentum eu velit id tempor. Curabitur purus sapien, cursus sed nisl tristique, commodo vehicula arcu.</p>
+                                   <p style={{color:"black"}}>Aliquam ac sem et diam iaculis efficitur. Morbi in enim odio. Nullam quis volutpat est, sed dapibus sapien. Cras condimentum eu velit id tempor. Curabitur purus sapien, cursus sed nisl tristique, commodo vehicula arcu.</p>
                                  <div class="slider-btn mt-20">                                          
                                      <a style={{backgroundColor:'rgb(210, 33, 39)',borderColor:'rgb(210, 33, 39)'}} href="/aboutus" class="btn ss-btn smoth-scroll">Read More</a>				
                                 </div>
@@ -221,7 +221,7 @@ function Home() {
         <Typography gutterBottom variant="h5" component="div">
         {item.productname}
         </Typography>
-        <Typography variant="body2" color="text.secondary">
+        <Typography   variant="body2" color="text.dark">
         {item.description}
 
         </Typography>
@@ -252,7 +252,7 @@ function Home() {
             </section>
 
 
-            <section   data-aos="zoom-in-up"  id="services-08" class="services-08 pt-105 pb-100 p-relative mb-5" style={sliderStyle1} >
+            <section   data-aos="zoom-in-up"  id="services-08" class="services-08 pt-105 pb-100 p-relative " style={sliderStyle1} >
                 <div class="container">
                     <div class="row">   
                         <div class="col-lg-12">
@@ -276,10 +276,11 @@ function Home() {
                                     </div>
                                     <div class="services-08-content">
                                         <h3>
-                                            <a href="single-service.html">Superior Quality</a>                                     
+                                            <a href="single-service.html">Superior Quality</a> 
+                                                                              
                                         </h3>
 <div className='me-5' style={{width:'20rem',height:'10rem'}}>
-                                          <p style={{textAlign:'justify'}}>We pride ourselves on delivering machine tools of the highest quality,ensuring durability and optimal performance for all your machining needs.</p>
+                                          <p style={{textAlign:'justify',color:'black'}}>We pride ourselves on delivering machine tools of the highest quality,ensuring durability and optimal performance for all your machining needs.</p>
   
 </div>                                        <a href="single-service.html" class="readmore"><i class="far fa-angle-right"></i></a>
                                     </div>
@@ -297,7 +298,7 @@ function Home() {
                                             <a href="single-service.html">Wide Product Range</a>
                                         </h3>
                                         <div className='me-5' style={{width:'20rem',height:'10rem'}}>
-                                        <p style={{textAlign:'justify'}}>Whether you need milling machines, lathes, grinders, or specialized equipment, we have a comprehensive range of products to meet your requirements.</p> </div>
+                                        <p style={{textAlign:'justify',color:'black'}}>Whether you need milling machines, lathes, grinders, or specialized equipment, we have a comprehensive range of products to meet your requirements.</p> </div>
                                         <a href="single-service.html" class="readmore"><i class="far fa-angle-right"></i></a>
                                     </div>
                                 </div>
@@ -310,7 +311,7 @@ function Home() {
                                     <div class="services-08-content">
                                         <h3><a href="single-service.html">Innovative Technology</a></h3>
                                         <div className='me-5' style={{width:'20rem',height:'10rem'}}>
-                                        <p style={{textAlign:'justify'}}>Our commitment to innovation means you get access to the latest advancements in machine tool technology.</p> </div>
+                                        <p style={{textAlign:'justify',color:'black'}}>Our commitment to innovation means you get access to the latest advancements in machine tool technology.</p> </div>
                                         <a href="single-service.html" class="readmore"><i class="far fa-angle-right"></i></a>
                                     </div>
                                 </div>
@@ -328,7 +329,7 @@ function Home() {
                                     <div class="services-08-content">
                                         <h3><a href="single-service.html">Competitive Pricing</a></h3>
                                         <div className='me-5' style={{width:'20rem',height:'10rem'}}>
-                                        <p style={{textAlign:'justify'}}>We offer premium machine tools at competitive prices. Our goal is to provide you with the best value for your investment.</p> </div>
+                                        <p style={{textAlign:'justify',color:'black'}}>We offer premium machine tools at competitive prices. Our goal is to provide you with the best value for your investment.</p> </div>
                                         <a href="single-service.html" class="readmore"><i class="far fa-angle-right"></i></a>
                                     </div>
                                 </div>
@@ -341,7 +342,7 @@ function Home() {
                                     <div class="services-08-content">
                                         <h3><a href="single-service.html">Reliability and Trust</a></h3>
                                         <div className='me-5' style={{width:'20rem',height:'10rem'}}>
-                                        <p style={{textAlign:'justify'}}>Over the years, we have built a reputation for reliability and trustworthiness. Our clients know they can depend on us for consistent quality, timely deliveries, and exceptional service.</p> </div>
+                                        <p style={{textAlign:'justify',color:'black'}}>Over the years, we have built a reputation for reliability and trustworthiness. Our clients know they can depend on us for consistent quality, timely deliveries, and exceptional service.</p> </div>
                                         <a href="single-service.html" class="readmore"><i class="far fa-angle-right"></i></a>
                                     </div>
                                 </div>
@@ -354,11 +355,12 @@ function Home() {
                                     <div class="services-08-content">
                                         <h3><a href="single-service.html">Customer-Focused</a></h3>
                                         <div className='me-5' style={{width:'20rem',height:'10rem'}}>
-                                        <p style={{textAlign:'justify'}}>Your satisfaction is our top priority. We offer personalized service, tailored solutions, and ongoing support to ensure you get the most out of our products.</p> </div>
+                                        <p style={{textAlign:'justify',color:'black'}}>Your satisfaction is our top priority. We offer personalized service, tailored solutions, and ongoing support to ensure you get the most out of our products.</p> </div>
                                         <a href="single-service.html" class="readmore"><i class="far fa-angle-right"></i></a>
                                     </div>
-                                </div>
+                                </div>  
                             </div>
+
                        
                         </div>
 					
@@ -366,7 +368,7 @@ function Home() {
                     </div>
             </section>
 
-<br />
+{/* <br />
        <div className='text-center mt-5'><h2>OUR <span style={{color:'rgb(210, 33, 39)'}}>BRANDS</span></h2></div>
 
      <div className='container'>
@@ -448,7 +450,7 @@ function Home() {
           
           </div>
   
-     </div>
+     </div> */}
     </div>
   )
 }

@@ -8,7 +8,7 @@ import './Footer.css';
 
 const Copy = () => {
   return (
-    <footer style={{backgroundColor:'rgb(210, 33, 39)'}} className="footer">
+    <footer  style={{backgroundColor:'rgb(210, 33, 39)'}} className="footer">
       <div className="footer-container">
         <div className="footer-logo">
 
@@ -21,9 +21,7 @@ const Copy = () => {
           <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faFacebook} />
           </a>
-          <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faTwitter} />
-          </a>
+         
           <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faInstagram} />
             

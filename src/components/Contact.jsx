@@ -131,27 +131,29 @@ function Contact() {
                        
 
 <div className='col-6'>
-<Card className='ms-5' style={{ width: '18rem' }}>
+<Card className='ms-5' style={{ width: '18rem',borderColor:'rgb(210, 33, 39)' }}>
       <Card.Body>
         <Card.Title>Mukund Machine Tools</Card.Title>
         <Card.Subtitle className="mb-2 text-muted">Perumbavoor</Card.Subtitle>
+        <br/>
         <Card.Text>
         4F9G+63M, Karthika Annex, Ground Floor, Kalady-Perumbavoor Rd, Perumbavoor, Kerala 683542
         </Card.Text>
         <Card.Text>
-        Phone:<a>95444 21115</a>
+        Phone: <a>95444 21115</a>
         </Card.Text>
        
-        <Card.Link href="#">Another Link</Card.Link>
+        {/* <Card.Link href="#">Another Link</Card.Link> */}
       </Card.Body>
     </Card>
 </div>
 <div className='col-6'>
 
-<Card className='ms-5' style={{ width: '18rem' }}>
+<Card className='ms-5' style={{ width: '18rem',borderColor:'rgb(210, 33, 39)' }}>
       <Card.Body>
         <Card.Title>Prebin Engineering</Card.Title>
         <Card.Subtitle className="mb-2 text-muted">Kannur</Card.Subtitle>
+        <br/>
         <Card.Text>
         Dharmasala, Kerala 670563
         </Card.Text>
@@ -159,10 +161,10 @@ function Contact() {
         Working Hours: 9 Am-6 pm
         </Card.Text>
         <Card.Text>
-        Phone:<a>72931 15909</a>
+        Phone: <a>72931 15909</a>
         </Card.Text>
        
-        <Card.Link href="#">Another Link</Card.Link>
+        {/* <Card.Link href="#">Another Link</Card.Link> */}
       </Card.Body>
     </Card>
 </div>

@@ -38,6 +38,8 @@ function Header() {
                          
 
                       
+
+                      
                          
                         
                     </div>
@@ -63,21 +65,21 @@ function Header() {
     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
     <Navbar.Collapse id="responsive-navbar-nav">
       <Nav className="me-auto">
-        <Nav.Link className='me-4' style={{fontSize:'20px',fontWeight:'500'}} href="/">Home</Nav.Link>
-        <Nav.Link className='me-4' style={{fontSize:'20px',fontWeight:'500'}} href="/aboutus">Aboutus</Nav.Link>
-        <Nav.Link className='me-4' style={{fontSize:'20px',fontWeight:'500'}} href="/products">Products</Nav.Link>
-        <Nav.Link className='me-4' style={{fontSize:'20px',fontWeight:'500'}} href="/contact">Contact</Nav.Link>
+        <Nav.Link className='me-4' style={{fontSize:'20px',fontWeight:'400',color:'black'}} href="/">Home</Nav.Link>
+        <Nav.Link className='me-4' style={{fontSize:'20px',fontWeight:'400',color:'black'}} href="/aboutus">Aboutus</Nav.Link>
+        <Nav.Link className='me-4' style={{fontSize:'20px',fontWeight:'400',color:'black'}} href="/products">Products</Nav.Link>
+        <Nav.Link className='me-4' style={{fontSize:'20px',fontWeight:'400',color:'black'}} href="/contact">Contact</Nav.Link>
       </Nav>
       <Nav>
       <div class="header-cta">
                                <ul>                                   
                                     <li>
                                         <i style={{color:'rgb(210, 33, 39)'}} class="icon fal fa-envelope"></i>
-                                        <span style={{fontWeight:'500'}}>kannurmukund@gmail.com</span>
+                                        <span style={{fontWeight:'400',color:'black'}}>kannurmukund@gmail.com</span>
                                     </li>
                                     <li >
                                         <i style={{color:'rgb(210, 33, 39)'}} class="icon fal fa-phone"></i>
-                                        <span style={{fontWeight:'500'}}>0091 497 2700966</span>
+                                        <span style={{fontWeight:'400',color:'black'}}>0091 497 2700966</span>
                                     </li>
                                 </ul>
                             </div>

@@ -68,11 +68,12 @@ function Aboutus() {
                                     <h3 style={{color:'00173c'}}>Welcome to <br /></h3>   
                                     <h2 ><span style={{color:'rgb(210, 33, 39)'}}>Mukund Machine Tools</span></h2>                                
                                 </div>
-                                   <p>Aliquam ac sem et diam iaculis efficitur. Morbi in enim odio. Nullam quis volutpat est, sed dapibus sapien. Cras condimentum eu velit id tempor. Curabitur purus sapien, cursus sed nisl tristique, commodo vehicula arcu.</p>
-                                  <p>Ut iaculis dignissim justo, ut scelerisque lacus gravida sit amet. Mauris at pharetra quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi accumsan hendrerit dapibus. Quisque auctor leo non nulla maximus, tincidunt lobortis diam dignissim.Teger eu venenatis tellus. Nullam vehicula magna id tellus accumsan blandit. Vivamus vehicula vel lorem vel purus sapien, cursus sed nisl dignissim.</p>
+                                   <p style={{color:'black'}}>Aliquam ac sem et diam iaculis efficitur. Morbi in enim odio. Nullam quis volutpat est, sed dapibus sapien. Cras condimentum eu velit id tempor. Curabitur purus sapien, cursus sed nisl tristique, commodo vehicula arcu.</p>
+                                  <p style={{color:'black'}}>Ut iaculis dignissim justo, ut scelerisque lacus gravida sit amet. Mauris at pharetra quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi accumsan hendrerit dapibus. Quisque auctor leo non nulla maximus, tincidunt lobortis diam dignissim.Teger eu venenatis tellus. Nullam vehicula magna id tellus accumsan blandit. Vivamus vehicula vel lorem vel purus sapien, cursus sed nisl dignissim.</p>
                                  {/* <div class="slider-btn mt-20">                                          
                                      <a href="/aboutus" class="btn ss-btn smoth-scroll">Read More</a>				
                                 </div> */}
+
                             </div>
                         </div>
                      

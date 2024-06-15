@@ -25,13 +25,8 @@ function App() {
   
     </Routes>
     <WhatsApp/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-  
-    
-    <Copy/>
+     <Copy/>
+
 
 
     
