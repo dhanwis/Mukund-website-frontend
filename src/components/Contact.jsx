@@ -126,50 +126,44 @@ function Contact() {
                             </div>     */}
 
 {/* <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999533.8942689339!2d74.14937777812501!3d11.875168000000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba43d3698079455%3A0xdbe4609715f541e1!2sMukund%20Machine%20Tools!5e0!3m2!1sen!2sin!4v1717047988547!5m2!1sen!2sin" width="600" height="450" style={{border:'0'}} allowfullscreen="" loading="lazy"></iframe> */}
-<h3 style={{marginTop:'-60px'}} className='text-center mb-5'>Other Branches</h3>
-                      <div className='row'>
-                       
 
-<div className='col-6'>
-<Card className='ms-5' style={{ width: '18rem',borderColor:'rgb(210, 33, 39)' }}>
-      <Card.Body>
-        <Card.Title>Mukund Machine Tools</Card.Title>
-        <Card.Subtitle className="mb-2 text-muted">Perumbavoor</Card.Subtitle>
-        <br/>
-        <Card.Text>
-        4F9G+63M, Karthika Annex, Ground Floor, Kalady-Perumbavoor Rd, Perumbavoor, Kerala 683542
-        </Card.Text>
-        <Card.Text>
-        Phone: <a>95444 21115</a>
-        </Card.Text>
-       
-        {/* <Card.Link href="#">Another Link</Card.Link> */}
-      </Card.Body>
-    </Card>
-</div>
-<div className='col-6'>
-
-<Card className='ms-5' style={{ width: '18rem',borderColor:'rgb(210, 33, 39)' }}>
-      <Card.Body>
-        <Card.Title>Prebin Engineering</Card.Title>
-        <Card.Subtitle className="mb-2 text-muted">Kannur</Card.Subtitle>
-        <br/>
-        <Card.Text>
-        Dharmasala, Kerala 670563
-        </Card.Text>
-        <Card.Text>
-        Working Hours: 9 Am-6 pm
-        </Card.Text>
-        <Card.Text>
-        Phone: <a>72931 15909</a>
-        </Card.Text>
-       
-        {/* <Card.Link href="#">Another Link</Card.Link> */}
-      </Card.Body>
-    </Card>
-</div>
-
-                        </div>  
+<br />
+<br />
+<h3 style={{marginTop:'-50px'}} className='text-center mb-5'>Other Branches</h3>
+<div className='row'>
+        <div className='col-12 col-md-6'>
+          <Card className='m-3' style={{ width: '100%', borderColor: 'rgb(210, 33, 39)' }}>
+            <Card.Body>
+              <Card.Title>Mukund Machine Tools</Card.Title>
+              <Card.Subtitle className="mb-2 text-muted">Perumbavoor</Card.Subtitle>
+              <br/>
+              <Card.Text>
+                4F9G+63M, Karthika Annex, Ground Floor, Kalady-Perumbavoor Rd, Perumbavoor, Kerala 683542
+              </Card.Text>
+              <Card.Text>
+                Phone: <a href="tel:9544421115">95444 21115</a>
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </div>
+        <div className='col-12 col-md-6'>
+          <Card className='m-3' style={{ width: '100%', borderColor: 'rgb(210, 33, 39)' }}>
+            <Card.Body>
+              <Card.Title>Prebin Engineering</Card.Title>
+              <Card.Subtitle className="mb-2 text-muted">Kannur</Card.Subtitle>
+              <br/>
+              <Card.Text>
+                Dharmasala, Kerala 670563 <br />
+                Working Hours: 9 Am-6 pm
+              </Card.Text>
+             
+              <Card.Text>
+                Phone: <a href="tel:7293115909">72931 15909</a>
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </div>
+      </div> 
 						</div>
 					</div>
                     

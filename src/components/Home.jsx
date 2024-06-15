@@ -208,7 +208,7 @@ function Home() {
 
                 <div className='row'>
   {
-    getProduct.length>0 ?
+   getProduct && getProduct.length>0 ?
     getProduct.slice(0,4).map((item)=>(
     <div className='col-12 col-md-6 col-lg-3 mb-4'>
     <Card data-aos="flip-left" sx={{ maxWidth: 345 }}>
@@ -221,10 +221,13 @@ function Home() {
         <Typography gutterBottom variant="h5" component="div">
         {item.productname}
         </Typography>
-        <Typography   variant="body2" color="text.dark">
+        <Typography style={{width:'15rem',height:'6rem'}}  variant="body2" color="text.dark">
         {item.description}
 
         </Typography>
+        {/* <CardText style={{width:'15rem',height:'6rem'}} >
+                              {item.description}
+                            </CardText> */}
       </CardContent>
       <CardActions>
        

@@ -76,7 +76,7 @@ function Products() {
 
   
  {
-  getProduct.length> 0 ?
+  getProduct && getProduct.length> 0 ?
   getProduct.map((item)=>(
     // slice(0,3)
 
@@ -86,9 +86,9 @@ function Products() {
       <Card.Img style={{height:'200px'}} variant="top" src={`${BASE_URL}/uploads/${item.image}`} />
       <Card.Body>
         <Card.Title>{item.productname}</Card.Title>
-        <Card.Text>
-        {item.description}
-        </Card.Text>
+        <Card.Text style={{width:'15rem',height:'6rem'}} >
+                              {item.description}
+                            </Card.Text>
         <Button style={{backgroundColor:'rgb(210, 33, 39)',borderColor:'rgb(210, 33, 39)'}}>Get a Quote <i class="fa-solid fa-arrow-right"></i></Button>
       </Card.Body>
     </Card>
