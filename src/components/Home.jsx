@@ -211,26 +211,28 @@ function Home() {
    getProduct && getProduct.length>0 ?
     getProduct.slice(0,4).map((item)=>(
     <div className='col-12 col-md-6 col-lg-3 mb-4'>
-    <Card data-aos="flip-left" sx={{ maxWidth: 345 }}>
-    <CardMedia
+     <Card 
+      data-aos="flip-left" 
+      sx={{ 
+        maxWidth: 345, 
+        border: '1px solid rgb(210, 33, 39)'  
+      }}
+    >
+      <CardMedia
         sx={{ height: 200 }}
         image={`${BASE_URL}/uploads/${item.image}`}
         title="green iguana"
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-        {item.productname}
+          {item.productname}
         </Typography>
-        <Typography style={{width:'15rem',height:'6rem'}}  variant="body2" color="text.dark">
-        {item.description}
-
+        <Typography style={{ width: '15rem', height: '6rem' }} variant="body2" color="text.dark">
+          {item.description}
         </Typography>
-        {/* <CardText style={{width:'15rem',height:'6rem'}} >
-                              {item.description}
-                            </CardText> */}
       </CardContent>
       <CardActions>
-       
+        {/* Add any card actions here */}
       </CardActions>
     </Card>
   </div>
@@ -301,7 +303,7 @@ function Home() {
                                             <a href="single-service.html">Wide Product Range</a>
                                         </h3>
                                         <div className='me-5' style={{width:'20rem',height:'10rem'}}>
-                                        <p style={{textAlign:'justify',color:'black'}}>Whether you need milling machines, lathes, grinders, or specialized equipment, we have a comprehensive range of products to meet your requirements.</p> </div>
+                                        <p style={{textAlign:'justify',color:'black'}}>Whether you need saws, cutters, or powertools, we have a comprehensive range of products to meet your requirements.</p> </div>
                                         <a href="single-service.html" class="readmore"><i class="far fa-angle-right"></i></a>
                                     </div>
                                 </div>

@@ -13,25 +13,16 @@ function Products() {
 
   useEffect(() => {
     Aos.init({
-      duration: 1000, // Duration of animation in milliseconds
-      easing: 'ease-in-out', // Easing function for animation
-      once: false, // Whether animation should happen only once
-      mirror: false, // Whether elements should animate out while scrolling past them
+      duration: 1000,
+      easing: 'ease-in-out', 
+      once: false, 
+      mirror: false, 
     });
   }, []);
 
-    const sliderStyle1 = {
-        
-        
-        // height: '100vh', // adjust this to your desired height
-        // display: 'flex',
-        // alignItems: 'center',
-      };
 
-    //   style="background-image: url(img/bg/testimonal-bg.png);background-color: #fff;background-position: center center;background-repeat: no-repeat;"
 
-    // style={{background:'#00173c'}}
-
+  
 
 
     const [getProduct, setgetProduct] = useState([]);
@@ -82,19 +73,20 @@ function Products() {
 
  
  <div className='col-12 col-md-6 col-lg-4 mb-4'>
-  <Card style={{ width: '18rem' }}>
+  <Card style={{ width: '18rem'  
+ }}>
       <Card.Img style={{height:'200px'}} variant="top" src={`${BASE_URL}/uploads/${item.image}`} />
       <Card.Body>
         <Card.Title>{item.productname}</Card.Title>
         <Card.Text style={{width:'15rem',height:'6rem'}} >
-                              {item.description}
+                              {item.description}   
                             </Card.Text>
         <Button style={{backgroundColor:'rgb(210, 33, 39)',borderColor:'rgb(210, 33, 39)'}}>Get a Quote <i class="fa-solid fa-arrow-right"></i></Button>
       </Card.Body>
     </Card>
   </div>
    ))
- :null
+ : <center>  <img  className='mb-5 ' style={{width:'45%'}} src="img/icon/no-data2.1.gif" alt="Description of the image" /><h4 className='mb-5' style={{color:'#d22127'}}>No products found!</h4></center>
   
 }
  

@@ -57,7 +57,7 @@ function Contact() {
                          <div data-aos="fade-right" class="col-lg-4 order-1">
                              
                             <div class="contact-info">
-                                  <div class="single-cta pb-30 mb-30 wow fadeInUp animated" data-animation="fadeInDown animated" data-delay=".2s">
+                                  <div class="single-cta pb-30 mb-30 wow"  data-delay=".2s">
                                         <div  class="f-cta-icon">
                                             <i style={{backgroundColor:'rgb(210, 33, 39)'}}  class="far fa-map"></i>
                                         </div>
@@ -65,7 +65,7 @@ function Contact() {
                                         <p>147, Stadium Complex, Kannur <br/>
                                             670 001,Kerala,India</p>
                                     </div>
-                                     <div class="single-cta pb-30 mb-30 wow fadeInUp animated" data-animation="fadeInDown animated" data-delay=".2s">
+                                     <div class="single-cta pb-30 mb-30 wow " d data-delay=".2s">
                                         <div class="f-cta-icon">
                                             <i style={{backgroundColor:'rgb(210, 33, 39)'}} class="far fa-clock"></i>
                                         </div>
@@ -73,7 +73,7 @@ function Contact() {
                                         <p>Monday to  09:00 to 5:30 <br/> 
                                             Sunday holiday</p> 
                                     </div>
-                                     <div class="single-cta wow fadeInUp animated" data-animation="fadeInDown animated" data-delay=".2s">
+                                     <div class="single-cta wow "  data-delay=".2s">
                                         <div class="f-cta-icon">
                                             <i style={{backgroundColor:'rgb(210, 33, 39)'}} class="far fa-envelope-open"></i>
                                         </div>
@@ -134,7 +134,7 @@ function Contact() {
         <div className='col-12 col-md-6'>
           <Card className='m-3' style={{ width: '100%', borderColor: 'rgb(210, 33, 39)' }}>
             <Card.Body>
-              <Card.Title>Mukund Machine Tools</Card.Title>
+              <Card.Title>MUKUND MACHINE TOOLS</Card.Title>
               <Card.Subtitle className="mb-2 text-muted">Perumbavoor</Card.Subtitle>
               <br/>
               <Card.Text>
@@ -149,7 +149,7 @@ function Contact() {
         <div className='col-12 col-md-6'>
           <Card className='m-3' style={{ width: '100%', borderColor: 'rgb(210, 33, 39)' }}>
             <Card.Body>
-              <Card.Title>Prebin Engineering</Card.Title>
+              <Card.Title>PREBIN ENGINEERING</Card.Title>
               <Card.Subtitle className="mb-2 text-muted">Kannur</Card.Subtitle>
               <br/>
               <Card.Text>
