@@ -18,14 +18,14 @@ const Copy = () => {
           &copy; {new Date().getFullYear()} Mukund Machine Tools. All rights reserved.
         </div>
         <div className="footer-social">
-          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+          {/* <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faFacebook} />
           </a>
          
           <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faInstagram} />
             
-          </a>
+          </a> */}
           
         </div>
       </div>

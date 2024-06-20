@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import Card from 'react-bootstrap/Card';
+import './officeaddress.css'; 
 
 function Contact() {
 
@@ -57,14 +58,13 @@ function Contact() {
                          <div data-aos="fade-right" class="col-lg-4 order-1">
                              
                             <div class="contact-info">
-                                  <div class="single-cta pb-30 mb-30 wow"  data-delay=".2s">
-                                        <div  class="f-cta-icon">
-                                            <i style={{backgroundColor:'rgb(210, 33, 39)'}}  class="far fa-map"></i>
-                                        </div>
-                                        <h5>Office Address</h5>
-                                        <p>147, Stadium Complex, Kannur <br/>
-                                            670 001,Kerala,India</p>
-                                    </div>
+                            <div className="single-cta wow" data-delay=".2s">
+            <div className="f-cta-icon">
+                <i className="far fa-map" style={{ backgroundColor: 'rgb(210, 33, 39)' }}></i>
+            </div>
+            <h5>Office Address</h5>
+            <p>147, Stadium Complex, Kannur <br /> 670 001, Kerala, India</p>
+        </div>
                                      <div class="single-cta pb-30 mb-30 wow " d data-delay=".2s">
                                         <div class="f-cta-icon">
                                             <i style={{backgroundColor:'rgb(210, 33, 39)'}} class="far fa-clock"></i>
@@ -141,7 +141,7 @@ function Contact() {
                 4F9G+63M, Karthika Annex, Ground Floor, Kalady-Perumbavoor Rd, Perumbavoor, Kerala 683542
               </Card.Text>
               <Card.Text>
-                Phone: <a href="tel:9544421115">95444 21115</a>
+                Phone: <a href="tel:9544421115">9544421115</a>
               </Card.Text>
             </Card.Body>
           </Card>

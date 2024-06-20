@@ -11,6 +11,7 @@ import Typography from '@mui/material/Typography';
 import { addprojectresponsecontext } from './context/Contextshare';
 import { allproductAPI } from '../services/allAPI';
 import { BASE_URL } from '../services/baseurl';
+import { useInView } from 'react-intersection-observer';
 
 
 function Home() {
@@ -69,6 +70,11 @@ function Home() {
     console.log(getProduct);
 
 
+    const { ref: ref1, inView: inView1 } = useInView({ triggerOnce: true });
+    const { ref: ref2, inView: inView2 } = useInView({ triggerOnce: true });
+    const { ref: ref3, inView: inView3 } = useInView({ triggerOnce: true });
+
+
   return (
     <div>
 
@@ -99,76 +105,70 @@ function Home() {
 
 
 
-                    <section id="services" class="services-area services-bg pt-120 pb-90 p-relative">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-xl-7 col-lg-10">
-                            <div class="section-title text-center mb-35">
-                                <h2>What We Provide</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div  class="row">
-                        <div style={{borderRadius:'10px'}}  class="col-lg-4 col-md-6 mb-30">
-                        <div data-aos="fade-right" style={{ borderRadius: '10px' }} className="s-single-services text-center">
-      <img style={{ height: '500px', width: '500px' }} src="img/services/ik.jpg" alt="feature" />
-      <div className="h-service"><h5>Industrial Knives</h5></div>
-      <div className="services-icon">
-        <img src="img/icon/sve-icon5.jpg" />
-      </div>
-      <div className="services-hover">
-        <div className="box1"></div>
-        <div className="box2"></div>
-        <div className="second-services-content">
-          <h5>Industrial Knives</h5>
-          <p>Crafted from high-grade materials, our industrial knives deliver unparalleled precision and durability. Whether you're working with metal, wood, plastic, or food products, these knives ensure reliable, efficient cutting for the toughest industrial tasks.</p>
-          {/* <a href="single-service.html">Read More</a> */}
+                    <section id="services" className="services-area services-bg pt-120 pb-90 p-relative">
+      <div className="container">
+        <div className="row justify-content-center">
+          <div className="col-xl-7 col-lg-10">
+            <div className="section-title text-center mb-35">
+              <h2>What We Provide</h2>
+            </div>
+          </div>
+        </div>
+        <div className="row">
+          <div style={{ borderRadius: '10px' }} className="col-lg-4 col-md-6 mb-30">
+            <div data-aos="fade-right" style={{ borderRadius: '10px' }} className="s-single-services text-center" ref={ref1}>
+              {inView1 && <img style={{ height: '500px', width: '500px' }} src="img/services/ik.jpg" alt="feature" />}
+              <div className="h-service"><h5>Industrial Knives</h5></div>
+              <div className="services-icon">
+                {inView1 && <img src="img/icon/sve-icon5.jpg" />}
+              </div>
+              <div className="services-hover">
+                <div className="box1"></div>
+                <div className="box2"></div>
+                <div className="second-services-content">
+                  <h5>Industrial Knives</h5>
+                  <p>Crafted from high-grade materials, our industrial knives deliver unparalleled precision and durability. Whether you're working with metal, wood, plastic, or food products, these knives ensure reliable, efficient cutting for the toughest industrial tasks.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-4 col-md-6 mb-30">
+            <div data-aos="zoom-out" className="s-single-services text-center" ref={ref2}>
+              {inView2 && <img style={{ height: '500px', width: '500px' }} src="img/services/pt2.jpg" alt="feature" />}
+              <div className="h-service"><h5>Power Tools</h5></div>
+              <div className="services-icon">
+                {inView2 && <img src="img/icon/sve-icon6.jpg" />}
+              </div>
+              <div className="services-hover">
+                <div className="box1"></div>
+                <div className="box2"></div>
+                <div className="second-services-content">
+                  <h5>Power Tools</h5>
+                  <p>Our power tools combine innovative technology with rugged construction to deliver outstanding performance. Perfect for demanding applications, they provide the power, accuracy, and durability needed for professional-grade results.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-4 col-md-6 mb-30">
+            <div data-aos="fade-left" className="s-single-services text-center" ref={ref3}>
+              {inView3 && <img style={{ height: '500px', width: '500px' }} src="img/services/powertools.jpg" alt="feature" />}
+              <div className="h-service"><h5>Cutters</h5></div>
+              <div className="services-icon">
+                {inView3 && <img src="img/icon/sve-icon5.jpg" />}
+              </div>
+              <div className="services-hover">
+                <div className="box1"></div>
+                <div className="box2"></div>
+                <div className="second-services-content">
+                  <h5>Cutters</h5>
+                  <p>Designed for professional and industrial use, our cutters offer exceptional cutting power and precision. Built to last, they handle the toughest materials with ease, making them an essential tool for any job site or workshop.</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-                        </div>
-                         <div class="col-lg-4 col-md-6 mb-30">
-                            <div data-aos="zoom-out" class="s-single-services text-center">
-                                 <img style={{height:'500px',width:'500px'}} src="img/services/pt2.jpg" alt="feature"/>
-                                 <div class="h-service"><h5>Power Tools</h5></div>
-                                 <div class="services-icon">
-                                       <img src="img/icon/sve-icon6.jpg"/>
-                                    </div>
-                                <div class="services-hover">
-                                    <div class="box1"></div>
-                                    <div class="box2"></div>
-                                    <div class="second-services-content">
-                                        <h5>Power Tools</h5>
-                                        <p>Our power tools combine innovative technology with rugged construction to deliver outstanding performance. Perfect for demanding applications, they provide the power, accuracy, and durability needed for professional-grade results.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                         <div class="col-lg-4 col-md-6 mb-30">
-                            <div data-aos="fade-left" class="s-single-services text-center">
-                                <img style={{height:'500px',width:'500px'}} src="img/services/powertools.jpg" alt="feature"/>
-                                <div class="h-service"><h5>Cutters</h5></div>
-                                 <div class="services-icon">
-
-                                 <img src="img/icon/sve-icon5.jpg"/>
-                                    </div>
-                                <div class="services-hover">
-                                    <div class="box1"></div>
-                                    <div class="box2"></div>
-                                    <div class="second-services-content">
-                                        <h5>Cutters</h5>
-                                        <p>Designed for professional and industrial use, our cutters offer exceptional cutting power and precision. Built to last, they handle the toughest materials with ease, making them an essential tool for any job site or workshop..</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                       
-                    </div>
-                  
-                </div>
-         
-         
-           </section>
+    </section>
 
             <section data-aos="zoom-in-up" class="about-area about-p pt-120 pb-120 p-relative fix mb-5 ">
                 <div class="container">
@@ -207,7 +207,7 @@ function Home() {
                 <br />
 
                 <div className='row'>
-  {
+  {/* {
    getProduct && getProduct.length>0 ?
     getProduct.slice(0,4).map((item)=>(
     <div className='col-12 col-md-6 col-lg-3 mb-4'>
@@ -221,7 +221,7 @@ function Home() {
       <CardMedia
         sx={{ height: 200 }}
         image={`${BASE_URL}/uploads/${item.image}`}
-        title="green iguana"
+        title="mukund"
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
@@ -232,14 +232,122 @@ function Home() {
         </Typography>
       </CardContent>
       <CardActions>
-        {/* Add any card actions here */}
       </CardActions>
     </Card>
   </div>
   ))
   :null
   
-}
+} */}
+ <div className='col-12 col-md-6 col-lg-3 mb-4'>
+     <Card 
+      data-aos="flip-left" 
+      sx={{ 
+        maxWidth: 345, 
+         
+      }}
+    >
+      <CardMedia
+        sx={{ height: 200 }}
+        image={'img/icon/sree.jpg'}
+        title="mukund"
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+         Product 1
+        </Typography>
+        <Typography style={{ width: '15rem', height: '6rem' }} variant="body2" color="text.dark">
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae omnis accusantium, !
+        </Typography>
+      </CardContent>
+      <CardActions>
+        {/* Add any card actions here */}
+      </CardActions>
+    </Card>
+  </div>
+
+  <div className='col-12 col-md-6 col-lg-3 mb-4'>
+     <Card 
+      data-aos="flip-left" 
+      sx={{ 
+        maxWidth: 345, 
+         
+      }}
+    >
+      <CardMedia
+        sx={{ height: 200 }}
+        image={'img/icon/sree.jpg'}
+        title="mukund"
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+         Product 1
+        </Typography>
+        <Typography style={{ width: '15rem', height: '6rem' }} variant="body2" color="text.dark">
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae omnis accusantium, !
+        </Typography>
+      </CardContent>
+      <CardActions>
+        {/* Add any card actions here */}
+      </CardActions>
+    </Card>
+  </div>
+
+
+  <div className='col-12 col-md-6 col-lg-3 mb-4'>
+     <Card 
+      data-aos="flip-left" 
+      sx={{ 
+        maxWidth: 345, 
+         
+      }}
+    >
+      <CardMedia
+        sx={{ height: 200 }}
+        image={'img/icon/sree.jpg'}
+        title="mukund"
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+         Product 1
+        </Typography>
+        <Typography style={{ width: '15rem', height: '6rem' }} variant="body2" color="text.dark">
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae omnis accusantium, !
+        </Typography>
+      </CardContent>
+      <CardActions>
+        {/* Add any card actions here */}
+      </CardActions>
+    </Card>
+  </div>
+
+  <div className='col-12 col-md-6 col-lg-3 mb-4'>
+     <Card 
+      data-aos="flip-left" 
+      sx={{ 
+        maxWidth: 345, 
+         
+      }}
+    >
+      <CardMedia
+        sx={{ height: 200 }}
+        image={'img/icon/sree.jpg'}
+        title="mukund"
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+         Product 1
+        </Typography>
+        <Typography style={{ width: '15rem', height: '6rem' }} variant="body2" color="text.dark">
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae omnis accusantium, !
+        </Typography>
+      </CardContent>
+      <CardActions>
+        {/* Add any card actions here */}
+      </CardActions>
+    </Card>
+  </div>
+  
   
  
 
