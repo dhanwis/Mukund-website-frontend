@@ -62,14 +62,19 @@ function Aboutus() {
                           
                         </div>
                         
-					<div class="col-lg-6 col-md-12 col-sm-12">
+					<div  class="col-lg-6 col-md-12 col-sm-12 mb-5">
                             <div class="about-content s-about-content pl-30 wow "  >
                                 <div class="about-title second-title pb-25">  
                                     <h3 style={{color:'00173c'}}>Welcome to <br /></h3>   
-                                    <h2 ><span style={{color:'rgb(210, 33, 39)'}}>Mukund Machine Tools</span></h2>                                
+                                    <h1 ><span style={{color:'rgb(210, 33, 39)'}}>Mukund Machine Tools</span></h1>                                
                                 </div>
-                                   <p style={{color:'black'}}>Aliquam ac sem et diam iaculis efficitur. Morbi in enim odio. Nullam quis volutpat est, sed dapibus sapien. Cras condimentum eu velit id tempor. Curabitur purus sapien, cursus sed nisl tristique, commodo vehicula arcu.</p>
-                                  <p style={{color:'black'}}>Ut iaculis dignissim justo, ut scelerisque lacus gravida sit amet. Mauris at pharetra quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi accumsan hendrerit dapibus.</p>
+                                   <p style={{color:'black'}}>Founded in 1987, Mukund Machine Tools has grown from a small business into a leading supplier of industrial cutting tools. We specialise in trading high-quality knives, saws, and cutters for industries working with wood, rubber, paper, plastics, ferrous and other non-ferrous metals.
+                                   </p>
+                                  <p style={{color:'black'}}>Our collaboration with top manufacturers from India and across the world ensures that our customers benefit from the latest cutting tools which we have been selling locally and abroad. This network allows us to  consistently offer innovative and reliable solutions.
+                                  </p>
+                                  <p style={{color:'black'}}>
+                                  We have accumulated years of experience in providing timely services at our service centre which is equipped with state-of-the-art CNC machine.
+                                  </p>
                                  {/* <div class="slider-btn mt-20">                                          
                                      <a href="/aboutus" class="btn ss-btn smoth-scroll">Read More</a>				
                                 </div> */}

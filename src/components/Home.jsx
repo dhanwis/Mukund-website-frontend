@@ -189,7 +189,8 @@ function Home() {
                                 <div class="about-title second-title pb-25">  
                                     <h2>Our Industrial Solution</h2>                                   
                                 </div>
-                                   <p style={{color:"black"}}>Aliquam ac sem et diam iaculis efficitur. Morbi in enim odio. Nullam quis volutpat est, sed dapibus sapien. Cras condimentum eu velit id tempor. Curabitur purus sapien, cursus sed nisl tristique, commodo vehicula arcu.</p>
+                                   <p style={{color:"black"}}>Mukund Machine Tools has grown from a small business into a leading supplier of industrial cutting tools. We specialise in trading high-quality knives, saws, and cutters for industries working with wood, rubber, paper, plastics, ferrous and other non-ferrous metals.
+                                   </p>
                                  <div class="slider-btn mt-20">                                          
                                      <a style={{backgroundColor:'rgb(210, 33, 39)',borderColor:'rgb(210, 33, 39)'}} href="/aboutus" class="btn ss-btn smoth-scroll">Read More</a>				
                                 </div>

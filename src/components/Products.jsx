@@ -142,7 +142,7 @@ function Products() {
       </Card.Body>
     </Card>
   </div>
-  <div className='col-12 col-md-6 col-lg-4 mb-4'>
+  <div className='col-12 col-md-6 col-lg-4 mb-4'>     
   <Card style={{ width: '18rem'  
  }}>
       <Card.Img style={{height:'200px'}} variant="top" src={'img/icon/sree.jpg'} />
