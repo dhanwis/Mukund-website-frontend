@@ -2,16 +2,12 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 import React, { useContext, useEffect, useState } from 'react'
 
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
+import Card from 'react-bootstrap/Card';
+
 import { addprojectresponsecontext } from './context/Contextshare';
 import { allproductAPI } from '../services/allAPI';
 import { BASE_URL } from '../services/baseurl';
-import { useInView } from 'react-intersection-observer';
+import { Link } from 'react-router-dom';
 
 
 function Home() {
@@ -29,10 +25,7 @@ function Home() {
     const sliderStyle = {
       backgroundImage: 'url(img/slider/slider_img024.jpg)',
       backgroundSize: 'cover',
-      // backgroundPosition: 'center',
-      // height: '100vh', // adjust this to your desired height
-      // display: 'flex',
-      // alignItems: 'center',
+      
     };
 
 
@@ -70,9 +63,7 @@ function Home() {
     console.log(getProduct);
 
 
-    const { ref: ref1, inView: inView1 } = useInView({ triggerOnce: true });
-    const { ref: ref2, inView: inView2 } = useInView({ triggerOnce: true });
-    const { ref: ref3, inView: inView3 } = useInView({ triggerOnce: true });
+    
 
 
   return (
@@ -116,55 +107,61 @@ function Home() {
         </div>
         <div className="row">
           <div style={{ borderRadius: '10px' }} className="col-lg-4 col-md-6 mb-30">
-            <div data-aos="fade-right" style={{ borderRadius: '10px' }} className="s-single-services text-center" ref={ref1}>
-              {inView1 && <img style={{ height: '500px', width: '500px' }} src="img/services/ik.jpg" alt="feature" />}
-              <div className="h-service"><h5>Industrial Knives</h5></div>
-              <div className="services-icon">
-                {inView1 && <img src="img/icon/sve-icon5.jpg" />}
-              </div>
-              <div className="services-hover">
-                <div className="box1"></div>
-                <div className="box2"></div>
-                <div className="second-services-content">
-                  <h5>Industrial Knives</h5>
-                  <p>Crafted from high-grade materials, our industrial knives deliver unparalleled precision and durability. Whether you're working with metal, wood, plastic, or food products, these knives ensure reliable, efficient cutting for the toughest industrial tasks.</p>
+          <Link to={'/products'}>
+              <div data-aos="fade-right" style={{ borderRadius: '10px' }} className="s-single-services text-center" >
+               <img style={{ height: '500px', width: '500px' }} src="img/services/ik.jpg" alt="feature" />
+                <div className="h-service"><h5>Industrial Knives</h5></div>
+                <div className="services-icon">
+                  <img src="img/icon/sve-icon5.jpg" />
+                </div>
+                <div className="services-hover">
+                  <div className="box1"></div>
+                  <div className="box2"></div>
+                  <div className="second-services-content">
+                    <h5>Industrial Knives</h5>
+                    <p>Crafted from high-grade materials, our industrial knives deliver unparalleled precision and durability. Whether you're working with metal, wood, plastic, or food products, these knives ensure reliable, efficient cutting for the toughest industrial tasks.</p>
+                  </div>
                 </div>
               </div>
-            </div>
+          </Link>
           </div>
           <div className="col-lg-4 col-md-6 mb-30">
-            <div data-aos="zoom-out" className="s-single-services text-center" ref={ref2}>
-              {inView2 && <img style={{ height: '500px', width: '500px' }} src="img/services/pt2.jpg" alt="feature" />}
-              <div className="h-service"><h5>Power Tools</h5></div>
-              <div className="services-icon">
-                {inView2 && <img src="img/icon/sve-icon6.jpg" />}
-              </div>
-              <div className="services-hover">
-                <div className="box1"></div>
-                <div className="box2"></div>
-                <div className="second-services-content">
-                  <h5>Power Tools</h5>
-                  <p>Our power tools combine innovative technology with rugged construction to deliver outstanding performance. Perfect for demanding applications, they provide the power, accuracy, and durability needed for professional-grade results.</p>
+           <Link to={'/products'}>
+              <div data-aos="zoom-out" className="s-single-services text-center" >
+               <img style={{ height: '500px', width: '500px' }} src="img/services/pt2.jpg" alt="feature" />
+                <div className="h-service"><h5>Power Tools</h5></div>
+                <div className="services-icon">
+                  <img src="img/icon/sve-icon6.jpg" />
+                </div>
+                <div className="services-hover">
+                  <div className="box1"></div>
+                  <div className="box2"></div>
+                  <div className="second-services-content">
+                    <h5>Power Tools</h5>
+                    <p>Our power tools combine innovative technology with rugged construction to deliver outstanding performance. Perfect for demanding applications, they provide the power, accuracy, and durability needed for professional-grade results.</p>
+                  </div>
                 </div>
               </div>
-            </div>
+           </Link>
           </div>
           <div className="col-lg-4 col-md-6 mb-30">
-            <div data-aos="fade-left" className="s-single-services text-center" ref={ref3}>
-              {inView3 && <img style={{ height: '500px', width: '500px' }} src="img/services/powertools.jpg" alt="feature" />}
-              <div className="h-service"><h5>Cutters</h5></div>
-              <div className="services-icon">
-                {inView3 && <img src="img/icon/sve-icon5.jpg" />}
-              </div>
-              <div className="services-hover">
-                <div className="box1"></div>
-                <div className="box2"></div>
-                <div className="second-services-content">
-                  <h5>Cutters</h5>
-                  <p>Designed for professional and industrial use, our cutters offer exceptional cutting power and precision. Built to last, they handle the toughest materials with ease, making them an essential tool for any job site or workshop.</p>
+          <Link to={'/products'}>
+              <div data-aos="fade-left" className="s-single-services text-center">
+               <img style={{ height: '500px', width: '500px' }} src="img/services/powertools.jpg" alt="feature" />
+                <div className="h-service"><h5>Cutters</h5></div>
+                <div className="services-icon">
+                  <img src="img/icon/sve-icon5.jpg" />
+                </div>
+                <div className="services-hover">
+                  <div className="box1"></div>
+                  <div className="box2"></div>
+                  <div className="second-services-content">
+                    <h5>Cutters</h5>
+                    <p>Designed for professional and industrial use, our cutters offer exceptional cutting power and precision. Built to last, they handle the toughest materials with ease, making them an essential tool for any job site or workshop.</p>
+                  </div>
                 </div>
               </div>
-            </div>
+          </Link>
           </div>
         </div>
       </div>
@@ -174,10 +171,10 @@ function Home() {
                 <div class="container">
                     <div class="row justify-content-center align-items-center">
                          <div class="col-lg-6 col-md-12 col-sm-12">
-                            <div  class="s-about-img p-relative  wow fadeInLeft animated" data-animation="fadeInLeft" data-delay=".4s">
+                            <div  class="s-about-img p-relative  wow  " >
                                 <img src="img/features/about_img3.jpg" alt="img"/>   
                                <div  class="about-text second-about">
-                                    <span>5 <sub>+</sub></span>
+                                    <span>30 <sub>+</sub></span>
                                     <p >Years of Experience</p>
                                 </div>
                             </div>
@@ -185,7 +182,7 @@ function Home() {
                         </div>
                         
 					<div   class="col-lg-6 col-md-12 col-sm-12 mb-5">
-                            <div  class="about-content s-about-content pl-30 wow fadeInRight  animated"   >
+                            <div  class="about-content s-about-content pl-30 wow "   >
                                 <div class="about-title second-title pb-25">  
                                     <h2>Our Industrial Solution</h2>                                   
                                 </div>
@@ -208,39 +205,25 @@ function Home() {
                 <br />
 
                 <div className='row'>
-  {/* {
-   getProduct && getProduct.length>0 ?
-    getProduct.slice(0,4).map((item)=>(
-    <div className='col-12 col-md-6 col-lg-3 mb-4'>
-     <Card 
-      data-aos="flip-left" 
-      sx={{ 
-        maxWidth: 345, 
-        border: '1px solid rgb(210, 33, 39)'  
-      }}
-    >
-      <CardMedia
-        sx={{ height: 200 }}
-        image={`${BASE_URL}/uploads/${item.image}`}
-        title="mukund"
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          {item.productname}
-        </Typography>
-        <Typography style={{ width: '15rem', height: '6rem' }} variant="body2" color="text.dark">
-          {item.description}
-        </Typography>
-      </CardContent>
-      <CardActions>
-      </CardActions>
+                {getProduct && getProduct.length > 0 ? (
+        getProduct.slice(0, 4).map((item) => (
+          <div className='col-12 col-md-6 col-lg-3 mb-4' key={item.id}>
+            <Link to={'/products'}>
+            <Card style={{ width: '18rem', borderColor:'rgb(210, 33, 39)' 
+ }}>
+      <Card.Img style={{height:'200px'}} variant="top" src={`${BASE_URL}/uploads/${item.image}`} />
+      <Card.Body>
+        <Card.Title style={{width:'15rem',height:'4rem'}}>{item.productname}</Card.Title>
+        <Card.Text style={{width:'15rem',height:'8rem'}} >
+                              {item.description}   
+                            </Card.Text>
+      </Card.Body>
     </Card>
-  </div>
-  ))
-  :null
-  
-} */}
- <div className='col-12 col-md-6 col-lg-3 mb-4'>
+            </Link>
+          </div>
+        ))
+      ) : null}
+ {/* <div className='col-12 col-md-6 col-lg-3 mb-4'>
      <Card 
       data-aos="flip-left" 
       sx={{ 
@@ -262,7 +245,6 @@ function Home() {
         </Typography>
       </CardContent>
       <CardActions>
-        {/* Add any card actions here */}
       </CardActions>
     </Card>
   </div>
@@ -289,7 +271,6 @@ function Home() {
         </Typography>
       </CardContent>
       <CardActions>
-        {/* Add any card actions here */}
       </CardActions>
     </Card>
   </div>
@@ -317,7 +298,6 @@ function Home() {
         </Typography>
       </CardContent>
       <CardActions>
-        {/* Add any card actions here */}
       </CardActions>
     </Card>
   </div>
@@ -344,17 +324,16 @@ function Home() {
         </Typography>
       </CardContent>
       <CardActions>
-        {/* Add any card actions here */}
       </CardActions>
     </Card>
-  </div>
+  </div> */}
   
   
  
 
   <div class="slider-btn mt-30 mb-160">     
 <center>
-                                                 <a style={{backgroundColor:'rgb(210, 33, 39)',borderColor:'rgb(210, 33, 39)'}} href="/products" class="btn ss-btn mr-40" data-animation="fadeInLeft" data-delay=".4s">See More</a>
+                                                 <a style={{backgroundColor:'rgb(210, 33, 39)',borderColor:'rgb(210, 33, 39)'}} href="/products" class="btn ss-btn mr-40" >See More</a>
     
 </center>                                        </div>    
 </div>
@@ -390,13 +369,13 @@ function Home() {
                                     </div>
                                     <div class="services-08-content">
                                         <h3>
-                                            <a href="single-service.html">Superior Quality</a> 
+                                            <a>Superior Quality</a> 
                                                                               
                                         </h3>
 <div className='me-5' style={{width:'20rem',height:'10rem'}}>
                                           <p style={{textAlign:'justify',color:'black'}}>We pride ourselves on delivering machine tools of the highest quality,ensuring durability and optimal performance for all your machining needs.</p>
   
-</div>                                        <a href="single-service.html" class="readmore"><i class="far fa-angle-right"></i></a>
+</div>                                        <a  class="readmore"><i class="far fa-angle-right"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -409,11 +388,11 @@ function Home() {
                                     </div>
                                     <div class="services-08-content">
                                         <h3>
-                                            <a href="single-service.html">Wide Product Range</a>
+                                            <a >Wide Product Range</a>
                                         </h3>
                                         <div className='me-5' style={{width:'20rem',height:'10rem'}}>
                                         <p style={{textAlign:'justify',color:'black'}}>Whether you need saws, cutters, or powertools, we have a comprehensive range of products to meet your requirements.</p> </div>
-                                        <a href="single-service.html" class="readmore"><i class="far fa-angle-right"></i></a>
+                                        <a  class="readmore"><i class="far fa-angle-right"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -423,10 +402,10 @@ function Home() {
                                       <img src="img/icon/project-management.png" alt="circle_left"/>
                                     </div>
                                     <div class="services-08-content">
-                                        <h3><a href="single-service.html">Innovative Technology</a></h3>
+                                        <h3><a >Innovative Technology</a></h3>
                                         <div className='me-5' style={{width:'20rem',height:'10rem'}}>
                                         <p style={{textAlign:'justify',color:'black'}}>Our commitment to innovation means you get access to the latest advancements in machine tool technology.</p> </div>
-                                        <a href="single-service.html" class="readmore"><i class="far fa-angle-right"></i></a>
+                                        <a  class="readmore"><i class="far fa-angle-right"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -441,10 +420,10 @@ function Home() {
                                       <img src="img/icon/competitive.png" alt="circle_left"/>
                                     </div>
                                     <div class="services-08-content">
-                                        <h3><a href="single-service.html">Competitive Pricing</a></h3>
+                                        <h3><a >Competitive Pricing</a></h3>
                                         <div className='me-5' style={{width:'20rem',height:'10rem'}}>
                                         <p style={{textAlign:'justify',color:'black'}}>We offer premium machine tools at competitive prices. Our goal is to provide you with the best value for your investment.</p> </div>
-                                        <a href="single-service.html" class="readmore"><i class="far fa-angle-right"></i></a>
+                                        <a class="readmore"><i class="far fa-angle-right"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -454,10 +433,10 @@ function Home() {
                                       <img src="img/icon/trust.png" alt="circle_left"/>
                                     </div>
                                     <div class="services-08-content">
-                                        <h3><a href="single-service.html">Reliability and Trust</a></h3>
+                                        <h3><a >Reliability and Trust</a></h3>
                                         <div className='me-5' style={{width:'20rem',height:'10rem'}}>
                                         <p style={{textAlign:'justify',color:'black'}}>Over the years, we have built a reputation for reliability and trustworthiness. Our clients know they can depend on us for consistent quality, timely deliveries, and exceptional service.</p> </div>
-                                        <a href="single-service.html" class="readmore"><i class="far fa-angle-right"></i></a>
+                                        <a  class="readmore"><i class="far fa-angle-right"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -467,10 +446,10 @@ function Home() {
                                       <img src="img/icon/target.png" alt="circle_left"/>
                                     </div>
                                     <div class="services-08-content">
-                                        <h3><a href="single-service.html">Customer-Focused</a></h3>
+                                        <h3><a >Customer-Focused</a></h3>
                                         <div className='me-5' style={{width:'20rem',height:'10rem'}}>
                                         <p style={{textAlign:'justify',color:'black'}}>Your satisfaction is our top priority. We offer personalized service, tailored solutions, and ongoing support to ensure you get the most out of our products.</p> </div>
-                                        <a href="single-service.html" class="readmore"><i class="far fa-angle-right"></i></a>
+                                        <a  class="readmore"><i class="far fa-angle-right"></i></a>
                                     </div>
                                 </div>  
                             </div>
@@ -482,89 +461,43 @@ function Home() {
                     </div>
             </section>
 
-{/* <br />
+<br />
        <div className='text-center mt-5'><h2>OUR <span style={{color:'rgb(210, 33, 39)'}}>BRANDS</span></h2></div>
 
-     <div className='container'>
-         <div className='row'>
-  
-         <div class="col-md-2 col-6 mt-5">
-  
-          <div data-aos="flip-left"  class="brand-bx">
-            <img src="https://dummyimage.com/600x400/000/fff" alt="circle_left"/>
-            
-            
+       <div class="container">
+    <div class="row mb-2">
+        <div class="col-md-2 col-6 mt-4">
+            <div data-aos="flip-left" class="brand-bx mt-4">
+                <img src="img/icon/cmtorangetools.jpg" alt="circle_left"/>
             </div>
-  
-  
-  
-  
-  
-          
-          </div>
-          <div class="col-md-2 col-6 mt-5">
-  
-          <div data-aos="flip-left" class="brand-bx">
-          <img src="https://dummyimage.com/600x400/000/fff" alt="circle_left"/>
-
-            
-            
+        </div>
+        <div class="col-md-2 col-6 mt-5">
+            <div data-aos="flip-left" class="brand-bx">
+                <img src="img/icon/bosh.jpg" alt="circle_left"/>
             </div>
-  
-  
-  
-  
-  
-          
-          </div>
-          <div class="col-md-2 col-6 mt-5">
-  
-          <div data-aos="flip-left" class="brand-bx">
-          <img src="https://dummyimage.com/600x400/000/fff" alt="circle_left"/>
-
-            
-            
+        </div>
+        <div class="col-md-2 col-6 mt-5">
+            <div data-aos="flip-left" class="brand-bx">
+                <img src="img/icon/kanefusa.png" alt="circle_left"/>
             </div>
+        </div>
+        <div class="col-md-2 col-6 mt-5">
+            <div data-aos="flip-left" class="brand-bx">
+                <img src="img/icon/kaymo.jpg" alt="circle_left"/>
             </div>
-
-            <div class="col-md-2 col-6 mt-5">
-  
-  <div data-aos="flip-left" class="brand-bx">
-  <img src="https://dummyimage.com/600x400/000/fff" alt="circle_left"/>
-
-    
-    
+        </div>
+        <div class="col-md-2 col-6 mt-5">
+            <div data-aos="flip-left" class="brand-bx">
+                <img  src="img/icon/sharpex.png" alt="circle_left"/>
+            </div>
+        </div>
+        <div class="col-md-2 col-6 mt-5">
+            <div data-aos="flip-left" class="brand-bx">
+                <img src="img/icon/abracut.jpg" alt="circle_left"/>
+            </div>
+        </div>
     </div>
-    </div>
-
-    <div class="col-md-2 col-6 mt-5">
-  
-  <div data-aos="flip-left" class="brand-bx">
-  <img src="https://dummyimage.com/600x400/000/fff" alt="circle_left"/>
-
-    
-    
-    </div>
-    </div>
-
-    <div class="col-md-2 col-6 mt-5">
-  
-  <div data-aos="flip-left" class="brand-bx">
-  <img src="https://dummyimage.com/600x400/000/fff" alt="circle_left"/>
-
-    
-    
-    </div>
-    </div>
-  
-  
-  
-  
-  
-          
-          </div>
-  
-     </div> */}
+</div>
     </div>
   )
 }

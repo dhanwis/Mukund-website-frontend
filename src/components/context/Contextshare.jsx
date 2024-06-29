@@ -3,7 +3,8 @@ import { useState } from 'react'
 // create context api
  export const addprojectresponsecontext=createContext()
  export const editprojectresponsecontext=createContext()
-//  export const isauthtokencontext=createContext()
+ 
+ export const isauthtokencontext=createContext()
 
 function Contextshare({children}) {
     // children is a predefined prob
@@ -11,13 +12,13 @@ function Contextshare({children}) {
     const [addprojectresponse,setaddprojectresponse]=useState({})
     const [editprojectresponse,seteditprojectresponse]=useState({})
 
-    // const [isauthtoken,setisauthtoken]=useState(true)
+    const [authtoken,setauthtoken]=useState(false)
   return (
     <div>
         {/* only provider can provide the data and value attribute is used to specify data to share */}
      <addprojectresponsecontext.Provider value={{addprojectresponse,setaddprojectresponse}}>
-      <editprojectresponsecontext.Provider value={{editprojectresponse,seteditprojectresponse}}>
-          {children}
+      <editprojectresponsecontext.Provider value={{editprojectresponse,seteditprojectresponse}}><isauthtokencontext.Provider value={{authtoken,setauthtoken}}>
+          {children}</isauthtokencontext.Provider>
           </editprojectresponsecontext.Provider>
      </addprojectresponsecontext.Provider>
     </div>

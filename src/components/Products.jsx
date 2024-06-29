@@ -66,7 +66,7 @@ function Products() {
 <div className='row'>
 
   
- {/* {
+ {
   getProduct && getProduct.length> 0 ?
   getProduct.map((item)=>(
    
@@ -77,20 +77,20 @@ function Products() {
  }}>
       <Card.Img style={{height:'200px'}} variant="top" src={`${BASE_URL}/uploads/${item.image}`} />
       <Card.Body>
-        <Card.Title>{item.productname}</Card.Title>
-        <Card.Text style={{width:'15rem',height:'6rem'}} >
+        <Card.Title  style={{width:'15rem',height:'4rem'}}>{item.productname}</Card.Title>
+        <Card.Text style={{width:'15rem',height:'8rem'}} >
                               {item.description}   
                             </Card.Text>
-        <Button style={{backgroundColor:'rgb(210, 33, 39)',borderColor:'rgb(210, 33, 39)'}}>Get a Quote <i class="fa-solid fa-arrow-right"></i></Button>
+        <Button href='https://wa.me/7259126513' style={{backgroundColor:'rgb(210, 33, 39)',borderColor:'rgb(210, 33, 39)'}}>Get a Quote <i class="fa-solid fa-arrow-right"></i></Button>
       </Card.Body>
     </Card>
   </div>
    ))
  : <center>  <img  className='mb-5 ' style={{width:'45%'}} src="img/icon/no-data2.1.gif" alt="Description of the image" /><h4 className='mb-5' style={{color:'#d22127'}}>No products found!</h4></center>
   
-} */}
+}
 
-<div className='col-12 col-md-6 col-lg-4 mb-4'>
+{/* <div className='col-12 col-md-6 col-lg-4 mb-4'>
   <Card style={{ width: '18rem'  
  }}>
       <Card.Img style={{height:'200px'}} variant="top" src={'img/icon/sree.jpg'} />
@@ -154,7 +154,7 @@ function Products() {
         <Button style={{backgroundColor:'rgb(210, 33, 39)',borderColor:'rgb(210, 33, 39)'}}>Get a Quote <i class="fa-solid fa-arrow-right"></i></Button>
       </Card.Body>
     </Card>
-  </div>
+  </div> */}
  
 </div>
 

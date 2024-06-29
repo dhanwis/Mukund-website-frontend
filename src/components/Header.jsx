@@ -1,5 +1,4 @@
-import { blue } from '@mui/material/colors'
-import React, { useState } from 'react'
+import React from 'react'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -55,9 +54,9 @@ function Header() {
 
       <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary fixed-top">
         <Container>
-          <Navbar.Brand href="#home">
+          <Navbar.Brand >
             <div class="logo">
-              <a href="index.html">
+              <a >
                 <img className='c1 ms-2' style={{ width: '70px', marginLeft: '-40px' }} src="img/icon/Mukundiconog.png" alt="logo" />
               </a>
             </div>
