@@ -204,139 +204,33 @@ function Home() {
                 <h1 className='text-center'>Our <span style={{color:'rgb(210, 33, 39)'}}>Products</span> are Here</h1>
                 <br />
 
-                <div className='row'>
-                {getProduct && getProduct.length > 0 ? (
-        getProduct.slice(0, 4).map((item) => (
-          <div className='col-12 col-md-6 col-lg-3 mb-4' key={item.id}>
-            <Link to={'/products'}>
-            <Card style={{ width: '18rem', borderColor:'rgb(210, 33, 39)' 
- }}>
-      <Card.Img style={{height:'200px'}} variant="top" src={`${BASE_URL}/uploads/${item.image}`} />
-      <Card.Body>
-        <Card.Title style={{width:'15rem',height:'4rem'}}>{item.productname}</Card.Title>
-        <Card.Text style={{width:'15rem',height:'8rem'}} >
-                              {item.description}   
-                            </Card.Text>
-      </Card.Body>
-    </Card>
-            </Link>
-          </div>
-        ))
-      ) : null}
- {/* <div className='col-12 col-md-6 col-lg-3 mb-4'>
-     <Card 
-      data-aos="flip-left" 
-      sx={{ 
-        maxWidth: 345, 
-         
-      }}
-    >
-      <CardMedia
-        sx={{ height: 200 }}
-        image={'img/icon/sree.jpg'}
-        title="mukund"
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-         Product 1
-        </Typography>
-        <Typography style={{ width: '15rem', height: '6rem' }} variant="body2" color="text.dark">
-         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae omnis accusantium, !
-        </Typography>
-      </CardContent>
-      <CardActions>
-      </CardActions>
-    </Card>
+                <div className="container">
+  <div className="row">
+    {getProduct && getProduct.length > 0 ? (
+      getProduct.slice(0, 4).map((item) => (
+        <div className="col-12 col-md-6 col-lg-3 mb-4" key={item.id}>
+          <Link to={`/products/${item.id}`}>
+            <Card style={{ borderColor: 'rgb(210, 33, 39)', marginBottom: '1rem' }}>
+              <Card.Img style={{ height: '200px', objectFit: 'cover' }} variant="top" src={`${BASE_URL}/uploads/${item.image}`} />
+              <Card.Body>
+                <Card.Title style={{ height: '4rem' }}>{item.productname}</Card.Title>
+                <Card.Text style={{ height: '8rem', overflow: 'hidden' }}>
+                  {item.description}
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Link>
+        </div>
+      ))
+    ) : null}
   </div>
-
-  <div className='col-12 col-md-6 col-lg-3 mb-4'>
-     <Card 
-      data-aos="flip-left" 
-      sx={{ 
-        maxWidth: 345, 
-         
-      }}
-    >
-      <CardMedia
-        sx={{ height: 200 }}
-        image={'img/icon/sree.jpg'}
-        title="mukund"
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-         Product 1
-        </Typography>
-        <Typography style={{ width: '15rem', height: '6rem' }} variant="body2" color="text.dark">
-         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae omnis accusantium, !
-        </Typography>
-      </CardContent>
-      <CardActions>
-      </CardActions>
-    </Card>
+  <div className="row">
+    <div className="col text-center">
+      <a style={{ backgroundColor: 'rgb(210, 33, 39)', borderColor: 'rgb(210, 33, 39)' }} href="/products" className="btn ss-btn">See More</a>
+    </div>
   </div>
-
-
-  <div className='col-12 col-md-6 col-lg-3 mb-4'>
-     <Card 
-      data-aos="flip-left" 
-      sx={{ 
-        maxWidth: 345, 
-         
-      }}
-    >
-      <CardMedia
-        sx={{ height: 200 }}
-        image={'img/icon/sree.jpg'}
-        title="mukund"
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-         Product 1
-        </Typography>
-        <Typography style={{ width: '15rem', height: '6rem' }} variant="body2" color="text.dark">
-         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae omnis accusantium, !
-        </Typography>
-      </CardContent>
-      <CardActions>
-      </CardActions>
-    </Card>
-  </div>
-
-  <div className='col-12 col-md-6 col-lg-3 mb-4'>
-     <Card 
-      data-aos="flip-left" 
-      sx={{ 
-        maxWidth: 345, 
-         
-      }}
-    >
-      <CardMedia
-        sx={{ height: 200 }}
-        image={'img/icon/sree.jpg'}
-        title="mukund"
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-         Product 1
-        </Typography>
-        <Typography style={{ width: '15rem', height: '6rem' }} variant="body2" color="text.dark">
-         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae omnis accusantium, !
-        </Typography>
-      </CardContent>
-      <CardActions>
-      </CardActions>
-    </Card>
-  </div> */}
-  
-  
- 
-
-  <div class="slider-btn mt-30 mb-160">     
-<center>
-                                                 <a style={{backgroundColor:'rgb(210, 33, 39)',borderColor:'rgb(210, 33, 39)'}} href="/products" class="btn ss-btn mr-40" >See More</a>
-    
-</center>                                        </div>    
 </div>
+
 
 
 
