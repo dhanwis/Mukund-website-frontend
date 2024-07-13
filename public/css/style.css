@@ -2580,7 +2580,7 @@ margin-right: 30px;
 }
 .services-08-item .readmore:hover{
     color: #fff;
-    background: #ff5e15;
+    background: #d22127;
 }
 .services-08 h2{
     color: #fff;
@@ -2704,8 +2704,8 @@ top: 28%;
 right: 30px;
 }
 .services-box2 .services-content2 .icon:hover{
-color: #ff5e15;
-border: 2px solid #ff5e15;
+color: #d22127;
+border: 2px solid #d22127;
 }
 .animations-01 {
     position: absolute;
@@ -3411,21 +3411,21 @@ background: #ffdfd0;
 line-height: 35px;
 }
 .team-social a:hover{
-    background: #ff5e15;
+    background: #d22127;
     color: #fff;
 }
 .single-team:hover .team-thumb .brd::before,.single-team:hover .team-thumb .brd::after{
-    color: #ff5e15;
+    color: #d22127;
 }
 
 .single-team:hover .team-info{
-   border-color: #ff5e15;
+   border-color: #d22127;
 }
 .team-t h2 {
 	top: 50px;
 }
 .single-team:hover .team-info h4{
-    color: #ff5e15;
+    color: #d22127;
 }
 .slick-slide {
     outline: none;
@@ -3463,11 +3463,11 @@ border-radius: 50%;
 }
 
 .team-info h4 a:hover{
-      color: #ff5e15;
+      color: #d22127;
 }
 .team-area-content span {
     margin-bottom: 10px;
-    color: #ff5e15;
+    color: #d22127;
     font-size: 18px;
     display: inline-block;
     font-weight: 500;
@@ -3477,7 +3477,7 @@ border-radius: 50%;
     content: "";
     width: 50px;
     height: 1px;
-    background: #ff5e15;
+    background: #d22127;
     position: relative;
     display: inline-block;
     top: -5px;
@@ -3615,7 +3615,7 @@ padding-left: 40px;
     height: 60px;
     text-align: center;
     border-radius: 50%;
-    color: #ff5e15;
+    color: #d22127;
     box-shadow: 1px 1.732px 30px 0px rgba(255, 94, 21, 0.25);
     font-size: 30px;
 }

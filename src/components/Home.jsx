@@ -1,7 +1,7 @@
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import React, { useContext, useEffect, useState } from 'react'
-
+import { Suspense, lazy } from 'react';
 import Card from 'react-bootstrap/Card';
 
 import { addprojectresponsecontext } from './context/Contextshare';
@@ -10,7 +10,13 @@ import { BASE_URL } from '../services/baseurl';
 import { Link } from 'react-router-dom';
 
 
+
+
+
 function Home() {
+
+ 
+
 
 
     useEffect(() => {
@@ -97,76 +103,76 @@ function Home() {
 
 
                     <section id="services" className="services-area services-bg pt-120 pb-90 p-relative">
-  <div className="container">
-    <div className="row justify-content-center">
-      <div className="col-xl-7 col-lg-10">
-        <div className="section-title text-center mb-35">
-          <h2>What We Provide</h2>
+      <div className="container">
+        <div className="row justify-content-center">
+          <div className="col-xl-7 col-lg-10">
+            <div className="section-title text-center mb-35">
+              <h2>What We Provide</h2>
+            </div>
+          </div>
+        </div>
+        <div className="row">
+          <div style={{ borderRadius: '10px' }} className="col-lg-4 col-md-6 mb-30">
+            <Link to={'/products'}>
+              <div data-aos="fade-right" style={{ borderRadius: '10px' }} className="s-single-services text-center">
+                <img loading="lazy" style={{ height: '500px', width: '500px' }} src="img/icon/ik1.jpg" alt="Industrial Knives" />
+                <div className="h-service"><h5>Industrial Knives</h5></div>
+                <div className="services-icon">
+                  <img loading="lazy" src="img/icon/sve-icon5.jpg" alt="icon" />
+                </div>
+                <div className="services-hover">
+                  <div className="box1"></div>
+                  <div className="box2"></div>
+                  <div className="second-services-content">
+                    <h5>Industrial Knives</h5>
+                    <p>Made from imported alloy steel with special composition for smooth surface and consistent thickness. Customised knife can be made based on your drawing for all kind of woods.</p>
+                  </div>
+                </div>
+              </div>
+            </Link>
+          </div>
+          <div data-aos="zoom-out" className="col-lg-4 col-md-6 mb-30">
+            <Link to={'/products'}>
+              <div className="s-single-services text-center">
+                <img loading="lazy" style={{ height: '500px', width: '500px' }} src="img/icon/pt21.jpg" alt="Power Tools" />
+                <div className="h-service"><h5>Power Tools</h5></div>
+                <div className="services-icon">
+                  <img loading="lazy" src="img/icon/sve-icon6.jpg" alt="icon" />
+                </div>
+                <div className="services-hover">
+                  <div className="box1"></div>
+                  <div className="box2"></div>
+                  <div className="second-services-content">
+                    <h5>Power Tools</h5>
+                    <p>Crafted from high-grade materials, our industrial cutters deliver unparalleled precision and durability in cutting, slitting, trimming, and profiling.</p>
+                  </div>
+                </div>
+              </div>
+            </Link>
+          </div>
+          <div data-aos="fade-left" className="col-lg-4 col-md-6 mb-30">
+            <Link to={'/products'}>
+              <div className="s-single-services text-center">
+                <img loading="lazy" style={{ height: '500px', width: '500px' }} src="img/icon/powertools1.jpg" alt="Cutters" />
+                <div className="h-service"><h5>Cutters</h5></div>
+                <div className="services-icon">
+                  <img loading="lazy" src="img/icon/sve-icon5.jpg" alt="icon" />
+                </div>
+                <div className="services-hover">
+                  <div className="box1"></div>
+                  <div className="box2"></div>
+                  <div className="second-services-content">
+                    <h5>Cutters</h5>
+                    <p>All kinds of tungsten tipped and polycrystalline diamond saw blades are available for precise cutting of wood, aluminum, metal, plastic, ferrous, and non-ferrous materials.</p>
+                  </div>
+                </div>
+              </div>
+            </Link>
+          </div>
         </div>
       </div>
-    </div>
-    <div className="row">
-      <div style={{ borderRadius: '10px' }} className="col-lg-4 col-md-6 mb-30">
-        <Link to={'/products'}>
-          <div data-aos="fade-right" style={{ borderRadius: '10px' }} className="s-single-services text-center">
-            <img loading="lazy" style={{ height: '500px', width: '500px' }} src="img/services/ik.jpg" alt="feature" />
-            <div className="h-service"><h5>Industrial Knives</h5></div>
-            <div className="services-icon">
-              <img loading="lazy" src="img/icon/sve-icon5.jpg" />
-            </div>
-            <div className="services-hover">
-              <div className="box1"></div>
-              <div className="box2"></div>
-              <div className="second-services-content">
-                <h5>Industrial Knives</h5>
-                <p>Crafted from high-grade materials, our industrial knives deliver unparalleled precision and durability. Whether you're working with metal, wood, plastic, or food products, these knives ensure reliable, efficient cutting for the toughest industrial tasks.</p>
-              </div>
-            </div>
-          </div>
-        </Link>
-      </div>
-      <div className="col-lg-4 col-md-6 mb-30">
-        <Link to={'/products'}>
-          <div data-aos="zoom-out" className="s-single-services text-center">
-            <img loading="lazy" style={{ height: '500px', width: '500px' }} src="img/services/pt2.jpg" alt="feature" />
-            <div className="h-service"><h5>Power Tools</h5></div>
-            <div className="services-icon">
-              <img loading="lazy" src="img/icon/sve-icon6.jpg" />
-            </div>
-            <div className="services-hover">
-              <div className="box1"></div>
-              <div className="box2"></div>
-              <div className="second-services-content">
-                <h5>Power Tools</h5>
-                <p>Our power tools combine innovative technology with rugged construction to deliver outstanding performance. Perfect for demanding applications, they provide the power, accuracy, and durability needed for professional-grade results.</p>
-              </div>
-            </div>
-          </div>
-        </Link>
-      </div>
-      <div className="col-lg-4 col-md-6 mb-30">
-        <Link to={'/products'}>
-          <div data-aos="fade-left" className="s-single-services text-center">
-            <img loading="lazy" style={{ height: '500px', width: '500px' }} src="img/services/powertools.jpg" alt="feature" />
-            <div className="h-service"><h5>Cutters</h5></div>
-            <div className="services-icon">
-              <img loading="lazy" src="img/icon/sve-icon5.jpg" />
-            </div>
-            <div className="services-hover">
-              <div className="box1"></div>
-              <div className="box2"></div>
-              <div className="second-services-content">
-                <h5>Cutters</h5>
-                <p>Designed for professional and industrial use, our cutters offer exceptional cutting power and precision. Built to last, they handle the toughest materials with ease, making them an essential tool for any job site or workshop.</p>
-              </div>
-            </div>
-          </div>
-        </Link>
-      </div>
-    </div>
-  </div>
-</section>
-            <section data-aos="zoom-in-up" class="about-area about-p pt-120 pb-120 p-relative fix mb-5 ">
+    </section>
+            <section  class="about-area about-p pt-120 pb-120 p-relative fix mb-5 ">
                 <div class="container">
                     <div class="row justify-content-center align-items-center">
                          <div class="col-lg-6 col-md-12 col-sm-12">
@@ -208,9 +214,9 @@ function Home() {
     {getProduct && getProduct.length > 0 ? (
       getProduct.slice(0, 4).map((item) => (
         <div className="col-12 col-md-6 col-lg-3 mb-4" key={item.id}>
-          <Link to={`/products/${item.id}`}>
+          <Link to={`/products`}>
             <Card style={{ borderColor: 'rgb(210, 33, 39)', marginBottom: '1rem' }}>
-              <Card.Img style={{ height: '200px', objectFit: 'cover' }} variant="top" src={`${BASE_URL}/uploads/${item.image}`} />
+              <Card.Img style={{ height: '200px' }} variant="top" src={`${BASE_URL}/uploads/${item.image}`} />
               <Card.Body>
                 <Card.Title style={{ height: '4rem' }}>{item.productname}</Card.Title>
                 <Card.Text style={{ height: '8rem', overflow: 'hidden' }}>
@@ -238,121 +244,116 @@ function Home() {
             </section>
 
 
-            <section   data-aos="zoom-in-up"  id="services-08" class="services-08 pt-105 pb-100 p-relative " style={sliderStyle1} >
-                <div class="container">
-                    <div class="row">   
-                        <div class="col-lg-12">
-                            <div class="section-title center-align mb-50 text-center">
-                                <h2>
-                                   Why Choose Us
-                                </h2>
-                             
-                            </div>
-                           
-                        </div>
-                         
-                    </div>
-                    </div>
-                    <div class="container bg-outer">
-                    <div class="row services-08-item--wrapper mt-0">
-                            <div class="col-lg-4 col-md-4">
-                                <div class="services-08-item">
-                                    <div class="services-08-thumb">
-                                      <img src="img/icon/high-quality.png" alt="circle_left"/>
-                                    </div>
-                                    <div class="services-08-content">
-                                        <h3>
-                                            <a>Superior Quality</a> 
-                                                                              
-                                        </h3>
-<div className='me-5' style={{width:'20rem',height:'10rem'}}>
-                                          <p style={{textAlign:'justify',color:'black'}}>We pride ourselves on delivering machine tools of the highest quality,ensuring durability and optimal performance for all your machining needs.</p>
-  
-</div>                                        <a  class="readmore"><i class="far fa-angle-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                              <div class="col-lg-4 col-md-4">
-                                <div class="services-08-item">
-                                    <div class="services-08-thumb">
-                                      <img src="img/icon/drill.png" alt="circle_left"/>
-
-                                      
-                                    </div>
-                                    <div class="services-08-content">
-                                        <h3>
-                                            <a >Wide Product Range</a>
-                                        </h3>
-                                        <div className='me-5' style={{width:'20rem',height:'10rem'}}>
-                                        <p style={{textAlign:'justify',color:'black'}}>Whether you need saws, cutters, or powertools, we have a comprehensive range of products to meet your requirements.</p> </div>
-                                        <a  class="readmore"><i class="far fa-angle-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                             <div class="col-lg-4 col-md-4">
-                                <div class="services-08-item">
-                                    <div class="services-08-thumb">
-                                      <img src="img/icon/project-management.png" alt="circle_left"/>
-                                    </div>
-                                    <div class="services-08-content">
-                                        <h3><a >Innovative Technology</a></h3>
-                                        <div className='me-5' style={{width:'20rem',height:'10rem'}}>
-                                        <p style={{textAlign:'justify',color:'black'}}>Our commitment to innovation means you get access to the latest advancements in machine tool technology.</p> </div>
-                                        <a  class="readmore"><i class="far fa-angle-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        
-                       
-                        </div>
-                    
-                    <div class="row services-08-item--wrapper mt-0">
-                             <div class="col-lg-4 col-md-4">
-                                <div class="services-08-item">
-                                    <div class="services-08-thumb">
-                                      <img src="img/icon/competitive.png" alt="circle_left"/>
-                                    </div>
-                                    <div class="services-08-content">
-                                        <h3><a >Competitive Pricing</a></h3>
-                                        <div className='me-5' style={{width:'20rem',height:'10rem'}}>
-                                        <p style={{textAlign:'justify',color:'black'}}>We offer premium machine tools at competitive prices. Our goal is to provide you with the best value for your investment.</p> </div>
-                                        <a class="readmore"><i class="far fa-angle-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                             <div class="col-lg-4 col-md-4">
-                                <div class="services-08-item">
-                                    <div class="services-08-thumb">
-                                      <img src="img/icon/trust.png" alt="circle_left"/>
-                                    </div>
-                                    <div class="services-08-content">
-                                        <h3><a >Reliability and Trust</a></h3>
-                                        <div className='me-5' style={{width:'20rem',height:'10rem'}}>
-                                        <p style={{textAlign:'justify',color:'black'}}>Over the years, we have built a reputation for reliability and trustworthiness. Our clients know they can depend on us for consistent quality, timely deliveries, and exceptional service.</p> </div>
-                                        <a  class="readmore"><i class="far fa-angle-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                             <div class="col-lg-4 col-md-4">
-                                <div class="services-08-item">
-                                    <div class="services-08-thumb">
-                                      <img src="img/icon/target.png" alt="circle_left"/>
-                                    </div>
-                                    <div class="services-08-content">
-                                        <h3><a >Customer-Focused</a></h3>
-                                        <div className='me-5' style={{width:'20rem',height:'10rem'}}>
-                                        <p style={{textAlign:'justify',color:'black'}}>Your satisfaction is our top priority. We offer personalized service, tailored solutions, and ongoing support to ensure you get the most out of our products.</p> </div>
-                                        <a  class="readmore"><i class="far fa-angle-right"></i></a>
-                                    </div>
-                                </div>  
-                            </div>
-
-                       
-                        </div>
-					
-                     
-                    </div>
-            </section>
+            <section
+      data-aos="zoom-in-up"
+      id="services-08"
+      className="services-08 pt-105 pb-100 p-relative"
+      style={sliderStyle1}
+    >
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-12">
+            <div className="section-title center-align mb-50 text-center">
+              <h2>Why Choose Us</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="container bg-outer">
+        <div className="row services-08-item--wrapper mt-0">
+          <div className="col-lg-4 col-md-4">
+            <div className="services-08-item">
+              <div className="services-08-thumb">
+                <img src="img/icon/high-quality.png" alt="circle_left" />
+              </div>
+              <div className="services-08-content">
+                <h3>
+                  <a href="#">Superior Quality</a>
+                </h3>
+                {/* <div className="me-5" style={{ width: '20rem', height: '10rem' }}> */}
+                  <p>We are committed to delivering superior quality machine tools that meet the highest standards. Our products are built to last, ensuring you get the most reliable performance for your investment.</p>
+                {/* </div> */}
+                {/* <a className="readmore"><i className="far fa-angle-right"></i></a> */}
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-4 col-md-4">
+            <div className="services-08-item">
+              <div className="services-08-thumb">
+                <img src="img/icon/drill.png" alt="circle_left" />
+              </div>
+              <div className="services-08-content">
+                <h3>
+                  <a href="#">Wide Product Range</a>
+                </h3>
+                {/* <div className="me-5" style={{ width: '20rem', height: '10rem' }}> */}
+                  <p>Our extensive product range covers all your machine tool needs. From basic tools to advanced machinery, we have the right equipment to suit any application and budget.</p>
+                {/* </div> */}
+                {/* <a className="readmore"><i className="far fa-angle-right"></i></a> */}
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-4 col-md-4">
+            <div className="services-08-item">
+              <div className="services-08-thumb">
+                <img src="img/icon/project-management.png" alt="circle_left" />
+              </div>
+              <div className="services-08-content">
+                <h3><a href="#">Innovative Technology</a></h3>
+                {/* <div className="me-5" style={{ width: '20rem', height: '10rem' }}> */}
+                  <p>Stay ahead with our innovative technology solutions. Our machine tools are equipped with the latest advancements to enhance productivity and efficiency in your operations.</p>
+                {/* </div> */}
+                {/* <a className="readmore"><i className="far fa-angle-right"></i></a> */}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="row services-08-item--wrapper mt-0">
+          <div className="col-lg-4 col-md-4">
+            <div className="services-08-item">
+              <div className="services-08-thumb">
+                <img src="img/icon/competitive.png" alt="circle_left" />
+              </div>
+              <div className="services-08-content">
+                <h3><a href="#">Competitive Pricing</a></h3>
+                {/* <div className="me-5" style={{ width: '20rem', height: '10rem' }}> */}
+                  <p>We offer premium machine tools at competitive prices. Our goal is to provide you with the best value for your investment, ensuring high quality without compromising affordability.</p>
+                {/* </div> */}
+                {/* <a className="readmore mt-4"><i className="far fa-angle-right"></i></a> */}
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-4 col-md-4">
+            <div className="services-08-item">
+              <div className="services-08-thumb">
+                <img src="img/icon/trust.png" alt="circle_left" />
+              </div>
+              <div className="services-08-content">
+                <h4><a href="#">Reliability and Trust</a></h4>
+                {/* <div className="me-5" style={{ width: '20rem', height: '10rem' }}> */}
+                  <p>You can count on our machine tools for consistent performance. Built with precision and reliability in mind, our products are trusted by professionals across various industries.</p>
+                {/* </div> */}
+                {/* <a className="readmore"><i className="far fa-angle-right"></i></a> */}
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-4 col-md-4">
+            <div className="services-08-item">
+              <div className="services-08-thumb">
+                <img src="img/icon/target.png" alt="circle_left" />
+              </div>
+              <div className="services-08-content">
+                <h3><a href="#">Customer-Focused</a></h3>
+                {/* <div className="me-5" style={{ width: '20rem', height: '10rem' }}> */}
+                  <p>We prioritize your needs and satisfaction. Our customer-focused approach ensures you receive the best support, from product selection to after-sales service, making your experience seamless and rewarding.</p>
+                {/* </div> */}
+                {/* <a className="readmore"><i className="far fa-angle-right"></i></a> */}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
 <br />
        <div className='text-center mt-5'><h2>OUR <span style={{color:'rgb(210, 33, 39)'}}>BRANDS</span></h2></div>

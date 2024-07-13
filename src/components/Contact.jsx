@@ -78,7 +78,7 @@ function Contact() {
                                             <i style={{backgroundColor:'rgb(210, 33, 39)'}} class="far fa-envelope-open"></i>
                                         </div>
                                         <h5>Message Us</h5>
-                                        <p> <a >kannurmukund@gmail.com</a></p>
+                                        <p> <a >info@mukundmachine.com</a></p>
                                     </div>
                                 </div>							
                         </div>

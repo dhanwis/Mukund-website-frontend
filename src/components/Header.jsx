@@ -23,10 +23,14 @@ function Header() {
             <div class="col-lg-8 col-md-8 d-none d-lg-block">
               <div >
                 <ul >
-                  <li>
-                    <i style={{ color: 'rgb(210, 33, 39)' }} class="icon fal fa-envelope"></i>
-                    <span>kannurmukund@gmail.com</span>
-                  </li>
+                <li>
+  <i style={{ color: 'rgb(210, 33, 39)' }} className="icon fal fa-envelope"></i>
+  <a href="mailto:info@mukundmachine.com" style={{ textDecoration: 'none', color: 'inherit' }}>
+    <span>info@mukundmachine.com</span>
+  </a>
+</li>
+
+
                   <li>
                     <i style={{ color: 'rgb(210, 33, 39)' }} class="icon fal fa-phone"></i>
                     <span>0091 497 2700966</span>
@@ -72,10 +76,12 @@ function Header() {
             <Nav>
               <div class="header-cta">
                 <ul className='contact-info1'>
-                  <li>
-                    <i style={{ color: 'rgb(210, 33, 39)' }} class="icon fal fa-envelope"></i>
-                    <span style={{ fontWeight: '400', color: 'black' }}>kannurmukund@gmail.com</span>
-                  </li>
+                <li>
+  <i style={{ color: 'rgb(210, 33, 39)' }} className="icon fal fa-envelope"></i>
+  <a href="mailto:info@mukundmachine.com" style={{ textDecoration: 'none', color: 'inherit' }}>
+    <span style={{color:'#0d0d0e'}}>info@mukundmachine.com</span>
+  </a>
+</li>
                   <li >
                     <i style={{ color: 'rgb(210, 33, 39)' }} class="icon fal fa-phone"></i>
                     <span style={{ fontWeight: '400', color: 'black' }}>0091 497 2700966</span>

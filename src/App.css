@@ -6,7 +6,24 @@ body {
   /* Prevent horizontal scrolling */
 }
 
+.services-08-content p {
+  text-align: justify;
+  color: black;
+}
 
+@media (max-width: 992px) {
+  .services-08-content p {
+    width: auto;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-08-content p {
+    width: 100%;
+    height: auto;
+  }
+}
 
 
 
@@ -23,3 +40,6 @@ body {
     width: 20px;
   }
 }
+
+
+
