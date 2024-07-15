@@ -135,7 +135,7 @@ function Home() {
             <Link to={'/products'}>
               <div className="s-single-services text-center">
                 <img loading="lazy" style={{ height: '500px', width: '500px' }} src="img/icon/pt21.jpg" alt="Power Tools" />
-                <div className="h-service"><h5>Power Tools</h5></div>
+                <div className="h-service"><h5>Converting Tools</h5></div>
                 <div className="services-icon">
                   <img loading="lazy" src="img/icon/sve-icon6.jpg" alt="icon" />
                 </div>
@@ -143,7 +143,7 @@ function Home() {
                   <div className="box1"></div>
                   <div className="box2"></div>
                   <div className="second-services-content">
-                    <h5>Power Tools</h5>
+                    <h5>Converting Tools</h5>
                     <p>Crafted from high-grade materials, our industrial cutters deliver unparalleled precision and durability in cutting, slitting, trimming, and profiling.</p>
                   </div>
                 </div>
@@ -153,8 +153,8 @@ function Home() {
           <div data-aos="fade-left" className="col-lg-4 col-md-6 mb-30">
             <Link to={'/products'}>
               <div className="s-single-services text-center">
-                <img loading="lazy" style={{ height: '500px', width: '500px' }} src="img/icon/powertools1.jpg" alt="Cutters" />
-                <div className="h-service"><h5>Cutters</h5></div>
+                <img loading="lazy" style={{ height: '500px', width: '500px' }} src="img/icon/client.jpeg" alt="Cutters" />
+                <div className="h-service"><h5>Saw Blades</h5></div>
                 <div className="services-icon">
                   <img loading="lazy" src="img/icon/sve-icon5.jpg" alt="icon" />
                 </div>
@@ -162,7 +162,7 @@ function Home() {
                   <div className="box1"></div>
                   <div className="box2"></div>
                   <div className="second-services-content">
-                    <h5>Cutters</h5>
+                    <h5>Saw Blades</h5>
                     <p>All kinds of tungsten tipped and polycrystalline diamond saw blades are available for precise cutting of wood, aluminum, metal, plastic, ferrous, and non-ferrous materials.</p>
                   </div>
                 </div>
