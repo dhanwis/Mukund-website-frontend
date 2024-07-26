@@ -77,8 +77,8 @@ function Products() {
  }}>
       <Card.Img style={{height:'200px'}} variant="top" src={`${BASE_URL}/uploads/${item.image}`} />
       <Card.Body>
-        <Card.Title  style={{width:'15rem',height:'4rem'}}>{item.productname}</Card.Title>
-        <Card.Text style={{width:'15rem',height:'8rem'}} >
+        <Card.Title  style={{width:'15rem',height:'2rem'}}>{item.productname}</Card.Title>
+        <Card.Text style={{width:'15rem',height:'13rem', whiteSpace: 'pre-wrap'}} >
                               {item.description}   
                             </Card.Text>
         <Button href='https://wa.me/7259126513' style={{backgroundColor:'rgb(210, 33, 39)',borderColor:'rgb(210, 33, 39)'}}>Get a Quote <i class="fa-solid fa-arrow-right"></i></Button>
