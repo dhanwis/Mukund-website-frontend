@@ -219,7 +219,7 @@ function Home() {
               <Card.Img style={{ height: '200px' }} variant="top" src={`${BASE_URL}/uploads/${item.image}`} />
               <Card.Body>
                 <Card.Title style={{ height: '3rem' }}>{item.productname}</Card.Title>
-                <Card.Text style={{ height: '14rem', overflow: 'hidden', whiteSpace: 'pre-wrap' }} >
+                <Card.Text style={{ height: '16rem', overflow: 'hidden', whiteSpace: 'pre-wrap' }} >
                   {item.description}
                 </Card.Text>
               </Card.Body>
