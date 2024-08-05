@@ -66,7 +66,7 @@ function Home() {
       setaddprojectresponse(result.data)
     };
 
-    console.log(getProduct);
+    // console.log(getProduct);
 
 
     
@@ -271,7 +271,9 @@ function Home() {
                   <a href="#">Superior Quality</a>
                 </h3>
                 {/* <div className="me-5" style={{ width: '20rem', height: '10rem' }}> */}
-                  <p>We are committed to delivering superior quality machine tools that meet the highest standards. Our products are built to last, ensuring you get the most reliable performance for your investment.</p>
+                  <p>We are committed to delivering superior quality machine tools that meet the highest standards. Our products are built to last, ensuring you get the most reliable performance for your investment, with long-run accuracy.
+
+</p>
                 {/* </div> */}
                 {/* <a className="readmore"><i className="far fa-angle-right"></i></a> */}
               </div>
@@ -287,7 +289,9 @@ function Home() {
                   <a href="#">Wide Product Range</a>
                 </h3>
                 {/* <div className="me-5" style={{ width: '20rem', height: '10rem' }}> */}
-                  <p>Our extensive product range covers all your machine tool needs. From basic tools to advanced machinery, we have the right equipment to suit any application and budget.</p>
+                  <p>Our extensive product range covers all your machine tool needs. From basic tools to advanced machinery, we offer customized products to suit any application and budget, with a global product range.
+
+.</p>
                 {/* </div> */}
                 {/* <a className="readmore"><i className="far fa-angle-right"></i></a> */}
               </div>
@@ -301,7 +305,9 @@ function Home() {
               <div className="services-08-content">
                 <h3><a href="#">Innovative Technology</a></h3>
                 {/* <div className="me-5" style={{ width: '20rem', height: '10rem' }}> */}
-                  <p>Stay ahead with our innovative technology solutions. Our machine tools are equipped with the latest advancements to enhance productivity and efficiency in your operations.</p>
+                  <p>Stay ahead with our innovative technology solutions. We believe in manufacturing superior products, offering the best tools to ensure your output is superior.
+
+</p>
                 {/* </div> */}
                 {/* <a className="readmore"><i className="far fa-angle-right"></i></a> */}
               </div>
@@ -331,7 +337,8 @@ function Home() {
               <div className="services-08-content">
                 <h4><a href="#">Reliability and Trust</a></h4>
                 {/* <div className="me-5" style={{ width: '20rem', height: '10rem' }}> */}
-                  <p>You can count on our machine tools for consistent performance. Built with precision and reliability in mind, our products are trusted by professionals across various industries.</p>
+                  <p>You can count on our machine tools for consistent performance. Built with precision and reliability in mind, our products are trusted by professionals across various industries.
+                  </p>
                 {/* </div> */}
                 {/* <a className="readmore"><i className="far fa-angle-right"></i></a> */}
               </div>
