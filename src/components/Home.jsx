@@ -116,7 +116,7 @@ function Home() {
             <Link to={'/products'}>
               <div data-aos="fade-right" style={{ borderRadius: '10px' }} className="s-single-services text-center">
                 <img loading="lazy" style={{ height: '500px', width: '500px' }} src="img/icon/ik1.jpg" alt="Industrial Knives" />
-                <div className="h-service"><h5>Industrial Knives</h5></div>
+                <div className="h-service"><h5 style={{fontSize:'30px'}}>Industrial Knives</h5></div>
                 <div className="services-icon">
                   <img loading="lazy" src="img/icon/sve-icon5.jpg" alt="icon" />
                 </div>
@@ -124,8 +124,8 @@ function Home() {
                   <div className="box1"></div>
                   <div className="box2"></div>
                   <div className="second-services-content">
-                    <h5>Industrial Knives</h5>
-                    <p>Made from imported alloy steel with special composition for smooth surface and consistent thickness. Customised knife can be made based on your drawing for all kind of woods.</p>
+                    <h5 style={{fontSize:'30px'}}>Industrial Knives</h5>
+                    <p style={{fontSize:'20px'}}>Made from imported alloy steel with special composition for smooth surface and consistent thickness. Customised knife can be made based on your drawing for all kind of woods.</p>
                   </div>
                 </div>
               </div>
@@ -143,8 +143,8 @@ function Home() {
                   <div className="box1"></div>
                   <div className="box2"></div>
                   <div className="second-services-content">
-                    <h5>Converting Tools</h5>
-                    <p>Crafted from high-grade materials, our industrial cutters deliver unparalleled precision and durability in cutting, slitting, trimming, and profiling.</p>
+                    <h5 style={{fontSize:'30px'}}>Converting Tools</h5>
+                    <p  style={{fontSize:'20px'}}>Crafted from high-grade materials, our industrial cutters deliver unparalleled precision and durability in cutting, slitting, trimming, and profiling.</p>
                   </div>
                 </div>
               </div>
@@ -162,8 +162,8 @@ function Home() {
                   <div className="box1"></div>
                   <div className="box2"></div>
                   <div className="second-services-content">
-                    <h5>Saw Blades</h5>
-                    <p>All kinds of tungsten tipped and polycrystalline diamond saw blades are available for precise cutting of wood, aluminum, metal, plastic, ferrous, and non-ferrous materials.</p>
+                    <h5 style={{fontSize:'30px'}}>Saw Blades</h5>
+                    <p style={{fontSize:'20px'}}>All kinds of tungsten tipped and polycrystalline diamond saw blades are available for precise cutting of wood, aluminum, metal, plastic, ferrous, and non-ferrous materials.</p>
                   </div>
                 </div>
               </div>

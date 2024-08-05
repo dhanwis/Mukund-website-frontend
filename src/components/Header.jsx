@@ -69,9 +69,10 @@ function Header() {
           <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto mt-2">
   <Nav.Link className='me-4' style={{ fontSize: '20px', fontWeight: '400', color: 'black', whiteSpace: 'nowrap' }} href="/">Home</Nav.Link>
-  <Nav.Link className='me-4' style={{ fontSize: '20px', fontWeight: '400', color: 'black', whiteSpace: 'nowrap' }} href="/aboutus">About Us</Nav.Link>
   <Nav.Link className='me-4' style={{ fontSize: '20px', fontWeight: '400', color: 'black', whiteSpace: 'nowrap' }} href="/products">Products</Nav.Link>
   <Nav.Link className='me-4' style={{ fontSize: '20px', fontWeight: '400', color: 'black', whiteSpace: 'nowrap' }} href="/contact">Contact</Nav.Link>
+  <Nav.Link className='me-4' style={{ fontSize: '20px', fontWeight: '400', color: 'black', whiteSpace: 'nowrap' }} href="/aboutus">About Us</Nav.Link>
+
 </Nav>
 
             <Nav>
