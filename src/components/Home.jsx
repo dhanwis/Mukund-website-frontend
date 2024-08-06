@@ -8,6 +8,7 @@ import { addprojectresponsecontext } from './context/Contextshare';
 import { allproductAPI } from '../services/allAPI';
 import { BASE_URL } from '../services/baseurl';
 import { Link } from 'react-router-dom';
+import ImageCarousel from './MultipleImg';
 
 
 
@@ -139,7 +140,7 @@ function Home() {
                 <img loading="lazy" style={{ height: '500px', width: '500px' }} src="img/icon/pt21.jpg" alt="Industrial Knives" />
                 <div className="h-service"><h5 style={{fontSize:'30px'}}>Converting Tools</h5></div>
                 <div className="services-icon">
-                  <img loading="lazy" src="img/icon/sve-icon4.jpg" alt="icon" />
+                  <img loading="lazy" src="img/icon/sve-icon4.1.jpg" alt="icon" />
                 </div>
                 <div className="services-hover">
                   <div className="box1"></div>
@@ -216,11 +217,12 @@ function Home() {
                 <div className="container">
   <div className="row">
     {getProduct && getProduct.length > 0 ? (
-      getProduct.slice(0, 4).map((item) => (
+      getProduct.slice(0,4).map((item) => (
         <div className="col-12 col-md-6 col-lg-3 mb-4" key={item.id}>
           <Link to={`/products`}>
-            <Card style={{ borderColor: 'rgb(210, 33, 39)', marginBottom: '1rem' }}>
-              <Card.Img style={{ height: '200px' }} variant="top" src={`${BASE_URL}/uploads/${item.image}`} />
+            <Card style={{ borderColor: 'grey', marginBottom: '1rem' }}>
+              {/* <Card.Img style={{ height: '200px' }} variant="top" src={`${BASE_URL}/uploads/${item.image}`} /> */}
+              <ImageCarousel image={item.image}/>
               <Card.Body>
                 <Card.Title style={{ height: '3rem' }}>{item.productname}</Card.Title>
                 <Card.Text style={{ height: '16rem', overflow: 'hidden', whiteSpace: 'pre-wrap' }} >

@@ -7,6 +7,7 @@ import Aos from 'aos';
 import { allproductAPI } from '../services/allAPI';
 import { BASE_URL } from '../services/baseurl';
 import { addprojectresponsecontext } from './context/Contextshare';
+import ImageCarousel from './MultipleImg';
 
 
 function Products() {
@@ -75,7 +76,7 @@ function Products() {
  <div className='col-12 col-md-6 col-lg-4 mb-4'>
   <Card style={{ width: '18rem'  
  }}>
-      <Card.Img style={{height:'200px'}} variant="top" src={`${BASE_URL}/uploads/${item.image}`} />
+        <ImageCarousel image={item.image}/>
       <Card.Body>
         <Card.Title  style={{width:'15rem',height:'2rem'}}>{item.productname}</Card.Title>
         <Card.Text style={{width:'15rem',height:'13rem', whiteSpace: 'pre-wrap'}} >
