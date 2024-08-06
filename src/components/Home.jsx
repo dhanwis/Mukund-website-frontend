@@ -118,7 +118,7 @@ function Home() {
                 <img loading="lazy" style={{ height: '500px', width: '500px' }} src="img/icon/ik1.jpg" alt="Industrial Knives" />
                 <div className="h-service"><h5 style={{fontSize:'30px'}}>Industrial Knives</h5></div>
                 <div className="services-icon">
-                  <img loading="lazy" src="img/icon/sve-icon5.jpg" alt="icon" />
+                  <img loading="lazy" src="img/icon/sve-icon2.jpg" alt="icon" />
                 </div>
                 <div className="services-hover">
                   <div className="box1"></div>
@@ -137,11 +137,12 @@ function Home() {
                 <img loading="lazy" style={{ height: '500px', width: '500px' }} src="img/icon/pt21.jpg" alt="Power Tools" />
                 <div className="h-service"><h5>Converting Tools</h5></div>
                 <div className="services-icon">
-                  <img loading="lazy" src="img/icon/sve-icon6.jpg" alt="icon" />
-                </div>
-                <div className="services-hover">
+                  <img loading="lazy" src="img/icon/sve-icon4.1.jpg" alt="icon" />
+                </div>    
+                <div classN ame="services-hover">
+
                   <div className="box1"></div>
-                  <div className="box2"></div>
+                  <div className="box2"></div>    
                   <div className="second-services-content">
                     <h5 style={{fontSize:'30px'}}>Converting Tools</h5>
                     <p  style={{fontSize:'20px'}}>Crafted from high-grade materials, our industrial cutters deliver unparalleled precision and durability in cutting, slitting, trimming, and profiling.</p>
@@ -156,7 +157,7 @@ function Home() {
                 <img loading="lazy" style={{ height: '500px', width: '500px' }} src="img/icon/client.jpeg" alt="Cutters" />
                 <div className="h-service"><h5>Saw Blades</h5></div>
                 <div className="services-icon">
-                  <img loading="lazy" src="img/icon/sve-icon5.jpg" alt="icon" />
+                  <img loading="lazy" src="img/icon/sve-icon1.0.jpg" alt="icon" />
                 </div>
                 <div className="services-hover">
                   <div className="box1"></div>
