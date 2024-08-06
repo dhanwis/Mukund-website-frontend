@@ -131,26 +131,29 @@ function Home() {
               </div>
             </Link>
           </div>
-          <div data-aos="zoom-out" className="col-lg-4 col-md-6 mb-30">
-            <Link to={'/products'}>
-              <div className="s-single-services text-center">
-                <img loading="lazy" style={{ height: '500px', width: '500px' }} src="img/icon/pt21.jpg" alt="Power Tools" />
-                <div className="h-service"><h5>Converting Tools</h5></div>
-                <div className="services-icon">
-                  <img loading="lazy" src="img/icon/sve-icon4.1.jpg" alt="icon" />
-                </div>    
-                <div classN ame="services-hover">
+         
 
+          <div  style={{ borderRadius: '10px' }} className="col-lg-4 col-md-6 mb-30">
+            <Link to={'/products'}>
+              <div data-aos="zoom-out" style={{ borderRadius: '10px' }} className="s-single-services text-center">
+                <img loading="lazy" style={{ height: '500px', width: '500px' }} src="img/icon/pt21.jpg" alt="Industrial Knives" />
+                <div className="h-service"><h5 style={{fontSize:'30px'}}>Converting Tools</h5></div>
+                <div className="services-icon">
+                  <img loading="lazy" src="img/icon/sve-icon4.jpg" alt="icon" />
+                </div>
+                <div className="services-hover">
                   <div className="box1"></div>
-                  <div className="box2"></div>    
+                  <div className="box2"></div>
                   <div className="second-services-content">
                     <h5 style={{fontSize:'30px'}}>Converting Tools</h5>
-                    <p  style={{fontSize:'20px'}}>Crafted from high-grade materials, our industrial cutters deliver unparalleled precision and durability in cutting, slitting, trimming, and profiling.</p>
+                    <p style={{fontSize:'20px'}}>Crafted from high-grade materials, our industrial cutters deliver unparalleled precision and durability in cutting, slitting, trimming, and profiling.</p>
                   </div>
                 </div>
               </div>
             </Link>
           </div>
+
+
           <div data-aos="fade-left" className="col-lg-4 col-md-6 mb-30">
             <Link to={'/products'}>
               <div className="s-single-services text-center">
