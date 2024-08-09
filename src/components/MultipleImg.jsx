@@ -1,7 +1,8 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
 import { BASE_URL } from '../services/baseurl';
-import './Buttonstyle.css'; // Import the custom CSS file
+ // Import the custom CSS file
+ import './Buttonstyle.css'
 
 const ImageCarousel = ({ image }) => {
   return (
