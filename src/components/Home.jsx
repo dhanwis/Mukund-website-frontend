@@ -126,7 +126,7 @@ function Home() {
           <div  style={{ borderRadius: '10px' }} className="col-lg-4 col-md-6 mb-30">
             <Link to={'/products'}>
               <div data-aos="zoom-out" style={{ borderRadius: '10px' }} className="s-single-services text-center">
-                <img loading="lazy" style={{ height: '500px', width: '500px' }} src="img/icon/pt21.jpg" alt="Industrial Knives" />
+                <img loading="lazy" style={{ height: '500px', width: '500px' }} src="img/icon/ct-whatweprovide.jpeg" alt="Industrial Knives" />
                 <div className="h-service"><h5 style={{fontSize:'30px'}}>Converting Tools</h5></div>
                 <div className="services-icon">
                   <img loading="lazy" src="img/icon/sve-icon4.1.jpg" alt="icon" />
@@ -268,11 +268,11 @@ function Home() {
                 <h3>
                   <a href="#">Superior Quality</a>
                 </h3>
-                {/* <div className="me-5" style={{ width: '20rem', height: '10rem' }}> */}
+                
                   <p>We are committed to delivering superior quality machine tools that meet the highest standards. Our products are built to last, ensuring you get the most reliable performance for your investment, with long-run accuracy.
 
 </p>
-                {/* </div> */}
+               
                 {/* <a className="readmore"><i className="far fa-angle-right"></i></a> */}
               </div>
             </div>
@@ -286,11 +286,11 @@ function Home() {
                 <h3>
                   <a href="#">Wide Product Range</a>
                 </h3>
-                {/* <div className="me-5" style={{ width: '20rem', height: '10rem' }}> */}
+                
                   <p>Our extensive product range covers all your machine tool needs. From basic tools to advanced machinery, we offer customized products to suit any application and budget, with a global product range.
 
 .</p>
-                {/* </div> */}
+            
                 {/* <a className="readmore"><i className="far fa-angle-right"></i></a> */}
               </div>
             </div>
