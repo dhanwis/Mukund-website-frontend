@@ -52,7 +52,7 @@ const ProductDetail = () => {
       </Row>
       <Row className="mt-4">
         {product && product.image.map((image, index) => (
-          <Col xs={3} key={index} className="text-center">
+          <Col xs={3} key={index} className="text-center mb-4">
             <Image
               src={`${BASE_URL}/uploads/${image}`}
               alt={`Thumbnail ${index + 1}`}
