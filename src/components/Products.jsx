@@ -1,5 +1,4 @@
 import React, { useContext, useEffect, useState } from 'react'
-// import '../product.css';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import 'aos/dist/aos.css';
@@ -7,7 +6,7 @@ import Aos from 'aos';
 import { allproductAPI } from '../services/allAPI';
 import { BASE_URL } from '../services/baseurl';
 import { addprojectresponsecontext } from './context/Contextshare';
-import ImageCarousel from './MultipleImg';
+import { Link } from 'react-router-dom';
 
 
 function Products() {
@@ -76,7 +75,10 @@ function Products() {
  <div className='col-12 col-md-6 col-lg-4 mb-4'>
   <Card style={{ width: '18rem'  
  }}>
-        <ImageCarousel image={item.image}/>
+<Link to={`/productdetail/${item._id}`}>
+    <Card.Img style={{ height: '200px' }} variant="top" src={`${BASE_URL}/uploads/${item.image[0]}`} />
+  
+</Link>       
       <Card.Body>
         <Card.Title  style={{width:'15rem',height:'2rem'}}>{item.productname}</Card.Title>
         <Card.Text style={{width:'15rem',height:'13rem', whiteSpace: 'pre-wrap'}} >

@@ -11,6 +11,27 @@ body {
   color: black;
 }
 
+
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1; /* This makes sure the content area takes up the remaining space */
+  padding-top: 80px; /* Adjust this value based on your header's height */
+  padding-bottom: 60px; /* Adjust this value based on your footer's height */
+}
+
+
 @media (max-width: 992px) {
   .services-08-content p {
     width: auto;

@@ -1,24 +1,19 @@
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import React, { useContext, useEffect, useState } from 'react'
-import { Suspense, lazy } from 'react';
 import Card from 'react-bootstrap/Card';
 
 import { addprojectresponsecontext } from './context/Contextshare';
 import { allproductAPI } from '../services/allAPI';
 import { BASE_URL } from '../services/baseurl';
 import { Link } from 'react-router-dom';
-import ImageCarousel from './MultipleImg';
+import Button from 'react-bootstrap/Button';
 
 
 
 
 
 function Home() {
-
- 
-
-
 
     useEffect(() => {
         Aos.init({
@@ -43,17 +38,11 @@ function Home() {
     
     };
 
-
-
     const [getProduct, setgetProduct] = useState([]);
 
     const {addprojectresponse,setaddprojectresponse}=useContext(addprojectresponsecontext)
 
-
-
-
-    
-    useEffect(() => {
+ useEffect(() => {
       getProducts(); 
 
     }, [addprojectresponse]);
@@ -219,17 +208,20 @@ function Home() {
     {getProduct && getProduct.length > 0 ? (
       getProduct.slice(0,4).map((item) => (
         <div className="col-12 col-md-6 col-lg-3 mb-4" key={item.id}>
-          <Link to={`/products`}>
+          <Link to={`/productdetail/${item._id}`}>
             <Card style={{ borderColor: 'grey', marginBottom: '1rem' }}>
-              {/* <Card.Img style={{ height: '200px' }} variant="top" src={`${BASE_URL}/uploads/${item.image}`} /> */}
-              <ImageCarousel image={item.image}/>
+              <Card.Img style={{ height: '200px' }} variant="top" src={`${BASE_URL}/uploads/${item.image[0]}`} />
+              {/* <ImageCarousel image={item.image}/> */}
               <Card.Body>
                 <Card.Title style={{ height: '3rem' }}>{item.productname}</Card.Title>
-                <Card.Text style={{ height: '16rem', overflow: 'hidden', whiteSpace: 'pre-wrap' }} >
+                {/* <Card.Text style={{ height: '16rem', overflow: 'hidden', whiteSpace: 'pre-wrap' }} >
                   {item.description}
-                </Card.Text>
+                </Card.Text> */}
+                <Button style={{borderRadius:'10px',backgroundColor:'rgb(35, 42, 49)',borderColor:'rgb(35, 42, 49)',padding:'7px',float:'right'}} >Details <i class="fa-solid fa-arrow-right-long" style={{color:'#dfe1e2'}}></i></Button>
+
               </Card.Body>
             </Card>
+            
           </Link>
         </div>
       ))

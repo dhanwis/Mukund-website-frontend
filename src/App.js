@@ -12,6 +12,7 @@ import WhatsApp from './components/Whatsappbutton';
 import { isauthtokencontext } from './components/context/Contextshare';
 import ErrorPage from './components/Errorss';
 import Loading from './components/Loading';
+import ProductDetail from './components/ProductDetail';
 
 function App() {
   const { authtoken, setauthtoken } = useContext(isauthtokencontext);
@@ -30,16 +31,18 @@ function App() {
 
   return (
     <div className="App">
+     
+      <main className="content">
       <Header />
-
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<Products />} />
         <Route path="/aboutus" element={<Aboutus />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/productdetail/:id" element={<ProductDetail />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
-
+      </main>
       <WhatsApp />
       <br />
       <Copy />

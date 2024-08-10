@@ -14,46 +14,6 @@ function Header() {
 
   return (
     <div>
-
-
-      {/* <header class="header-area header">   */}
-      <div class="header-top second-header d-none d-md-block">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-lg-8 col-md-8 d-none d-lg-block">
-              <div >
-                <ul >
-                <li>
-  <i style={{ color: 'rgb(210, 33, 39)' }} className="icon fal fa-envelope"></i>
-  <a href="mailto:info@mukundmachine.com" style={{ textDecoration: 'none', color: 'inherit' }}>
-    <span>info@mukundmachine.com</span>
-  </a>
-</li>
-
-
-                  <li>
-                    <i style={{ color: 'rgb(210, 33, 39)' }} class="icon fal fa-phone"></i>
-                    <span>0091 497 2700966</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-
-
-
-
-
-
-          </div>
-        </div>
-      </div>
-
-
-
-
-
-
       {/* </header> */}
 
       <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary fixed-top">

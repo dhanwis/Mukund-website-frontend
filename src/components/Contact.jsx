@@ -83,50 +83,7 @@ function Contact() {
                                 </div>							
                         </div>
                         <div data-aos="fade-left" class="col-lg-8 order-2">
-                            
-                            {/* <div class="contact-bg02">
-                                <div class="section-title center-align">
-                                    <h2>
-                                       Make Appointment
-                                    </h2>
-                                </div>                                
-                                <form action="https://zcube.in/indobi/mail.php" method="post" class="contact-form mt-30">
-                                    <div class="row">
-                                    <div class="col-lg-6">
-                                        <div class="contact-field p-relative c-name mb-20">                                    
-                                            <input type="text" id="firstn" name="firstn" placeholder="First Name" required/>
-                                        </div>                               
-                                    </div>
-
-                                    <div class="col-lg-6">                               
-                                        <div class="contact-field p-relative c-subject mb-20">                                   
-                                            <input type="text" id="email" name="email" placeholder="Eamil" required/>
-                                        </div>
-                                    </div>		
-                                    <div class="col-lg-6">                               
-                                        <div class="contact-field p-relative c-subject mb-20">                                   
-                                            <input type="text" id="phone" name="phone" placeholder="Phone No." required/>
-                                        </div>
-                                    </div>	
-                                    <div class="col-lg-6">                               
-                                        <div class="contact-field p-relative c-subject mb-20">                                   
-                                            <input type="text" id="subject" name="subject" placeholder="Subject"/>
-                                        </div>
-                                    </div>	
-                                    <div class="col-lg-12">
-                                        <div class="contact-field p-relative c-message mb-30">                                  
-                                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Write comments"></textarea>
-                                        </div>
-                                        <div class="slider-btn">                                          
-                                                    <button class="btn ss-btn" data-animation="fadeInRight" data-delay=".8s"><span>Submit Now</span></button>				
-                                                </div>                             
-                                    </div>
-                                    </div>
-                            </form>                            
-                            </div>     */}
-
-{/* <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999533.8942689339!2d74.14937777812501!3d11.875168000000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba43d3698079455%3A0xdbe4609715f541e1!2sMukund%20Machine%20Tools!5e0!3m2!1sen!2sin!4v1717047988547!5m2!1sen!2sin" width="600" height="450" style={{border:'0'}} allowfullscreen="" loading="lazy"></iframe> */}
-
+                        
 <br />
 <br />
 <h3 style={{marginTop:'-50px'}} className='text-center mb-5'>Other Branches</h3>
@@ -170,7 +127,6 @@ function Contact() {
                 </div>
                
             </section>
-            {/* style="background: #f5f5f5;" */}
             <div class="map fix" style={{background:' #f5f5f5;'}} >
                 <div class="container-flud">
                     

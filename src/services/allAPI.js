@@ -9,6 +9,11 @@ export const allproductAPI=async(reqheader)=>{
     return await commonAPI(`GET`,`${BASE_URL}/product/all-product`,"",reqheader)
 }
 
+// get product by id
+// export const fetchProductById = async(productId,reqheader)=>{
+    
+//     return await commonAPI('GET',`${BASE_URL}/product/${productId}`,reqheader)
+//  }
 
 
 

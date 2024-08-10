@@ -1,13 +1,13 @@
 
 .whatsapp-button {
     position: fixed;
-    bottom: 20px; /* Adjust as needed */
-    right: 20px; /* Adjust as needed */
-    z-index: 1000; /* Make sure it's above other content */
+    bottom: 20px; 
+    right: 20px; 
+    z-index: 1000; 
   }
   
   .whatsapp-button img {
-    width: 50px; /* Adjust size as needed */
+    width: 50px; 
     height: auto;
     cursor: pointer;
   }
