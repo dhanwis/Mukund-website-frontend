@@ -183,13 +183,24 @@ function Home() {
 					<div   class="col-lg-6 col-md-12 col-sm-12 mb-5">
                             <div  class="about-content s-about-content pl-30 wow "   >
                                 <div class="about-title second-title pb-25">  
-                                    <h2>Our Industrial Solution</h2>                                   
+                                    <h2>Our Brand</h2>                                   
                                 </div>
-                                   <p style={{color:"black"}}>Mukund Machine Tools has grown from a small business into a leading supplier of industrial cutting tools. We specialise in trading high-quality knives, saws, and cutters for industries working with wood, rubber, paper, plastics, ferrous and other non-ferrous metals.
-                                   </p>
-                                 <div class="slider-btn mt-20">                                          
+                                <section id="our-brand">
+            <h3>Mumatul Peeling Knives</h3>
+            <p>Manufactured under uncompromised metallurgical & meteorological quality control.</p>
+            <p>Excellent edge holding property due to high tungsten inlay.</p>
+            <p>No teething or chipping problem.</p>
+            <p>Long interval between regrinds, hence long durable life.</p>
+
+            <div className='mt-5'>
+              <h3 >Mumatul circular Saw Blade</h3>
+              <p>For cutting wood, plywood, block board, flush door, chipboard, laminates, plastics, steel, etc.</p>
+            </div>
+            
+        </section>
+                                 {/* <div class="slider-btn mt-20">                                          
                                      <a style={{backgroundColor:'rgb(210, 33, 39)',borderColor:'rgb(210, 33, 39)'}} href="/aboutus" class="btn ss-btn smoth-scroll">Read More</a>				
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                      
