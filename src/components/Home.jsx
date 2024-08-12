@@ -25,7 +25,7 @@ function Home() {
       }, []);
  
     const sliderStyle = {
-      backgroundImage: 'url(img/slider/slider_img024.jpg)',
+      backgroundImage: 'url(img/slider/slider_img0244.jpg)',
       backgroundSize: 'cover',
       
     };
