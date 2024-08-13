@@ -93,7 +93,7 @@ function Home() {
 
 
 
-                    <section id="services" className="services-area services-bg pt-120 pb-90 p-relative">
+                    <section id="services" className="services-area services-bg pt-120 pb-90 p-relative" style={{ marginBottom: '0', paddingBottom: '0' }}>
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-xl-7 col-lg-10">
@@ -167,7 +167,7 @@ function Home() {
         </div>
       </div>
     </section>
-            <section  class="about-area about-p pt-120 pb-120 p-relative fix mb-5 ">
+            <section  class="about-area about-p pt-120 pb-120 p-relative fix" style={{ marginBottom: '0', marginTop: '-20px' }}>
 <center>
               <h2 style={{fontSize:'50px'}}>Our <span style={{color:'#d22127'}}>Brand</span></h2>                                   
   
@@ -222,50 +222,40 @@ function Home() {
             </section>
 
 
-           <div className='mb-5'>
-              <section data-aos="zoom-in-up" id="services" class="services-area services-bg pt-120 pb-90 p-relative mb-5">
-                  <div class="container">
-                  <h1 className='text-center'>Our <span style={{color:'rgb(210, 33, 39)'}}>Products</span> are Here</h1>
-                  <br />
-  
-                  <div className="container">
-    <div className="row">
-      {getProduct && getProduct.length > 0 ? (
-        getProduct.slice(0,4).map((item) => (
-          <div className="col-12 col-md-6 col-lg-3 mb-4" key={item.id}>
-            <Link to={`/productdetail/${item._id}`}>
-              <Card style={{ borderColor: 'grey', marginBottom: '1rem' }}>
-                <Card.Img style={{ height: '200px' }} variant="top" src={`${BASE_URL}/uploads/${item.image[0]}`} />
-                {/* <ImageCarousel image={item.image}/> */}
-                <Card.Body>
-                  <Card.Title style={{ height: '3rem' }}>{item.productname}</Card.Title>
-                  {/* <Card.Text style={{ height: '16rem', overflow: 'hidden', whiteSpace: 'pre-wrap' }} >
-                    {item.description}
-                  </Card.Text> */}
-                  <Button style={{borderRadius:'10px',backgroundColor:'rgb(35, 42, 49)',borderColor:'rgb(35, 42, 49)',padding:'7px',float:'right'}} >Details <i class="fa-solid fa-arrow-right-long" style={{color:'#dfe1e2'}}></i></Button>
-  
-                </Card.Body>
-              </Card>
-              
-            </Link>
+            <div style={{ marginBottom: '0', marginTop: '0' }}>
+  <section data-aos="zoom-in-up" id="services" className="services-area services-bg pt-120 pb-90 p-relative">
+    <div className="container">
+      <h1 className="text-center">Our <span style={{ color: 'rgb(210, 33, 39)' }}>Products</span> are Here</h1>
+      <br />
+      <div className="container">
+        <div className="row">
+          {getProduct && getProduct.length > 0 ? (
+            getProduct.slice(0, 4).map((item) => (
+              <div className="col-12 col-md-6 col-lg-3 mb-4" key={item.id}>
+                <Link to={`/productdetail/${item._id}`}>
+                  <Card style={{ borderColor: 'grey', marginBottom: '1rem' }}>
+                    <Card.Img style={{ height: '200px' }} variant="top" src={`${BASE_URL}/uploads/${item.image[0]}`} />
+                    <Card.Body>
+                      <Card.Title style={{ height: '3rem' }}>{item.productname}</Card.Title>
+                      <Button style={{ borderRadius: '10px', backgroundColor: 'rgb(35, 42, 49)', borderColor: 'rgb(35, 42, 49)', padding: '7px', float: 'right' }}>
+                        Details <i className="fa-solid fa-arrow-right-long" style={{ color: '#dfe1e2' }}></i>
+                      </Button>
+                    </Card.Body>
+                  </Card>
+                </Link>
+              </div>
+            ))
+          ) : null}
+        </div>
+        <div className="row">
+          <div className="col text-center">
+            <a style={{ backgroundColor: 'rgb(210, 33, 39)', borderColor: 'rgb(210, 33, 39)' }} href="/products" className="btn ss-btn">See More</a>
           </div>
-        ))
-      ) : null}
-    </div>
-    <div className="row">
-      <div className="col text-center">
-        <a style={{ backgroundColor: 'rgb(210, 33, 39)', borderColor: 'rgb(210, 33, 39)' }} href="/products" className="btn ss-btn">See More</a>
+        </div>
       </div>
     </div>
-  </div>
-  
-  
-  
-  
-                    
-                  </div>
-              </section>
-           </div>
+  </section>
+</div>
 
 
             <section
