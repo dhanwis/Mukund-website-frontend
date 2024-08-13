@@ -106,7 +106,7 @@ function Home() {
           <div style={{ borderRadius: '10px' }} className="col-lg-4 col-md-6 mb-30">
             <Link to={'/products'}>
               <div data-aos="fade-right" style={{ borderRadius: '10px' }} className="s-single-services text-center">
-                <img loading="lazy" style={{ height: '500px', width: '500px' }} src="img/icon/ik1.jpg" alt="Industrial Knives" />
+                <img loading="lazy" style={{ height: '500px', width: '500px' }} src="img/icon/ik1.jpeg" alt="Industrial Knives" />
                 <div className="h-service"><h5 style={{fontSize:'30px'}}>Industrial Knives</h5></div>
                 <div className="services-icon">
                   <img loading="lazy" src="img/icon/sve-icon2.jpg" alt="icon" />
@@ -170,12 +170,12 @@ function Home() {
             <section  class="about-area about-p pt-120 pb-120 p-relative fix mb-5 ">
                 <div class="container">
                     <div class="row justify-content-center align-items-center">
+                    <center><h2 style={{fontSize:'50px'}}>Our <span style={{color:'#d22127'}}>Brand</span></h2> </center>  
                          <div class="col-lg-6 col-md-12 col-sm-12">
                             <div  class="s-about-img p-relative  wow  " >
-                              <br />
-                              <br />
+                             
                               
-                                <img src="img/icon/pk-whatweprovide.jpeg" alt="img"/>   
+                                <img className='mb-5' src="img/icon/pk-whatweprovide.jpeg" alt="img"/>   
                                <div  class="about-text second-about">
                                     <span>30 <sub>+</sub></span>
                                     <p >Years of Experience</p>
@@ -183,11 +183,11 @@ function Home() {
                             </div>
                           
                         </div>
-                        
+                         
 					<div   class="col-lg-6 col-md-12 col-sm-12 mb-5">
                             <div  class="about-content s-about-content pl-30 wow "   >
                                 <div class="about-title second-title pb-25">  
-                                    <h2>Our <span style={{color:'#d22127'}}>Brand</span></h2>                                   
+                                                                     
                                 </div>
                                 <section id="our-brand">
             <h5>Mumatul Peeling Knives</h5>
