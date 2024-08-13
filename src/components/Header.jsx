@@ -35,13 +35,13 @@ function Header() {
 
 </Nav>
 
-            <Nav>
+            <Nav className='contact-info12'>
               <div class="header-cta">
-              <ul className="contact-info1 mt-2" style={{ display: 'flex', alignItems: 'center' }}>
+              <ul className=" mt-2 " style={{ display: 'flex', alignItems: 'center' }}>
   <li style={{ display: 'flex', alignItems: 'center'}}>
     <i style={{ color: 'rgb(210, 33, 39)' }} className="icon fal fa-envelope"></i>
     <a href="mailto:info@mukundmachine.com" style={{ textDecoration: 'none', color: 'inherit' }}>
-      <span style={{ color: '#0d0d0e' }}>info@mukundmachine.com</span>
+      <span style={{ color: '#0d0d0e' }}>info@mukundmachine.com</span>   
     </a>
   </li>
   <li style={{ display: 'flex', alignItems: 'center' }}>

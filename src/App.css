@@ -32,6 +32,18 @@ body, html {
 }
 
 
+.brand-container {
+  padding: 0 10px; /* Adds horizontal padding between items */
+}
+
+.brand-bx {
+  background-color: #fff; /* Optional: Adds background color */
+  border-radius: 8px; /* Optional: Adds rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow */
+}
+
+
+
 @media (max-width: 992px) {
   .services-08-content p {
     width: auto;
@@ -50,7 +62,7 @@ body, html {
 
 
 @media screen and (max-width: 1000px) {
-  .contact-info1 {
+  .contact-info12 {
     display: none;
   }
 }

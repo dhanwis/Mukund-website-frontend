@@ -8,6 +8,7 @@ import { allproductAPI } from '../services/allAPI';
 import { BASE_URL } from '../services/baseurl';
 import { Link } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
+import BrandCarousel from './BrandCoruosel';
 
 
 
@@ -171,7 +172,10 @@ function Home() {
                     <div class="row justify-content-center align-items-center">
                          <div class="col-lg-6 col-md-12 col-sm-12">
                             <div  class="s-about-img p-relative  wow  " >
-                                <img src="img/features/about_img3.jpg" alt="img"/>   
+                              <br />
+                              <br />
+                              
+                                <img src="img/icon/pk-whatweprovide.jpeg" alt="img"/>   
                                <div  class="about-text second-about">
                                     <span>30 <sub>+</sub></span>
                                     <p >Years of Experience</p>
@@ -183,19 +187,23 @@ function Home() {
 					<div   class="col-lg-6 col-md-12 col-sm-12 mb-5">
                             <div  class="about-content s-about-content pl-30 wow "   >
                                 <div class="about-title second-title pb-25">  
-                                    <h2>Our Brand</h2>                                   
+                                    <h2>Our <span style={{color:'#d22127'}}>Brand</span></h2>                                   
                                 </div>
                                 <section id="our-brand">
-            <h3>Mumatul Peeling Knives</h3>
-            <p>Manufactured under uncompromised metallurgical & meteorological quality control.</p>
-            <p>Excellent edge holding property due to high tungsten inlay.</p>
-            <p>No teething or chipping problem.</p>
-            <p>Long interval between regrinds, hence long durable life.</p>
-
-            <div className='mt-5'>
-              <h3 >Mumatul circular Saw Blade</h3>
-              <p>For cutting wood, plywood, block board, flush door, chipboard, laminates, plastics, steel, etc.</p>
-            </div>
+            <h5>Mumatul Peeling Knives</h5>
+           <div className='ms-3'>
+              <p style={{color:'black'}}> ●  Manufactured under uncompromised metallurgical & meteorological quality control.</p>
+              <p style={{color:'black'}}> ●  Excellent edge holding property due to high tungsten inlay.</p>
+              <p style={{color:'black'}}> ●  No teething or chipping problem.</p>
+              <p style={{color:'black'}}> ●  Long interval between regrinds, hence long durable life.</p>
+  
+           </div>
+            <div className='mt-2'>
+              <h5 >Mumatul circular Saw Blade</h5>
+<div className='ms-2'>
+                <p style={{color:'black'}}> ●  For cutting wood, plywood, block board, flush door, chipboard, laminates, plastics, steel, etc.</p>
+  
+</div>            </div>
             
         </section>
                                  {/* <div class="slider-btn mt-20">                                          
@@ -372,42 +380,9 @@ function Home() {
     </section>
 
 <br />
-       <div className='text-center mt-5'><h2>OUR <span style={{color:'rgb(210, 33, 39)'}}>BRANDS</span></h2></div>
+       <div className='text-center mt-5'><h2><span style={{color:'rgb(210, 33, 39)'}}>BRANDS</span></h2></div>
 
-       <div class="container">
-    <div class="row mb-2">
-        <div class="col-md-2 col-6 mt-4">
-            <div data-aos="flip-left" class="brand-bx mt-4">
-                <img src="img/icon/cmtorangetools.jpg" alt="circle_left"/>
-            </div>
-        </div>
-        <div class="col-md-2 col-6 mt-5">
-            <div data-aos="flip-left" class="brand-bx">
-                <img src="img/icon/bosh.jpg" alt="circle_left"/>
-            </div>
-        </div>
-        <div class="col-md-2 col-6 mt-5">
-            <div data-aos="flip-left" class="brand-bx">
-                <img src="img/icon/kanefusa.png" alt="circle_left"/>
-            </div>
-        </div>
-        <div class="col-md-2 col-6 mt-5">
-            <div data-aos="flip-left" class="brand-bx">
-                <img src="img/icon/kaymo.jpg" alt="circle_left"/>
-            </div>
-        </div>
-        <div class="col-md-2 col-6 mt-5">
-            <div data-aos="flip-left" class="brand-bx">
-                <img  src="img/icon/sharpex.png" alt="circle_left"/>
-            </div>
-        </div>
-        <div class="col-md-2 col-6 mt-5">
-            <div data-aos="flip-left" class="brand-bx">
-                <img src="img/icon/abracut.jpg" alt="circle_left"/>
-            </div>
-        </div>
-    </div>
-</div>
+<BrandCarousel/>
     </div>
   )
 }
