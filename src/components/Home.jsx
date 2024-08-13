@@ -168,28 +168,33 @@ function Home() {
       </div>
     </section>
             <section  class="about-area about-p pt-120 pb-120 p-relative fix mb-5 ">
+<center>
+              <h2 style={{fontSize:'50px'}}>Our <span style={{color:'#d22127'}}>Brand</span></h2>                                   
+  
+</center>
                 <div class="container">
                     <div class="row justify-content-center align-items-center">
-                    <center><h2 style={{fontSize:'50px'}}>Our <span style={{color:'#d22127'}}>Brand</span></h2> </center>  
                          <div class="col-lg-6 col-md-12 col-sm-12">
                             <div  class="s-about-img p-relative  wow  " >
-                             
+                              <br />
+                              <br />
                               
-                                <img className='mb-5' src="img/icon/pk-whatweprovide.jpeg" alt="img"/>   
-                               <div  class="about-text second-about">
+                                <img src="img/icon/mumatul.jpeg" alt="img"/>   
+                               {/* <div  class="about-text second-about">
                                     <span>30 <sub>+</sub></span>
                                     <p >Years of Experience</p>
-                                </div>
+                                </div> */}
                             </div>
                           
                         </div>
-                         
-					<div   class="col-lg-6 col-md-12 col-sm-12 mb-5">
+                        
+					<div   class="col-lg-6 col-md-12 col-sm-12 ">
+           
                             <div  class="about-content s-about-content pl-30 wow "   >
                                 <div class="about-title second-title pb-25">  
-                                                                     
                                 </div>
                                 <section id="our-brand">
+                                 
             <h5>Mumatul Peeling Knives</h5>
            <div className='ms-3'>
               <p style={{color:'black'}}> ●  Manufactured under uncompromised metallurgical & meteorological quality control.</p>
@@ -217,48 +222,50 @@ function Home() {
             </section>
 
 
-            <section data-aos="zoom-in-up" id="services" class="services-area services-bg pt-120 pb-90 p-relative mb-5">
-                <div class="container">
-                <h1 className='text-center'>Our <span style={{color:'rgb(210, 33, 39)'}}>Products</span> are Here</h1>
-                <br />
-
-                <div className="container">
-  <div className="row">
-    {getProduct && getProduct.length > 0 ? (
-      getProduct.slice(0,4).map((item) => (
-        <div className="col-12 col-md-6 col-lg-3 mb-4" key={item.id}>
-          <Link to={`/productdetail/${item._id}`}>
-            <Card style={{ borderColor: 'grey', marginBottom: '1rem' }}>
-              <Card.Img style={{ height: '200px' }} variant="top" src={`${BASE_URL}/uploads/${item.image[0]}`} />
-              {/* <ImageCarousel image={item.image}/> */}
-              <Card.Body>
-                <Card.Title style={{ height: '3rem' }}>{item.productname}</Card.Title>
-                {/* <Card.Text style={{ height: '16rem', overflow: 'hidden', whiteSpace: 'pre-wrap' }} >
-                  {item.description}
-                </Card.Text> */}
-                <Button style={{borderRadius:'10px',backgroundColor:'rgb(35, 42, 49)',borderColor:'rgb(35, 42, 49)',padding:'7px',float:'right'}} >Details <i class="fa-solid fa-arrow-right-long" style={{color:'#dfe1e2'}}></i></Button>
-
-              </Card.Body>
-            </Card>
-            
-          </Link>
-        </div>
-      ))
-    ) : null}
-  </div>
-  <div className="row">
-    <div className="col text-center">
-      <a style={{ backgroundColor: 'rgb(210, 33, 39)', borderColor: 'rgb(210, 33, 39)' }} href="/products" className="btn ss-btn">See More</a>
+           <div className='mb-5'>
+              <section data-aos="zoom-in-up" id="services" class="services-area services-bg pt-120 pb-90 p-relative mb-5">
+                  <div class="container">
+                  <h1 className='text-center'>Our <span style={{color:'rgb(210, 33, 39)'}}>Products</span> are Here</h1>
+                  <br />
+  
+                  <div className="container">
+    <div className="row">
+      {getProduct && getProduct.length > 0 ? (
+        getProduct.slice(0,4).map((item) => (
+          <div className="col-12 col-md-6 col-lg-3 mb-4" key={item.id}>
+            <Link to={`/productdetail/${item._id}`}>
+              <Card style={{ borderColor: 'grey', marginBottom: '1rem' }}>
+                <Card.Img style={{ height: '200px' }} variant="top" src={`${BASE_URL}/uploads/${item.image[0]}`} />
+                {/* <ImageCarousel image={item.image}/> */}
+                <Card.Body>
+                  <Card.Title style={{ height: '3rem' }}>{item.productname}</Card.Title>
+                  {/* <Card.Text style={{ height: '16rem', overflow: 'hidden', whiteSpace: 'pre-wrap' }} >
+                    {item.description}
+                  </Card.Text> */}
+                  <Button style={{borderRadius:'10px',backgroundColor:'rgb(35, 42, 49)',borderColor:'rgb(35, 42, 49)',padding:'7px',float:'right'}} >Details <i class="fa-solid fa-arrow-right-long" style={{color:'#dfe1e2'}}></i></Button>
+  
+                </Card.Body>
+              </Card>
+              
+            </Link>
+          </div>
+        ))
+      ) : null}
+    </div>
+    <div className="row">
+      <div className="col text-center">
+        <a style={{ backgroundColor: 'rgb(210, 33, 39)', borderColor: 'rgb(210, 33, 39)' }} href="/products" className="btn ss-btn">See More</a>
+      </div>
     </div>
   </div>
-</div>
-
-
-
-
-                  
-                </div>
-            </section>
+  
+  
+  
+  
+                    
+                  </div>
+              </section>
+           </div>
 
 
             <section
