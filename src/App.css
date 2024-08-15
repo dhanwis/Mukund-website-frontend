@@ -43,6 +43,38 @@ body, html {
 }
 
 
+.product-card {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.product-images img {
+  border-radius: 8px;
+}
+
+.product-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.product-colors {
+  display: flex;
+  gap: 10px;
+}
+
+.color-dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.product-description {
+  font-size: 16px;
+  color: #666;
+}
+
+
 
 @media (max-width: 992px) {
   .services-08-content p {
