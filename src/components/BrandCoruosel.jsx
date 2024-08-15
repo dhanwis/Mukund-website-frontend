@@ -15,11 +15,11 @@ const BrandCarousel = () => {
         },
         tablet: {
             breakpoint: { max: 768, min: 464 },
-            items: 2
+            items: 3
         },
         mobile: {
             breakpoint: { max: 464, min: 0 },
-            items: 1
+            items: 3
         }
     };
 
@@ -34,7 +34,7 @@ const BrandCarousel = () => {
         { src: "img/icon/mitutoyo.jpeg", alt: "mitutoyo" },
         { src: "img/icon/insize.jpeg", alt: "insize" }
 
-        // Add more brands as needed
+       
     ];
 
     return (
