@@ -179,8 +179,234 @@ function Home() {
   
 </center>
 <br />
-<ProductDisplay/>
+{/* <ProductDisplay/> */}
+
+
+{/* <div style={{ backgroundImage: 'url("img/icon/services_bg.jpg")', backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center', padding: '20px' }}>   
+<div className='container'>
+<Row className="container mt-5 justify-content-center">
+  <Col xs={12} sm={10} md={8} lg={6} className="d-flex justify-content-center mb-4">
+    <Card className="shadow" style={{ width: '400px' }}>
+      <Card.Img variant="top" src="img/icon/mumatul.jpeg" style={{ width: '100%', height: 'auto' }} />
+      <Card.Body>
+        <h4>Mumatul Peeling Knives</h4>
+        <Card.Text>
+          Manufactured under uncompromised metallurgical & meteorological quality control.<br />
+          * Excellent edge holding property due to high tungsten inlay.<br />
+          * No teething or chipping problem.<br />
+          * Long interval between regrinds hence long durable life.
+        </Card.Text>
+      </Card.Body>
+    </Card>
+  </Col>
+
+  <Col xs={12} sm={10} md={8} lg={6} className="d-flex justify-content-center mb-4">
+    <Card className="shadow" style={{ width: '400px' }}>
+      <Card.Img variant="top" src="img/icon/our-brand1.png" style={{ width: '100%', height: 'auto' }} />
+      <Card.Body>
+        <h4>Mumatul Circular Saw Blade</h4>
+        <Card.Text>
+          ● For cutting wood, plywood, block board, flush door, chipboard, laminates, plastics, steel, etc.
+        </Card.Text>
+      </Card.Body>
+    </Card>
+  </Col>
+</Row>
+
+
+<br /><br />     
+</div>   
+
+
+
+
+</div> */}
+
+<div className="section-content">
+  <div
+    id="projectCarousel"
+    className="carousel slide"
+    data-bs-ride="carousel"
+    data-bs-interval={3000}
+  >
+    <div className="carousel-inner">
+      {/* Static Carousel Item */}
+      <div className="carousel-item active">
+        <div className="container my-4">
+          <div
+            className="card shadow-lg border-light"
+            style={{
+              borderRadius: 20,
+              backgroundImage:
+                'url("img/icon/services_bg.jpg")',
+              backgroundSize: "cover",
+              backgroundPosition: "center"
+            }}
+          >
+            <div className="card-body">
+              <div className="row gx-4 align-items-center">
+                {/* Image Section (Top on Mobile, Right on Larger Screens) */}
+                <div className="col-12 col-lg-6 order-lg-2 d-flex justify-content-center align-items-center mb-4 mb-lg-0">
+                  <img
+                    src="img/icon/mumatul.jpeg"
+                    className="img-fluid"
+                    alt="Project Title"
+                    style={{ borderRadius: 15, border: "4px solid lightgrey",width:"250px" }}
+                  />
+                </div>
+                {/* Information Section (Below Image on Mobile, Left of Image on Larger Screens) */}
+                <div className="col-12 col-lg-6 order-lg-1 d-flex flex-column justify-content-center">
+                  <h3 className="display-6 text-center text-lg-start mb-4">
+                  Mumatul Peeling Knives
+                  </h3>
+                 <p>  Manufactured under uncompromised metallurgical & meteorological quality control.<br />
+                 • Excellent edge holding property due to high tungsten inlay.<br />
+          • No teething or chipping problem.<br />
+          • Long interval between regrinds hence long durable life.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* corousel2 */}
+      <div className="carousel-item active">
+        <div className="container my-4">
+          <div
+            className="card shadow-lg border-light"
+            style={{
+              borderRadius: 20,
+              backgroundImage:
+                'url("img/icon/services_bg.jpg")',
+              backgroundSize: "cover",
+              backgroundPosition: "center"
+            }}
+          >
+            <div className="card-body">
+              <div className="row gx-4 align-items-center">
+                {/* Image Section (Top on Mobile, Right on Larger Screens) */}
+                <div className="col-12 col-lg-6 order-lg-2 d-flex justify-content-center align-items-center mb-4 mb-lg-0">
+                  <img
+                    src="img/icon/mumatul.jpeg"
+                    className="img-fluid"
+                    alt="Project Title"
+                    style={{ borderRadius: 15, border: "4px solid lightgrey",width:"300px" }}
+                  />
+                </div>
+                {/* Information Section (Below Image on Mobile, Left of Image on Larger Screens) */}
+                <div className="col-12 col-lg-6 order-lg-1 d-flex flex-column justify-content-center">
+                  <h3 className="display-6 text-center text-lg-start mb-4">
+                  Mumatul Peeling Knives
+                  </h3>
+                 <p>  Manufactured under uncompromised metallurgical & meteorological quality control.<br />
+                 • Excellent edge holding property due to high tungsten inlay.<br />
+          • No teething or chipping problem.<br />
+          • Long interval between regrinds hence long durable life.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* Repeat the above carousel-item block for more items if needed */}
+    </div>
+    <div className="carousel-inner">
+      {/* Static Carousel Item */}
+      <div className="carousel-item active">
+        <div className="container my-4">
+          <div
+            className="card shadow-lg border-light"
+            style={{
+              borderRadius: 20,
+              backgroundImage:
+                'url("img/icon/services_bg.jpg")',
+              backgroundSize: "cover",
+              backgroundPosition: "center"
+            }}
+          >
+            <div className="card-body">
+              <div className="row gx-4 align-items-center">
+                {/* Image Section (Top on Mobile, Right on Larger Screens) */}
+                <div className="col-12 col-lg-6 order-lg-2 d-flex justify-content-center align-items-center mb-4 mb-lg-0">
+                  <img
+                    src="img/icon/mumatul.jpeg"
+                    className="img-fluid"
+                    alt="Project Title"
+                    style={{ borderRadius: 15, border: "4px solid lightgrey",width:"250px" }}
+                  />
+                </div>
+                {/* Information Section (Below Image on Mobile, Left of Image on Larger Screens) */}
+                <div className="col-12 col-lg-6 order-lg-1 d-flex flex-column justify-content-center">
+                  <h3 className="display-6 text-center text-lg-start mb-4">
+                  Mumatul Peeling Knives
+                  </h3>
+                 <p>  Manufactured under uncompromised metallurgical & meteorological quality control.<br />
+                 • Excellent edge holding property due to high tungsten inlay.<br />
+          • No teething or chipping problem.<br />
+          • Long interval between regrinds hence long durable life.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* corousel2 */}
+      <div className="carousel-item active">
+        <div className="container my-4">
+          <div
+            className="card shadow-lg border-light"
+            style={{
+              borderRadius: 20,
+              backgroundImage:
+                'url("img/icon/services_bg.jpg")',
+              backgroundSize: "cover",
+              backgroundPosition: "center"
+            }}
+          >
+            <div className="card-body">
+              <div className="row gx-4 align-items-center">
+                {/* Image Section (Top on Mobile, Right on Larger Screens) */}
+                <div className="col-12 col-lg-6 order-lg-2 d-flex justify-content-center align-items-center mb-4 mb-lg-0">
+                  <img
+                    src="img/icon/our-brand1.png"
+                    className="img-fluid"
+                    alt="Project Title"
+                    style={{ borderRadius: 15, border: "4px solid lightgrey",width:'250px' }}
+                  />
+                </div>
+                {/* Information Section (Below Image on Mobile, Left of Image on Larger Screens) */}
+                <div className="col-12 col-lg-6 order-lg-1 d-flex flex-column justify-content-center">
+                  <h3 className="display-6 text-center text-lg-start mb-4">
+                  Mumatul Circular Saw Blade
+                  </h3>
+                 <p>   ● For cutting wood, plywood, block board, flush door, chipboard, laminates, plastics, steel, etc.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* Repeat the above carousel-item block for more items if needed */}
+    </div>
+    {/* Carousel Controls (Uncomment if needed) */}
+    
+  {/* <a class="carousel-control-prev custom-carousel-control" href="#projectCarousel" role="button" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+  </a>
+  <a class="carousel-control-next custom-carousel-control" href="#projectCarousel" role="button" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+  </a>  */}
+ 
+  </div>
+</div>
+
 <br />
+
+
+
+
 
 
             <div style={{ marginBottom: '0', marginTop: '0' }}>
