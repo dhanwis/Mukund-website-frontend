@@ -9,8 +9,6 @@ import { BASE_URL } from '../services/baseurl';
 import { Link } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import BrandCarousel from './BrandCoruosel';
-import { Col, Row } from 'react-bootstrap';
-import ProductDisplay from './BrandDisplay';
 
 
 

@@ -112,7 +112,9 @@ function Contact() {
               <Card.Text>
                 Dharmasala, Kerala 670563 <br />
                 Working Hours: 9 Am-6 pm
+              
               </Card.Text>
+              <br />
              
               <Card.Text>
                 Phone: <a href="tel:7293115909">72931 15909</a>
