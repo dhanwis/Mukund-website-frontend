@@ -185,7 +185,7 @@ function Home() {
     data-bs-ride="carousel"
     data-bs-interval={3000}
   >
-    <div className="carousel-inner">
+    <div data-aos="zoom-in-right" className="carousel-inner">
       {/* Static Carousel Item */}
       <div className="carousel-item active">
         <div className="container my-4">
@@ -226,7 +226,7 @@ function Home() {
         </div>
       </div>
       {/* corousel2 */}
-      <div className="carousel-item active">
+      <div  className="carousel-item active">
         <div className="container my-4">
           <div
             className="card shadow-lg border-light"
@@ -266,7 +266,7 @@ function Home() {
       </div>
       {/* Repeat the above carousel-item block for more items if needed */}
     </div>
-    <div className="carousel-inner">
+    <div data-aos="zoom-in-right" className="carousel-inner">
       {/* Static Carousel Item */}
       <div className="carousel-item active">
         <div className="container my-4">
