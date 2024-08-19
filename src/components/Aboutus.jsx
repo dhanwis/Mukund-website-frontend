@@ -6,7 +6,7 @@ import  { useEffect } from 'react'
 function Aboutus() {
 
     const sliderStyle1 = {
-        backgroundImage: 'url(img/bg/1920.jpg)',
+        backgroundImage: 'url(img/bg/imresizer1.jpg)',
         
       
       };
@@ -52,8 +52,10 @@ function Aboutus() {
                 <div class="container">
                     <div class="row justify-content-center align-items-center">
                          <div class="col-lg-6 col-md-12 col-sm-12">
+                            
                             <div class="s-about-img p-relative  wow "  >
-                                <img className='mb-5' src="img/services/about6.jpg" alt="img"/>   
+                                
+                                <img  src="img/services/imresizer2.jpg" alt="img"/>   
                                {/* <div class="about-text second-about">
                                     <span>5 <sub>+</sub></span>
                                     <p>Years of Experience</p>
@@ -66,9 +68,9 @@ function Aboutus() {
                             <div class="about-content s-about-content pl-30 wow "  >
                                 <div class="about-title second-title pb-25">  
                                     <h3 style={{color:'00173c'}}>Welcome to <br /></h3>   
-                                    <h1 ><span style={{color:'rgb(210, 33, 39)'}}>Mukund Machine Tools</span></h1>                                
+                                    <h1 style={{fontSize:'30px'}}><span style={{color:'rgb(210, 33, 39)'}}>Mukund Machine Tools</span></h1>                                
                                 </div>
-                                   <p style={{color:'black'}}>Founded in 1987, Mukund Machine Tools has grown from a small business into a leading supplier of industrial cutting tools. We specialise in trading high-quality knives, saws, and cutters for industries working with wood, rubber, paper, plastics, ferrous and other non-ferrous metals.
+                                   <p  style={{color:'black'}}>Founded in 1987, Mukund Machine Tools has grown from a small business into a leading supplier of industrial cutting tools. We specialise in trading high-quality knives, saws, and cutters for industries working with wood, rubber, paper, plastics, ferrous and other non-ferrous metals.
                                    </p>
                                   <p style={{color:'black'}}>Our collaboration with top manufacturers from India and across the world ensures that our customers benefit from the latest cutting tools which we have been selling locally and abroad. This network allows us to  consistently offer innovative and reliable solutions.
                                   </p>
