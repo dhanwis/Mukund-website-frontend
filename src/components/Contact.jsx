@@ -70,7 +70,7 @@ function Contact() {
                                             <i style={{backgroundColor:'rgb(210, 33, 39)'}} class="far fa-clock"></i>
                                         </div>
                                         <h5>Working Hours</h5>
-                                        <p>Monday to  09:00 to 5:30 <br/> 
+                                        <p>Monday to saturday 09:00 to 5:30 <br/> 
                                             Sunday holiday</p> 
                                     </div>
                                      <div class="single-cta wow "  data-delay=".2s">
