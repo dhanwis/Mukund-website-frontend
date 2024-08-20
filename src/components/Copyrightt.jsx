@@ -14,7 +14,7 @@ const Copy = () => {
         </div>
         <div className="footer-copyright">
           &copy; {new Date().getFullYear()} Mukund Machine Tools. All rights reserved. <br />
-          <span style={{fontSize:'12px',color:'rgb(11, 10, 78)'}}> Powered by:<span  > <a style={{color:'rgb(235, 183, 65)'}}  href="http://dhanwis.com/">Dhanwis TechInfo Solutions</a> </span></span>
+          <span style={{fontSize:'12px',color:'rgb(11, 10, 78)'}}> Powered by:<span  > <a target="_blank" rel='noopener noreferrer' style={{color:'rgb(235, 183, 65)'}}  href="http://dhanwis.com/">Dhanwis TechInfo Solutions</a> </span></span>
         </div>
         <div className="footer-social">
           {/* <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">

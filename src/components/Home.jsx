@@ -109,7 +109,7 @@ function Home() {
                 <img loading="lazy" style={{ height: '500px', width: '500px' }} src="img/icon/ik1.jpeg" alt="Industrial Knives" />
                 <div className="h-service"><h5 style={{fontSize:'30px'}}>Industrial Knives</h5></div>
                 <div className="services-icon">
-                  <img loading="lazy" src="img/icon/sve-icon2.jpg" alt="icon" />
+                  <img loading="lazy" src="img/icon/ikk.jpg" alt="icon" />
                 </div>
                 <div className="services-hover">
                   <div className="box1"></div>
