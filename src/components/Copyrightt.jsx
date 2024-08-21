@@ -6,15 +6,20 @@ import './Footer.css';
 
 const Copy = () => {
   return (
-    <footer  style={{backgroundColor:'rgb(210, 33, 39)'}} className="footer">
+    <footer style={{
+      backgroundImage: "url('img/services/footer-muk.jpg')",
+      backgroundSize: 'cover', // Ensure the image covers the entire footer
+      backgroundPosition: 'center', // Center the image
+      backgroundRepeat: 'no-repeat' // Prevent the image from repeating
+    }} className="footer">
       <div className="footer-container">
         <div className="footer-logo">
 
-          <img style={{width:'55px'}} src="img/icon/Mukundiconog3.png" alt="Site Logo" />
+          <img style={{width:'55px'}} src="img/icon/Mukundiconog4.png" alt="Site Logo" />
         </div>
         <div className="footer-copyright">
           &copy; {new Date().getFullYear()} Mukund Machine Tools. All rights reserved. <br />
-          <span style={{fontSize:'12px',color:'rgb(11, 10, 78)'}}> Powered by:<span  > <a target="_blank" rel='noopener noreferrer' style={{color:'rgb(235, 183, 65)'}}  href="http://dhanwis.com/">Dhanwis TechInfo Solutions</a> </span></span>
+          <span style={{fontSize:'12px',color:'white'}}> Powered by:<span  > <a target="_blank" rel='noopener noreferrer' style={{color:'rgb(235, 183, 65)'}}  href="http://dhanwis.com/">Dhanwis TechInfo Solutions</a> </span></span>
         </div>
         <div className="footer-social">
           {/* <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
