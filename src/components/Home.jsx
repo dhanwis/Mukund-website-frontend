@@ -204,7 +204,7 @@ function Home() {
                 {/* Image Section (Top on Mobile, Right on Larger Screens) */}
                 <div className="col-12 col-lg-6 order-lg-2 d-flex justify-content-center align-items-center mb-4 mb-lg-0">
                   <img
-                    src="img/icon/mumatul.jpeg"
+                    src="img/services/mumatul3.jpg"
                     className="img-fluid"
                     alt="Project Title"
                     style={{ borderRadius: 15, border: "4px solid lightgrey",width:"250px" }}
@@ -213,7 +213,7 @@ function Home() {
                 {/* Information Section (Below Image on Mobile, Left of Image on Larger Screens) */}
                 <div className="col-12 col-lg-6 order-lg-1 d-flex flex-column justify-content-center">
                   <h3 className="display-6 text-center text-lg-start mb-4">
-                  Mumatul Peeling Knives
+                 <span style={{color:'rgb(29, 34, 228)'}}> Mumatul</span> Peeling Knives
                   </h3>
                  <p>  Manufactured under uncompromised metallurgical & meteorological quality control.<br />
                  • Excellent edge holding property due to high tungsten inlay.<br />
@@ -243,7 +243,7 @@ function Home() {
                 {/* Image Section (Top on Mobile, Right on Larger Screens) */}
                 <div className="col-12 col-lg-6 order-lg-2 d-flex justify-content-center align-items-center mb-4 mb-lg-0">
                   <img
-                    src="img/icon/mumatul.jpeg"
+                    src="img/services/mumatul3.jpg"
                     className="img-fluid"
                     alt="Project Title"
                     style={{ borderRadius: 15, border: "4px solid lightgrey",width:"300px" }}
@@ -252,7 +252,7 @@ function Home() {
                 {/* Information Section (Below Image on Mobile, Left of Image on Larger Screens) */}
                 <div className="col-12 col-lg-6 order-lg-1 d-flex flex-column justify-content-center">
                   <h3 className="display-6 text-center text-lg-start mb-4">
-                  Mumatul Peeling Knives
+                <span style={{color:'rgb(29, 34, 228)'}}>  Mumatul</span> Peeling Knives
                   </h3>
                  <p className='me-3'>• Manufactured under uncompromised metallurgical & meteorological quality control.<br />
                  • Excellent edge holding property due to high tungsten inlay.<br />
@@ -324,7 +324,7 @@ function Home() {
                 {/* Image Section (Top on Mobile, Right on Larger Screens) */}
                 <div className="col-12 col-lg-6 order-lg-2 d-flex justify-content-center align-items-center mb-4 mb-lg-0">
                   <img
-                    src="img/icon/our-brand1.png"
+                    src="img/services/our-brand12.png"
                     className="img-fluid"
                     alt="Project Title"
                     style={{ borderRadius: 15, border: "4px solid lightgrey",width:'250px' }}
@@ -333,7 +333,7 @@ function Home() {
                 {/* Information Section (Below Image on Mobile, Left of Image on Larger Screens) */}
                 <div className="col-12 col-lg-6 order-lg-1 d-flex flex-column justify-content-center">
                   <h3 className="display-6 text-center text-lg-start mb-4">
-                  Mumatul Circular Saw Blade
+                <span style={{color:'rgb(29, 34, 228)'}} >  Mumatul</span> Circular Saw Blade
                   </h3>
                  <p>    • For cutting wood, plywood, block board, flush door, chipboard, laminates, plastics, steel, etc.</p>
                 </div>
@@ -344,16 +344,9 @@ function Home() {
       </div>
       {/* Repeat the above carousel-item block for more items if needed */}
     </div>
-    {/* Carousel Controls (Uncomment if needed) */}
+   
     
-  {/* <a class="carousel-control-prev custom-carousel-control" href="#projectCarousel" role="button" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-  </a>
-  <a class="carousel-control-next custom-carousel-control" href="#projectCarousel" role="button" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-  </a>  */}
+ 
  
   </div>
 </div>
