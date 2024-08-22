@@ -24,7 +24,7 @@ function Aboutus() {
     <div data-aos="zoom-out-down" >
 
 
-<section class="breadcrumb-area d-flex align-items-center" style={sliderStyle1}>
+<div class="breadcrumb-area d-flex align-items-center" style={sliderStyle1}>
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-xl-12 col-lg-12">
@@ -46,9 +46,9 @@ function Aboutus() {
                         
                     </div>
                 </div>
-            </section>
+            </div>
 
-            <section class="about-area about-p pt-120 pb-120 p-relative fix ">
+            <div class="about-area about-p pt-120 pb-120 p-relative fix ">
                 <div class="container">
                     <div class="row justify-content-center align-items-center">
                          <div class="col-lg-6 col-md-12 col-sm-12">
@@ -77,16 +77,13 @@ function Aboutus() {
                                   <p style={{color:'black'}}>
                                   We have accumulated years of experience in providing timely services at our service centre which is equipped with state-of-the-art CNC machine.
                                   </p>
-                                 {/* <div class="slider-btn mt-20">                                          
-                                     <a href="/aboutus" class="btn ss-btn smoth-scroll">Read More</a>				
-                                </div> */}
-
+                                
                             </div>
                         </div>
                      
                     </div>
                 </div>
-            </section>
+            </div>
     </div>
   )
 }
