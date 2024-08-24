@@ -233,7 +233,7 @@ function Home() {
             style={{
               borderRadius: 20,
               backgroundImage:
-                'url("img/icon/bg-og.png")',
+                'url("img/icon/bg-blue2.jpg")',
               backgroundSize: "cover",
               backgroundPosition: "center"
             }}
@@ -314,7 +314,7 @@ function Home() {
             style={{
               borderRadius: 20,
               backgroundImage:
-                'url("img/icon/bg-og.png")',
+                'url("img/icon/bg-blue2.jpg")',
               backgroundSize: "cover",
               backgroundPosition: "center"
             }}
@@ -515,6 +515,10 @@ function Home() {
 
 <br />
        <div className='text-center mt-5'><h2><span style={{color:'rgb(210, 33, 39)'}}>BRANDS</span></h2></div>
+       <br />
+
+
+       
 
 <BrandCarousel/>
     </div>
