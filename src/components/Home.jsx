@@ -26,7 +26,7 @@ function Home() {
       }, []);
  
     const sliderStyle = {
-      backgroundImage: 'url(img/slider/slider_img0244.jpg)',
+      backgroundImage: 'url(img/slider/slider_img02441.jpg)',
       backgroundSize: 'cover',
       
     };
@@ -76,10 +76,10 @@ function Home() {
                                         
 
                                          <h2 data-animation="fadeInUp" data-delay=".4s">We Are Best In Industry</h2>
-                                        <p data-animation="fadeInUp" data-delay=".6s">Your Gateway to Precision Manufacturing: Reliable Tools for Every Task.</p>
+                                        <p data-animation="fadeInUp" data-delay=".6s">Your Gateway to Manufacturing: Reliable Tools for Every Task.</p>
                                         
-                                         <div  class="slider-btn mt-30 mb-160">     
-                                             <a style={{backgroundColor:'rgb(210, 33, 39)',borderColor:'rgb(210, 33, 39)'}} href="/aboutus" class="btn ss-btn mr-40" data-animation="fadeInLeft" data-delay=".4s">Read More</a>
+                                         <div  class="slider-btn mt-30 mb-160 ">     
+                                             <a  style={{backgroundColor:'rgb(210, 33, 39)',borderColor:'rgb(210, 33, 39)'}} href="/aboutus" class="btn ss-btn mr-40" data-animation="fadeInLeft" data-delay=".4s">Read More</a>
                                         </div>        
                                                               
                                     </div>
@@ -194,7 +194,7 @@ function Home() {
             style={{
               borderRadius: 20,
               backgroundImage:
-                'url("img/icon/services_bg.jpg")',
+                'url("img/icon/white2.jpg")',
               backgroundSize: "cover",
               backgroundPosition: "center"
             }}
@@ -233,7 +233,7 @@ function Home() {
             style={{
               borderRadius: 20,
               backgroundImage:
-                'url("img/icon/bg-blue2.jpg")',
+                'url("img/icon/white2.jpg")',
               backgroundSize: "cover",
               backgroundPosition: "center"
             }}
@@ -275,7 +275,7 @@ function Home() {
             style={{
               borderRadius: 20,
               backgroundImage:
-                'url("img/icon/bg-og.png")',
+                'url("img/icon/white2.jpg")',
               backgroundSize: "cover",
               backgroundPosition: "center"
             }}
@@ -314,7 +314,7 @@ function Home() {
             style={{
               borderRadius: 20,
               backgroundImage:
-                'url("img/icon/bg-blue2.jpg")',
+                'url("img/icon/white2.jpg")',
               backgroundSize: "cover",
               backgroundPosition: "center"
             }}
