@@ -55,7 +55,7 @@ function Aboutus() {
                             
                             <div class="s-about-img p-relative  wow "  >
                                 
-                                <img  src="img/services/imresizer2.jpg" alt="img"/>   
+                                <img  src="img/services/image.png" alt="img"/>   
                                {/* <div class="about-text second-about">
                                     <span>5 <sub>+</sub></span>
                                     <p>Years of Experience</p>

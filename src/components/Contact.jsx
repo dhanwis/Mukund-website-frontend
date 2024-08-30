@@ -28,7 +28,7 @@ function Contact() {
                     <div class="row align-items-center">
                         <div class="col-xl-12 col-lg-12">
                             <div class="breadcrumb-wrap text-left">
-                                <div class="breadcrumb-title">
+                                <div class="breadcrumb-title">    
                                     <h2>Contact Us</h2>    
                                     <div class="breadcrumb-wrap">
                               

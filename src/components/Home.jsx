@@ -67,12 +67,12 @@ function Home() {
     <div>
 
 
-<div class="single-slider slider-bg d-flex align-items-center" style={sliderStyle} >
+<div class="single-slider slider-bg d-flex align-items-center" style={sliderStyle} > 
                         <div class="container">
                            <div class="row justify-content-center align-items-center">
                               
                                 <div class="col-lg-6 col-md-6">
-                                    <div class="slider-content s-slider-content mt-20">
+                                    <div class="slider-content s-slider-content mt-20"> 
                                         
 
                                          <h2 data-animation="fadeInUp" data-delay=".4s">We Are Best In Industry</h2>
@@ -148,7 +148,7 @@ function Home() {
           <div data-aos="fade-left" className="col-lg-4 col-md-6 mb-30">
             <Link to={'/products'}>
               <div className="s-single-services text-center">
-                <img loading="lazy" style={{ height: '500px', width: '500px' }} src="img/icon/client.jpeg" alt="Cutters" />
+                <img loading="lazy" style={{ height: '500px', width: '500px' }} src="img/icon/new-saw.jpeg" alt="Cutters" />
                 <div className="h-service"><h5>Saw Blades</h5></div>
                 <div className="services-icon">
                   <img loading="lazy" src="img/icon/sve-icon1.0.jpg" alt="icon" />
