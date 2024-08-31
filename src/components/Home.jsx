@@ -67,29 +67,31 @@ function Home() {
     <div>
 
 
-<div class="single-slider slider-bg d-flex align-items-center" style={sliderStyle} > 
-                        <div class="container">
-                           <div class="row justify-content-center align-items-center">
-                              
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="slider-content s-slider-content mt-20"> 
-                                        
-
-                                         <h2 data-animation="fadeInUp" data-delay=".4s">We Are Best In Industry</h2>
-                                        <p data-animation="fadeInUp" data-delay=".6s">Your Gateway to Manufacturing: Reliable Tools for Every Task.</p>
-                                        
-                                         <div  class="slider-btn mt-30 mb-160 ">     
-                                             <a  style={{backgroundColor:'rgb(210, 33, 39)',borderColor:'rgb(210, 33, 39)'}} href="/aboutus" class="btn ss-btn mr-40" data-animation="fadeInLeft" data-delay=".4s">Read More</a>
-                                        </div>        
-                                                              
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6">
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
+<div className="single-slider slider-bg d-flex align-items-center"> 
+  <div className="container">
+    <div className="row justify-content-center align-items-center">
+      <div className="col-lg-6 col-md-6">
+        <div className="slider-content s-slider-content mt-20"> 
+          <h2 data-animation="fadeInUp" data-delay=".4s">We Are Best In Industry</h2>
+          <p data-animation="fadeInUp" data-delay=".6s">Your Gateway to Manufacturing: Reliable Tools for Every Task.</p>
+          <div className="slider-btn mt-30 mb-160">     
+            <a 
+              style={{backgroundColor:'rgb(210, 33, 39)',borderColor:'rgb(210, 33, 39)'}} 
+              href="/aboutus" 
+              className="btn ss-btn mr-40" 
+              data-animation="fadeInLeft" 
+              data-delay=".4s"
+            >
+              Read More
+            </a>
+          </div>        
+        </div>
+      </div>
+      <div className="col-lg-6 col-md-6">
+      </div>
+    </div>
+  </div>
+</div>
 
 
 

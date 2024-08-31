@@ -76,6 +76,24 @@ body, html {
 
 
 
+
+/* Default background image for larger screens */
+.single-slider {
+  background-image: url('../public/img/slider/mm-banner.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Background image for mobile screens */
+@media only screen and (max-width: 768px) {
+  .single-slider {
+    background-image: url('../public/img/gallery/image.png');
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+
 @media (max-width: 992px) {
   .services-08-content p {
     width: auto;
@@ -105,6 +123,8 @@ body, html {
     width: 20px;
   }
 }
+
+
 
 
 
