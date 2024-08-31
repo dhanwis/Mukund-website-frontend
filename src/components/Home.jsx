@@ -71,9 +71,10 @@ function Home() {
   <div className="container">
     <div className="row justify-content-center align-items-center">
       <div className="col-lg-6 col-md-6">
-        <div className="slider-content s-slider-content mt-20"> 
+        <div style={{marginTop:'-35px'}} className="slider-content s-slider-content mb-5"> 
           <h2 data-animation="fadeInUp" data-delay=".4s">We Are Best In Industry</h2>
-          <p data-animation="fadeInUp" data-delay=".6s">Your Gateway to Manufacturing: Reliable Tools for Every Task.</p>
+         
+          <p style={{marginTop:'-12px'}} data-animation="fadeInUp" data-delay=".6s">Your Gateway to Manufacturing: Reliable Tools for Every Task.</p>
           <div className="slider-btn mt-30 mb-160">     
             <a 
               style={{backgroundColor:'rgb(210, 33, 39)',borderColor:'rgb(210, 33, 39)'}} 
