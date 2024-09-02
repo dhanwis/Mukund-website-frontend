@@ -202,23 +202,23 @@ function Home() {
               backgroundPosition: "center"
             }}
           >
-            <div className="card-body">
+              <div className="card-body">
               <div className="row gx-4 align-items-center">
                 {/* Image Section (Top on Mobile, Right on Larger Screens) */}
                 <div className="col-12 col-lg-6 order-lg-2 d-flex justify-content-center align-items-center mb-4 mb-lg-0">
                   <img
-                    src="img/services/mumatul3.jpg"
+                    src="img/icon/brand-og.jpeg"
                     className="img-fluid"
                     alt="Project Title"
-                    style={{ borderRadius: 15, border: "4px solid lightgrey",width:"250px" }}
+                    style={{ borderRadius: 15, border: "4px solid lightgrey",width:"300px" }}
                   />
                 </div>
                 {/* Information Section (Below Image on Mobile, Left of Image on Larger Screens) */}
                 <div className="col-12 col-lg-6 order-lg-1 d-flex flex-column justify-content-center">
                   <h3 className="display-6 text-center text-lg-start mb-4">
-                 <span style={{color:'rgb(29, 34, 228)'}}> Mumatul</span> Peeling Knives
+                <span style={{color:'rgb(29, 34, 228)'}}>  Mumatul</span> Peeling Knives
                   </h3>
-                 <p>  Manufactured under uncompromised metallurgical & meteorological quality control.<br />
+                 <p className='me-3'>• Manufactured under uncompromised metallurgical & meteorological quality control.<br />
                  • Excellent edge holding property due to high tungsten inlay.<br />
           • No teething or chipping problem.<br />
           • Long interval between regrinds hence long durable life.</p>
@@ -246,7 +246,7 @@ function Home() {
                 {/* Image Section (Top on Mobile, Right on Larger Screens) */}
                 <div className="col-12 col-lg-6 order-lg-2 d-flex justify-content-center align-items-center mb-4 mb-lg-0">
                   <img
-                    src="img/services/mumatul3.jpg"
+                    src="img/icon/brand-og.jpeg"
                     className="img-fluid"
                     alt="Project Title"
                     style={{ borderRadius: 15, border: "4px solid lightgrey",width:"300px" }}
@@ -286,23 +286,22 @@ function Home() {
             <div className="card-body">
               <div className="row gx-4 align-items-center">
                 {/* Image Section (Top on Mobile, Right on Larger Screens) */}
-                <div className="col-12 col-lg-6 order-lg-2 d-flex justify-content-center align-items-center mb-4 mb-lg-0">
+                <div className="col-12 col-lg-6 order-lg-2 d-flex justify-content-center align-items-center mb-5 mb-lg-0">
                   <img
-                    src="img/icon/mumatul.jpeg"
-                    className="img-fluid"
+                    src="img/icon/brandog123.png"
+                    className="img-fluid "
                     alt="Project Title"
-                    style={{ borderRadius: 15, border: "4px solid lightgrey",width:"250px" }}
+                    style={{ borderRadius: 15, border: "4px solid lightgrey",width:'260px' }}
+                    
                   />
+               
                 </div>
                 {/* Information Section (Below Image on Mobile, Left of Image on Larger Screens) */}
                 <div className="col-12 col-lg-6 order-lg-1 d-flex flex-column justify-content-center">
                   <h3 className="display-6 text-center text-lg-start mb-4">
-                  Mumatul Peeling Knives
+                <span style={{color:'rgb(29, 34, 228)'}} >  Mumatul</span> Circular Saw Blade
                   </h3>
-                 <p>  Manufactured under uncompromised metallurgical & meteorological quality control.<br />
-                 • Excellent edge holding property due to high tungsten inlay.<br />
-          • No teething or chipping problem.<br />
-          • Long interval between regrinds hence long durable life.</p>
+                 <p>    • For cutting wood, plywood, block board, flush door, chipboard, laminates, plastics, steel, etc.</p>
                 </div>
               </div>
             </div>
@@ -325,13 +324,15 @@ function Home() {
             <div className="card-body">
               <div className="row gx-4 align-items-center">
                 {/* Image Section (Top on Mobile, Right on Larger Screens) */}
-                <div className="col-12 col-lg-6 order-lg-2 d-flex justify-content-center align-items-center mb-4 mb-lg-0">
+                <div className="col-12 col-lg-6 order-lg-2 d-flex justify-content-center align-items-center mb-5 mb-lg-0">
                   <img
-                    src="img/services/our-brand12.png"
-                    className="img-fluid"
+                    src="img/icon/brandog123.png"
+                    className="img-fluid "
                     alt="Project Title"
-                    style={{ borderRadius: 15, border: "4px solid lightgrey",width:'250px' }}
+                    style={{ borderRadius: 15, border: "4px solid lightgrey",width:'260px' }}
+                    
                   />
+               
                 </div>
                 {/* Information Section (Below Image on Mobile, Left of Image on Larger Screens) */}
                 <div className="col-12 col-lg-6 order-lg-1 d-flex flex-column justify-content-center">
