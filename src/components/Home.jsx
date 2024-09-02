@@ -33,7 +33,7 @@ function Home() {
 
 
     const sliderStyle1 = {
-      backgroundImage: 'url(img/bg/servies-bg.png)',
+      backgroundImage: 'url(img/bg/servies-b.jpg)', 
       
       
     

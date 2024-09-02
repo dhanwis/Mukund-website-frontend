@@ -17,7 +17,7 @@ function Contact() {
 
 
     const sliderStyle = {
-        backgroundImage: 'url(img/bg/servies-bg.png)',
+        backgroundImage: 'url(img/bg/servies-b.jpg)',
         
       };
   return (
@@ -78,15 +78,16 @@ function Contact() {
                                             <i style={{backgroundColor:'rgb(210, 33, 39)'}} class="far fa-envelope-open"></i>
                                         </div>
                                         <h5>Message Us</h5>
-                                        <p> <a >info@mukundmachine.com</a></p>
-                                    </div>
+                                        <p><a>info@mukundmachine.com</a></p>         
+                                    </div>  
+                                         
                                 </div>							
                         </div>
                         <div data-aos="fade-left" class="col-lg-8 order-2">
-                        
+                      
 <br />
 <br />
-<h3 style={{marginTop:'-50px'}} className='text-center mb-5'>Other Branches</h3>
+<h3 style={{marginTop:'-50px'}} className='text-center mb-5'>Other Branches</h3>    
 <div className='row'>
         <div className='col-12 col-md-6'>
           <Card className='m-3' style={{ width: '100%', borderColor: 'rgb(210, 33, 39)' }}>
