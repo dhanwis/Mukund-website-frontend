@@ -255,9 +255,9 @@ function Home() {
                 {/* Information Section (Below Image on Mobile, Left of Image on Larger Screens) */}
                 <div className="col-12 col-lg-6 order-lg-1 d-flex flex-column justify-content-center">
                   <h3 className="display-6 text-center text-lg-start mb-4">
-                <span style={{color:'rgb(29, 34, 228)'}}>  Mumatul</span> Peeling Knives
+                <span className='kanit-thin' style={{color:'rgb(29, 34, 228)'}}>  Mumatul</span> Peeling Knives
                   </h3>
-                 <p className='me-3'>• Manufactured under uncompromised metallurgical & meteorological quality control.<br />
+                 <p style={{fontSize:'18px'}} className='me-3'>• Manufactured under uncompromised metallurgical & meteorological quality control.<br />
                  • Excellent edge holding property due to high tungsten inlay.<br />
           • No teething or chipping problem.<br />
           • Long interval between regrinds hence long durable life.</p>
@@ -337,9 +337,9 @@ function Home() {
                 {/* Information Section (Below Image on Mobile, Left of Image on Larger Screens) */}
                 <div className="col-12 col-lg-6 order-lg-1 d-flex flex-column justify-content-center">
                   <h3 className="display-6 text-center text-lg-start mb-4">
-                <span style={{color:'rgb(29, 34, 228)'}} >  Mumatul</span> Circular Saw Blade
+                <span className='kanit-thin' style={{color:'rgb(29, 34, 228)'}} >  Mumatul</span> Circular Saw Blade
                   </h3>
-                 <p>    • For cutting wood, plywood, block board, flush door, chipboard, laminates, plastics, steel, etc.</p>
+                 <p  style={{fontSize:'18px'}}>    • For cutting wood, plywood, block board, flush door, chipboard, laminates, plastics, steel, etc.</p>
                 </div>
               </div>
             </div>
