@@ -339,7 +339,7 @@ function Home() {
                   <h3 className="display-6 text-center text-lg-start mb-4">
                 <span className='kanit-thin' style={{color:'rgb(29, 34, 228)'}} >  Mumatul</span> Circular Saw Blade
                   </h3>
-                 <p  style={{fontSize:'18px'}}>    • For cutting wood, plywood, block board, flush door, chipboard, laminates, plastics, steel, etc.</p>
+                 <p  style={{fontSize:'18px'}}> •  Carbide and PCD tipped saw blade <br />  • For cutting wood, plywood, block board, flush door, chipboard, laminates, plastics, steel, etc.</p>
                 </div>
               </div>
             </div>
