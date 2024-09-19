@@ -7,10 +7,7 @@ import './Footer.css';
 const Copy = () => {
   return (
     <footer style={{
-      backgroundImage: "url('img/icon/footer-mukund.12.jpg')",
-      backgroundSize: 'cover', // Ensure the image covers the entire footer
-      backgroundPosition: 'center', // Center the image
-      backgroundRepeat: 'no-repeat' // Prevent the image from repeating
+     backgroundColor:'rgb(210, 33, 39)'
     }} className="footer">
       <div className="footer-container">
         <div className="footer-logo">
