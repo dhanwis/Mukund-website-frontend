@@ -12,7 +12,7 @@ const Copy = () => {
       <div className="footer-container">
         <div className="footer-logo">
 
-          <img style={{width:'55px'}} src="img/icon/Mukundiconog4.png" alt="Site Logo" />
+          <img style={{width:'55px'}} src="img/icon/Mukundiconog3.png" alt="Site Logo" />
         </div>
         <div className="footer-copyright">
           &copy; {new Date().getFullYear()} Mukund Machine Tools. All rights reserved. <br />
