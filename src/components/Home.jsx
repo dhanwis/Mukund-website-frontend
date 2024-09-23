@@ -181,7 +181,7 @@ function Home() {
 </center>
 <br />
 
-<div className="section-content">
+<div className="c7 section-content">
   <div
     id="projectCarousel"
     className="carousel slide"
