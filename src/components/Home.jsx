@@ -182,6 +182,8 @@ function Home() {
 <br />
 
 <div className="c7 section-content">
+  <br />
+  <br />
   <div
     id="projectCarousel"
     className="carousel slide"
@@ -352,6 +354,8 @@ function Home() {
     
  
   </div>
+  <br />
+  <br />
 </div>
 
 <br />
