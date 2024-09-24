@@ -220,7 +220,7 @@ function Home() {
                   <h3 className="display-6 text-center text-lg-start mb-4">
                 <span style={{color:'rgb(29, 34, 228)'}}>  Mumatul</span> Peeling Knives
                   </h3>
-                 <p className='me-3'>• Manufactured under uncompromised metallurgical & meteorological quality control.<br />
+                 <p className='me-3'>• Manufactured under uncompromised metallurgical &    meteorological quality control.<br />
                  • Excellent edge holding property due to high tungsten inlay.<br />
           • No teething or chipping problem.<br />
           • Long interval between regrinds hence long durable life.</p>
@@ -259,10 +259,26 @@ function Home() {
                   <h3 className="display-6 text-center text-lg-start mb-4">
                 <span className='kanit-thin' style={{color:'rgb(29, 34, 228)'}}>  Mumatul</span> Peeling Knives
                   </h3>
-                 <p style={{fontSize:'18px'}} className='me-3'>• Manufactured under uncompromised metallurgical & meteorological quality control.<br />
-                 • Excellent edge holding property due to high tungsten inlay.<br />
-          • No teething or chipping problem.<br />
-          • Long interval between regrinds hence long durable life.</p>
+                  
+                  <ul className='kanit-thin' style={{ fontSize: '18px',marginLeft:'11px' }}>
+    <li>Manufactured under uncompromised metallurgical & meteorological quality control.</li>
+    <li>Excellent edge holding property due to high tungsten inlay.</li>
+    <li>No teething or chipping problem.</li>
+    <li>Long interval between regrinds hence long durable life.</li>
+</ul>
+
+  {/* <div style={{ fontSize: '18px' }}>
+    <p>Manufactured under uncompromised metallurgical & meteorological quality control.<br />
+      Excellent edge holding property due to high tungsten inlay.<br />
+      No teething or chipping problem.<br />
+      Long interval between regrinds hence long durable life.
+    </p>
+  </div> */}
+
+
+
+
+
                 </div>
               </div>
             </div>
@@ -341,7 +357,10 @@ function Home() {
                   <h3 className="display-6 text-center text-lg-start mb-4">
                 <span className='kanit-thin' style={{color:'rgb(29, 34, 228)'}} >  Mumatul</span> Circular Saw Blade
                   </h3>
-                 <p  style={{fontSize:'18px'}}> •  Carbide and PCD tipped saw blade <br />  • For cutting wood, plywood, block board, flush door, chipboard, laminates, plastics, steel, etc.</p>
+                  <ul className='kanit-thin' style={{ fontSize: '18px',marginLeft:'11px' }}>
+    <li> For cutting wood, plywood, block board, flush door, chipboard, laminates, plastics, steel, etc.</li>
+    
+</ul>
                 </div>
               </div>
             </div>
