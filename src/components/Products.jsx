@@ -79,7 +79,7 @@ function Products() {
                       {item.productname}
                     </Card.Title>
                     <Card.Text
-                      style={{ width: "15rem", height: "13rem", whiteSpace: "pre-wrap" }}
+                      style={{ width: "15rem", height: "13rem", whiteSpace: "pre-wrap",textAlign:'justify'}}
                     >
                       {item.description}
                     </Card.Text>

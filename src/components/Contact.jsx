@@ -17,7 +17,7 @@ function Contact() {
 
 
     const sliderStyle = {
-        backgroundImage: 'url(img/bg/servies-b.jpg)',
+        backgroundImage: 'url(img/bg/bgchang.jpg)',
         
       };
   return (
