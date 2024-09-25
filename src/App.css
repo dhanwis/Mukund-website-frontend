@@ -91,6 +91,20 @@ background-image: url('../public/img/icon/brand3-bg.jpg');
   background-position: center;
 }
 
+
+.card-text12 {
+  width: 15rem;
+  height: 13rem;
+  white-space: pre-wrap;
+  text-align: justify;
+}
+
+@media (min-width: 992px) { /* Large screens */
+  .card-text12 {
+    height: 16rem;
+  }
+}
+
 /* Background image for mobile screens */
 @media only screen and (max-width: 768px) {
   .single-slider {

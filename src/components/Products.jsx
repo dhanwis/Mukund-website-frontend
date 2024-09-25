@@ -78,11 +78,9 @@ function Products() {
                     <Card.Title style={{ width: "15rem", height: "2rem" }}>
                       {item.productname}
                     </Card.Title>
-                    <Card.Text
-                      style={{ width: "15rem", height: "13rem", whiteSpace: "pre-wrap",textAlign:'justify'}}
-                    >
-                      {item.description}
-                    </Card.Text>
+                    <Card.Text className="card-text12">
+  {item.description}
+</Card.Text>
                     <Button
                       href="https://wa.me/7259126513"
                       style={{
