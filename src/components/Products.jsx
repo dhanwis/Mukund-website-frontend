@@ -75,10 +75,10 @@ function Products() {
                     />
                   </Link>
                   <Card.Body>
-                    <Card.Title style={{ width: "15rem", height: "2rem" }}>
+                    <Card.Title style={{ width: "15rem", height: "2rem",color:'rgb(210, 33, 39)' }}>
                       {item.productname}
                     </Card.Title>
-                    <Card.Text className="card-text12">
+                    <Card.Text className="card-text12 fw-bold">
   {item.description}
 </Card.Text>
                     <Button
