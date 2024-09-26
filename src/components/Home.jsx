@@ -175,11 +175,20 @@ function Home() {
             <br />
             <br />
 <br />
-            <center>
-              <h2 className='mt-2' style={{fontSize:'50px'}}>Our <span style={{color:'#d22127'}}>Brand</span></h2>                                   
-  
-</center>
-<br />
+<div className='container'>
+  <div className="d-flex justify-content-center align-items-center">
+        <h2 className="text-center" style={{ fontSize: '41px' }}>
+          Our&nbsp;<span style={{ color: '#d22127' }}>Brand</span>
+        </h2>
+        <img
+          src="img/icon/mumtul1.png"
+          alt="Brand Logo"
+          className="mb-3 img-fluid"
+          style={{ width: '150px', height: '180px' }}
+        />
+      </div>
+</div>
+
 
 <div className="c7 section-content">
   <br />
