@@ -177,7 +177,7 @@ function Home() {
 <br />
 <div className='container'>
   <div className="d-flex justify-content-center align-items-center">
-        <h2 className="text-center" style={{ fontSize: '41px' }}>
+        <h2 className="text-center ms-3" style={{ fontSize: '41px' }}>
           Our&nbsp;<span style={{ color: '#d22127' }}>Brand</span>
         </h2>
         <img
