@@ -44,8 +44,8 @@ const ProductDetail = () => {
           {product && (
             <>
             <br/>
-              <h2>{product.productname}</h2>
-              <p style={{whiteSpace:'pre-wrap'}}>{product.description}</p>
+              <h2 style={{color:'rgb(210, 33, 39)'}}>{product.productname}</h2>
+              <p className='fw-bold' style={{whiteSpace:'pre-wrap'}}>{product.description}</p>
             </>
           )}
         </Col>

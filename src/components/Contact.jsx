@@ -63,14 +63,14 @@ function Contact() {
                 <i className="far fa-map" style={{ backgroundColor: 'rgb(210, 33, 39)' }}></i>
             </div>
             <h5>Office Address</h5>
-            <p>147, Stadium Complex, Kannur <br /> 670 001, Kerala, India</p>
+            <p className='fw-bold'>147, Stadium Complex, Kannur <br /> 670 001, Kerala, India</p>
         </div>
                                      <div class="single-cta pb-30 mb-30 wow " d data-delay=".2s">
                                         <div class="f-cta-icon">
                                             <i style={{backgroundColor:'rgb(210, 33, 39)'}} class="far fa-clock"></i>
                                         </div>
                                         <h5>Working Hours</h5>
-                                        <p>Monday to saturday 09:00 to 5:30 <br/> 
+                                        <p className='fw-bold'>Monday to saturday <br /> 09:00 to 5:30 , 
                                             Sunday holiday</p> 
                                     </div>
                                      <div class="single-cta wow "  data-delay=".2s">
@@ -78,7 +78,7 @@ function Contact() {
                                             <i style={{backgroundColor:'rgb(210, 33, 39)'}} class="far fa-envelope-open"></i>
                                         </div>
                                         <h5>Message Us</h5>
-                                        <p><a>info@mukundmachine.com</a></p>         
+                                        <p className='fw-bold'><a>info@mukundmachine.com</a></p>         
                                     </div>  
                                          
                                 </div>							

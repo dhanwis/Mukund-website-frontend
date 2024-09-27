@@ -70,11 +70,11 @@ function Aboutus() {
                                     <h3 style={{color:'00173c'}}>Welcome to <br /></h3>   
                                     <h1 style={{fontSize:'30px'}}><span style={{color:'rgb(210, 33, 39)'}}>Mukund Machine Tools</span></h1>                                
                                 </div>
-                                   <p  style={{color:'black',textAlign:'justify'}}>Founded in 1987, Mukund Machine Tools has grown from a small business into a leading supplier of industrial cutting tools. We specialise in trading high-quality knives, saws, and cutters for industries working with wood, rubber, paper, plastics, ferrous , other non-ferrous metals.
+                                   <p className='fw-bold'  style={{color:'black',textAlign:'justify'}}>Founded in 1987, Mukund Machine Tools has grown from a small business into a leading supplier of industrial cutting tools. We specialise in trading high-quality knives, saws, and cutters for industries working with wood, rubber, paper, plastics, ferrous , other non-ferrous metals.
                                    </p>
-                                  <p style={{color:'black',textAlign:'justify'}}>Our collaboration with top manufacturers from India and across the world ensures that our customers benefit from the latest cutting tools which we have been selling locally and abroad. This network allows us to  consistently offer innovative and reliable solutions.
+                                  <p className='fw-bold' style={{color:'black',textAlign:'justify'}}>Our collaboration with top manufacturers from India and across the world ensures that our customers benefit from the latest cutting tools which we have been selling locally and abroad. This network allows us to  consistently offer innovative and reliable solutions.
                                   </p>
-                                  <p style={{color:'black',textAlign:'justify'}}>
+                                  <p className='fw-bold' style={{color:'black',textAlign:'justify'}}>
                                   We have accumulated years of experience in providing timely services at our service centre which is equipped with state-of-the-art CNC machine.
                                   </p>
                                 
