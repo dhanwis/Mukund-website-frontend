@@ -25,11 +25,7 @@ function Home() {
         });
       }, []);
  
-    const sliderStyle = {
-      backgroundImage: 'url(img/slider/slider_img02441.jpg)',
-      backgroundSize: 'cover',
-      
-    };
+   
 
 
     const sliderStyle1 = {
