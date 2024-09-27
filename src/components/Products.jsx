@@ -47,7 +47,7 @@ function Products() {
       setaddprojectresponse(result.data)
     };
 
-    console.log(getProduct);
+    // console.log(getProduct);
   return (
     <div>
     <div data-aos="zoom-out-down" className="container">

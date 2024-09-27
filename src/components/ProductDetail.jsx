@@ -12,7 +12,7 @@ const ProductDetail = () => {
   useEffect(() => {
     axios.get(`${BASE_URL}/product/${id}`)
       .then(response => {
-        console.log("productbyid", response);
+        // console.log("productbyid", response);
         setProduct(response.data);
         setSelectedImage(response.data.image[0]); // Set the first image as the selected image by default
       })
