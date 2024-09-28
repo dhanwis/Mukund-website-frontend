@@ -112,12 +112,11 @@ function Contact() {
         <Card.Body>
           <Card.Title>PREBIN ENGINEERING</Card.Title>
           <Card.Subtitle className="mb-2 text-muted">Kannur</Card.Subtitle>
-          <br />
           <Card.Text>
-            Dharmasala, Kerala 670563 <br />
-            Working Hours: 9 Am-6 pm
+          Industrial Plot, Andoor, Parassinikkadavu, 670 563 <br />
+Kannur Dt., Kerala. Tel: 0497 2931428
+Email: prebinengg@gmail.com
           </Card.Text>
-          <br />
           <Card.Text>
             Phone: <a href="tel:7293115909">72931 15909</a>
           </Card.Text>
