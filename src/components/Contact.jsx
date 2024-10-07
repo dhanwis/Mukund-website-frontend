@@ -99,7 +99,7 @@ function Contact() {
             4F9G+63M, Karthika Annex, Ground Floor, Kalady-Perumbavoor Rd, Perumbavoor, Kerala 683542
           </Card.Text>
           <Card.Text>
-            Phone: <a href="tel:9544421115">9544421115</a>
+            Phone: <a href="tel:9544421115">+919544421115</a>
           </Card.Text>
         </Card.Body>
       </Card>
@@ -118,7 +118,7 @@ Kannur Dt., Kerala. Tel: 0497 2931428
 Email: prebinengg@gmail.com
           </Card.Text>
           <Card.Text>
-            Phone: <a href="tel:7293115909">72931 15909</a>
+            Phone: <a href="tel:7293115909">+9172931 15909</a>
           </Card.Text>
         </Card.Body>
       </Card>
